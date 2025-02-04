@@ -54,12 +54,35 @@ aside.case-study-sidebar {
 	width: 300px;
 }
 
+aside.case-study-sidebar h2 {
+	font: 500 1.4em 'Montserrat', 'Open Sans', Arial, sans-serif;
+    color: #4b4b4b;
+    margin: 3em 0 .5em 0;
+}
+
+aside.case-study-sidebar h3 {
+	font: 300 .75em 'Montserrat', 'Open Sans', Arial, sans-serif;
+    color: #a6a6a6;
+    margin: 0 0 1em 0;
+}
+
+aside.case-study-sidebar h4 {
+	font: 100 .85em 'Montserrat', 'Open Sans', Arial, sans-serif;
+    color: #4b4b4b;
+    margin: 0 0 2em 0;
+}
+
+aside.case-study-sidebar p {
+    margin: 0 0 2em 0;
+}
+
 div.case-study-images {
 	float: left;
-	width: 300px;
+	width: 600px;
+	padding: 0 12px;
 }
 
 div.case-study-images img {
 	width: 100%;
-	padding: 12px;
+	padding: 0 12px;
 }
