@@ -47,3 +47,19 @@ Text Domain:  accelerate-theme-child
 	text-transform: uppercase;
 }
 
+/* Case Studies */
+
+aside.case-study-sidebar {
+	float: left;
+	width: 300px;
+}
+
+div.case-study-images {
+	float: left;
+	width: 300px;
+}
+
+div.case-study-images img {
+	width: 100%;
+	padding: 12px;
+}
