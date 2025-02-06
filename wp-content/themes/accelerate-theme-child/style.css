@@ -11,6 +11,10 @@ Text Domain:  accelerate-theme-child
 */
 
 
+/* Homepage */
+
+/*--- Hero Area on Homepage ---*/
+
 .home-page {
     background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
 }
@@ -23,21 +27,73 @@ Text Domain:  accelerate-theme-child
     background: none repeat scroll 0 0 #45ac9d;
 }
 
+/*--- Case Studies on Homepage ---*/
+
+.homepage-featured-work {
+	justify-content: space-between;
+}
+
+.site-content h2 {
+    font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+    color: #2b2b2b;
+    text-transform: uppercase;
+    margin: 3em 0 2em;
+	text-align: center;
+}
+
+.site-content {
+	justify-content: space-between;
+}
+
+figure {
+	text-align: center;
+}
+
+ul {
+	list-style: none;
+	display: flex;
+	flex-direction: row-reverse;
+	
+}
+
+li {
+	display: inline;
+	
+}
+
+.site-content h3 {
+	text-align: center;
+	font: 500 1em 'Montserrat', 'Open Sans', Arial, sans-serif;
+	margin-top: 1em;
+}
+
+
+
+/*--- Blog Posts on Homepage ---*/
+
 .blog-post {
 	width: 50%;
 	float: left;
-	margin-bottom: 2em;
 }
 
-.blog-post h4 {
+.blog-post h2 {
     font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
     color: #a6a6a6;
     text-transform: uppercase;
-    margin: 2em 0 .5em;
+    margin: 6em 0 .5em;
+	text-align: left;
 }
 
 .blog-post h3 {
-	font-size: 1.5em;
+	font: 700 1em 'Montserrat', 'Open Sans', Arial, sans-serif;
+    color: #2b2b2b;
+    margin: 2em 0 1.75em;
+	text-align: left;
+}
+
+.blog-post p {
+	color:#5b5b5b;
+	margin-bottom: 2em;
 }
 
 .read-more-link {
@@ -45,6 +101,27 @@ Text Domain:  accelerate-theme-child
 	font-weight: 700;
 	color: #45ac9d;
 	text-transform: uppercase;
+}
+
+
+
+/*--- Footer on Homepage ---*/
+
+#main {
+	margin-bottom: 0;
+}
+
+.site-footer {
+	padding-top: 1em;
+}
+
+/* Blog */
+
+.entry-header h2 {
+	margin-top: 0;
+	margin-bottom: 1em;
+	text-transform: none;
+	text-align: left;
 }
 
 /* Case Studies */
