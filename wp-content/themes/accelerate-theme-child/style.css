@@ -94,7 +94,7 @@ figure {
 .homepage-featured-work {
 	list-style: none;
 	display: flex;
-	flex-direction: row-reverse;
+	flex-direction: row;
 }
 
 .individual-featured-work {
