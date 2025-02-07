@@ -223,9 +223,16 @@ div.case-study-images img {
 	display: block;
 }
 
-/* Page */
 
-.page h2 {
+/* Contact Form */
+
+#contact-form {
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+
+#contact-form h2 {
     font: 700 2em 'Montserrat', 'Open Sans', Arial, sans-serif;
     color: #2b2b2b;
     margin: 0 0 0.5em;
@@ -233,15 +240,13 @@ div.case-study-images img {
 	text-transform: none;
 }
 
-.main-content p {
+#contact-form p {
 	font-size: 1em;
 	color: #2b2b2b;
 	padding: 0.5em 0 1em 0;
 }
 
-.main-content {
-	padding-left: 15%;
-	padding-right: 15%;
+#nf-form-1-cont {
 	flex-grow: 0;
 }
 
@@ -272,4 +277,10 @@ div.case-study-images img {
 
 #nf-field-4-container {
 	padding-bottom: 2em;
+}
+
+/* About Page */
+
+#call-to-action {
+	border-top: 1px solid #bfbfbf;
 }
