@@ -204,3 +204,17 @@ div.case-study-images img {
 	width: 100%;
 	padding: 0 12px;
 }
+
+/* Case Study Archive */
+.archive h2 {
+	text-align: left;
+}
+
+div.case-study-images img {
+    width: 100%;
+    padding: 1em;
+}
+
+.archive .main-content {
+	padding: 3em 0;
+}
