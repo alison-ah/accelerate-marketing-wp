@@ -228,20 +228,41 @@ div.case-study-images img {
 .page h2 {
     font: 700 2em 'Montserrat', 'Open Sans', Arial, sans-serif;
     color: #2b2b2b;
-    margin: 0.75em 0;
+    margin: 0 0 0.5em;
 	text-align: left;
 	text-transform: none;
 }
 
-.main-content.page p {
-	font-size: 1.5em;
-	width: 70%;
+.main-content p {
+	font-size: 1em;
+	color: #2b2b2b;
+	padding: 0.5em 0 1em 0;
 }
 
 .main-content {
 	padding-left: 15%;
 	padding-right: 15%;
 	flex-grow: 0;
+}
+
+#nf-label-field-1,
+#nf-label-field-2,
+#nf-label-field-3 {
+    font-weight: 600;
+	font-size: .85em;
+	color: #2b2b2b;
+    margin: 0;
+    padding: 0;
+}
+
+#nf-field-1-container,
+#nf-field-2-container {
+	width: 49%;
+	display: inline-block;
+}
+
+#nf-field-1-wrap {
+	padding-right: 2em;
 }
 
 .page #nf-field-4 {
