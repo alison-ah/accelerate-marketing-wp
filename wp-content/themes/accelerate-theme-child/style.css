@@ -11,6 +11,44 @@ Text Domain:  accelerate-theme-child
 */
 
 
+/* Global Styles */
+
+/* --- Footer ---*/
+
+.site-footer {
+	padding-top: 1em;
+}
+
+.social-media-navigation {
+	width: auto;
+}
+
+.social-media-navigation ul {
+	width: 100px;
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	align-items: end;
+
+	justify-content: space-between;
+
+}
+
+.menu-item i._mi {
+	display: block;
+    height: 25px;
+    width: 25px;
+    line-height: 25px;
+	
+	-moz-border-radius: 50%;
+    border-radius: 50%;
+
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 1em;
+}
+
 /* Homepage */
 
 /*--- Hero Area on Homepage ---*/
@@ -57,7 +95,6 @@ ul {
 	list-style: none;
 	display: flex;
 	flex-direction: row-reverse;
-	
 }
 
 li {
@@ -84,7 +121,7 @@ li {
     font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
     color: #a6a6a6;
     text-transform: uppercase;
-    margin: 6em 0 .5em;
+    margin: 4em 0 .5em;
 	text-align: left;
 }
 
