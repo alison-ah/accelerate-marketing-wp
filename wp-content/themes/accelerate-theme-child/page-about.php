@@ -36,8 +36,8 @@ get_header(); ?>
 		?>
 		
 		<!-- Hero Section -->
-		<div class="home-page hero-content">
-			<?php if($hero_summary) { echo $hero_summary; } ?>
+		<div class="home-page hero-content" id="about-hero">
+			<p id="hero-summary"><?php if($hero_summary) { echo $hero_summary; } ?></p>
 		</div> <!-- .home-page.hero-content -->
 
 		<article class="about">
@@ -47,76 +47,112 @@ get_header(); ?>
 					<p><?php the_content(); ?></p>
 				</div>
 			
-				<div class="services">
-					<?php 
-					if ($service_1) { 
-						echo '<p>Service 1: ' . esc_html($service_1) . '</p>';
-					} else {
-						echo '<p>Service 1 is empty</p>';
-					}
-					if ($service_1_description) { 
-						echo '<p>Description: ' . esc_html($service_1_description) . '</p>';
-					} else {
-						echo '<p>Service 1 description is empty</p>';
-					}
-					if ($service_1_image) { 
-						echo wp_get_attachment_image($service_1_image, $size);
-					}
-					?>
+				<div class="services" id="service-1">
+					<div class="service-image" id="service-img-1">
+						<?php
+							if ($service_1_image) { 
+								echo wp_get_attachment_image($service_1_image, $size);
+							}
+						?>
+					</div>
+
+					<div class="service-text" id="service-1-text">
+						<h3>
+							<?php 
+								if ($service_1) { 
+									echo esc_html($service_1);
+								}
+							?>
+						</h3>
+						<p>
+							<?php 
+								if ($service_1_description) { 
+									echo esc_html($service_1_description);
+								}
+							?>
+						</p>
+					</div>
 				</div> <!-- .services -->
 
-				<div class="services">
-					<?php 
-					if ($service_2) { 
-						echo '<p>Service 2: ' . esc_html($service_2) . '</p>';
-					} else {
-						echo '<p>Service 2 is empty</p>';
-					}
-					if ($service_2_description) { 
-						echo '<p>Description: ' . esc_html($service_2_description) . '</p>';
-					} else {
-						echo '<p>Service 2 description is empty</p>';
-					}
-					if ($service_2_image) { 
-						echo wp_get_attachment_image($service_2_image, $size);
-					}
-					?>
+				<div class="services" id="service-2">
+					<div class="service-image" id="service-img-2">
+						<?php
+							if ($service_2_image) { 
+								echo wp_get_attachment_image($service_2_image, $size);
+							}
+						?>
+					</div>
+
+					<div class="service-text" id="service-2-text">
+						<h3>
+							<?php 
+								if ($service_2) { 
+									echo esc_html($service_2);
+								}
+							?>
+						</h3>
+						<p>
+							<?php 
+								if ($service_2_description) { 
+									echo esc_html($service_2_description);
+								}
+							?>
+						</p>
+					</div>
 				</div> <!-- .services -->
 
-				<div class="services">
-					<?php 
-					if ($service_3) { 
-						echo '<p>Service 3: ' . esc_html($service_3) . '</p>';
-					} else {
-						echo '<p>Service 3 is empty</p>';
-					}
-					if ($service_3_description) { 
-						echo '<p>Description: ' . esc_html($service_3_description) . '</p>';
-					} else {
-						echo '<p>Service 3 description is empty</p>';
-					}
-					if ($service_3_image) { 
-						echo wp_get_attachment_image($service_3_image, $size);
-					}
-					?>
+				<div class="services" id="service-3">
+					<div class="service-image" id="service-img-3">
+						<?php
+							if ($service_3_image) { 
+								echo wp_get_attachment_image($service_3_image, $size);
+							}
+						?>
+					</div>
+
+					<div class="service-text" id="service-3-text">
+						<h3>
+							<?php 
+								if ($service_3) { 
+									echo esc_html($service_3);
+								}
+							?>
+						</h3>
+						<p>
+							<?php 
+								if ($service_3_description) { 
+									echo esc_html($service_3_description);
+								}
+							?>
+						</p>
+					</div>
 				</div> <!-- .services -->
 
-				<div class="services">
-					<?php 
-					if ($service_4) { 
-						echo '<p>Service 4: ' . esc_html($service_4) . '</p>';
-					} else {
-						echo '<p>Service 4 is empty</p>';
-					}
-					if ($service_4_description) { 
-						echo '<p>Description: ' . esc_html($service_4_description) . '</p>';
-					} else {
-						echo '<p>Service 4 description is empty</p>';
-					}
-					if ($service_4_image) { 
-						echo wp_get_attachment_image($service_4_image, $size);
-					}
-					?>
+				<div class="services" id="service-4">
+					<div class="service-image" id="service-img-4">
+						<?php
+							if ($service_4_image) { 
+								echo wp_get_attachment_image($service_4_image, $size);
+							}
+						?>
+					</div>
+
+					<div class="service-text" id="service-4-text">
+						<h3>
+							<?php 
+								if ($service_4) { 
+									echo esc_html($service_4);
+								}
+							?>
+						</h3>
+						<p>
+							<?php 
+								if ($service_4_description) { 
+									echo esc_html($service_4_description);
+								}
+							?>
+						</p>
+					</div>
 				</div> <!-- .services -->
 
 			</aside> <!-- .about-services -->
@@ -128,7 +164,7 @@ get_header(); ?>
 	</div> <!-- #primary.hero-content -->
 
 	<div id="call-to-action">
-		<h2>Interested in working with us?</h2>
+		<h2 class="call-to-action">Interested in working with us?</h2>
 		<a id="call-to-action-button" class="button" href="<?php echo site_url('/contact/') ?>">Contact Us</a>
 	</div>
 

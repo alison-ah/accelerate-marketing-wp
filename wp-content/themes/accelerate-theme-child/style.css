@@ -15,6 +15,10 @@ Text Domain:  accelerate-theme-child
 
 /* --- Footer ---*/
 
+#main {
+	margin-bottom: 0;
+}
+
 .site-footer {
 	padding-top: 1em;
 }
@@ -29,9 +33,7 @@ Text Domain:  accelerate-theme-child
 	display: flex;
 	flex-direction: row;
 	align-items: end;
-
 	justify-content: space-between;
-
 }
 
 .menu-item i._mi {
@@ -144,17 +146,6 @@ figure {
 	text-transform: uppercase;
 }
 
-
-
-/*--- Footer on Homepage ---*/
-
-#main {
-	margin-bottom: 0;
-}
-
-.site-footer {
-	padding-top: 1em;
-}
 
 /* Blog */
 
@@ -285,51 +276,96 @@ div.case-study-images img {
 	padding: 0;
 }
 
-.hero-content {
+#about-hero {
+	padding: 5em 0;
+	background-position: bottom;
+	margin-bottom: 3em;
+}
+
+#hero-summary {
+	margin: 0 33%;
 	color: white;
-	text-align: center;
 }
 
 .intro {
 	justify-content: center;
-	width: 50%;
+	margin: 0 24%;
+	padding-bottom: 2em;
+	text-align: center;
 }
 
-#call-to-action {
-	border-top: 1px solid #bfbfbf;
+.about {
+	padding: 0 12% 2em;
+	display: flex;
+	justify-content: center;
 }
 
 .about h2 {
 	font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
     color: #2b2b2b;
     text-transform: uppercase;
-    margin: 3em 0 2em;
+    margin: 0 0 0 2em;
 	text-align: center;
 }
 
 .about h3 {
-	text-align: center;
-	font: 500 1em 'Montserrat', 'Open Sans', Arial, sans-serif;
-	margin-top: 1em;
+	text-align: left;
+	color: #2b2b2b;
+	font: 600 1.25em 'Montserrat', 'Open Sans', Arial, sans-serif;
+	margin: 1em 0;
 }
 
-.about-img {
+.services {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	padding: 2em;
+	justify-content: space-between;
+}
+
+.service-image {
+	width: 25%;
 
 }
 
-#about-img-1,
-#about-img-3 {
-	float: left;
-	clear: both;
+.service-text {
+	width: 75%;
+	text-align: left;
 }
 
-#about-img-2,
-#about-img-4 {
-	float: right;
-	clear: both;
+#service-1,
+#service-3 {
+	flex-direction: row;
 }
 
-#call-to-action-button {
-	float: right;
-	clear: both;
+#service-2,
+#service-4 {
+	flex-direction: row-reverse;
+}
+
+#service-img-1,
+#service-img-3 {
+	padding-right: 3em;
+}
+
+#service-img-2,
+#service-img-4 {
+	padding-left: 3em;
+}
+
+#call-to-action {
+	border-top: 1px solid #bfbfbf;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 2em 12%;
+	width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+h2.call-to-action {
+	margin: 0;
+	padding-right: 2em;
 }
