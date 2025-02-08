@@ -31,7 +31,7 @@ get_header(); ?>
 		<!-- the loop -->
 			<?php while ( have_posts() ) : the_post();
 				$image_1 = get_field("image_1");
-				$size = "medium";
+				$size = "large";
 			?>
 			<li class="individual-featured-work">
 				<a href="<?php the_permalink(); ?>">
