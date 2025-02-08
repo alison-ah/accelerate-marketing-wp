@@ -279,8 +279,57 @@ div.case-study-images img {
 	padding-bottom: 2em;
 }
 
-/* About Page */
+/* About/Services Page */
+
+.main-content-about {
+	padding: 0;
+}
+
+.hero-content {
+	color: white;
+	text-align: center;
+}
+
+.intro {
+	justify-content: center;
+	width: 50%;
+}
 
 #call-to-action {
 	border-top: 1px solid #bfbfbf;
+}
+
+.about h2 {
+	font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+    color: #2b2b2b;
+    text-transform: uppercase;
+    margin: 3em 0 2em;
+	text-align: center;
+}
+
+.about h3 {
+	text-align: center;
+	font: 500 1em 'Montserrat', 'Open Sans', Arial, sans-serif;
+	margin-top: 1em;
+}
+
+.about-img {
+
+}
+
+#about-img-1,
+#about-img-3 {
+	float: left;
+	clear: both;
+}
+
+#about-img-2,
+#about-img-4 {
+	float: right;
+	clear: both;
+}
+
+#call-to-action-button {
+	float: right;
+	clear: both;
 }

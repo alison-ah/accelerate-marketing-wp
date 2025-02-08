@@ -15,7 +15,7 @@
 get_header(); ?>
 
 	<div id="primary" class="site-content sidebar">
-		<div class="main-content" role="main">
+		<div class="main-content page" role="main">
 			<?php while ( have_posts() ) : the_post(); ?>
                 <h2><?php the_title(); ?></h2>
 				<?php the_content(); ?>
