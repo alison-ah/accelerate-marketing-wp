@@ -120,8 +120,8 @@ ul.homepage-featured-work {
 /*--- Blog Posts on Homepage ---*/
 
 .blog-post {
-	width: 100%;
 	float: center;
+	padding: 0 2.5em;
 }
 
 .blog-post h2 {
@@ -135,7 +135,7 @@ ul.homepage-featured-work {
 .blog-post h3 {
 	font: 700 1em 'Montserrat', 'Open Sans', Arial, sans-serif;
     color: #2b2b2b;
-    margin: 2em 0 1.75em;
+   	margin: 2em 0 1.75em;
 	text-align: left;
 }
 
@@ -151,6 +151,45 @@ ul.homepage-featured-work {
 	text-transform: uppercase;
 }
 
+/*--- Testimonials on Homepage ---*/
+
+.recent-posts {
+	width: 100%;
+}
+
+.sp-testimonial-free h2 {
+	font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+    color: #a6a6a6;
+    text-transform: uppercase;
+    margin: 4em 3em .5em;
+	text-align: left;
+}
+
+.sp-testimonial-free-section .sp-testimonial-title h3 {
+    font: 700 1em 'Montserrat', 'Open Sans', Arial, sans-serif;
+    color: #2b2b2b;
+    margin: 1em 0 1.75em;
+	text-align: left;
+}
+
+.sp-testimonial-free-section, .sp-testimonial-client-testimonial,.sp-testimonial-free-section .sp-testimonial-client-testimonial p {
+	color:#5b5b5b;
+	font: 17px/1.65 'Open Sans', Arial, sans-serif;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+}
+
+.sp-testimonial-item, 
+.swiper-slide,
+.swiper-slide-active {
+	margin: 0;
+}
+
+.sp-testimonial-free {
+	margin: 0;
+	padding: 0;
+}
 
 /* Blog */
 
@@ -412,9 +451,32 @@ h3.not-found {
 	/* --- Blog on Homepage --- */
 
 	.blog-post {
-		width: 50%;
+		width: 38%;
+		float: right;
+		margin-right: 2%;
+		padding: 0;
+	}
+
+	.sp-testimonial-free {
+		width: 60%;
 		float: left;
 	}
+
+	.sp-testimonial-free-wrapper {
+		overflow: hidden;
+		
+	}
+
+	.sp-testimonial-free h2 {
+		padding: 0;
+		margin: 4em 0 .5em;
+	}
+
+	#sp-testimonial-free-47411 {
+		padding: 0;
+		margin: 0;
+	}
+	
 
 
 	/* Case Studies */

@@ -48,6 +48,13 @@ get_header(); ?>
 	</section>
 	<section class="recent-posts">
  		<div class="site-content">
+			<div class="sp-testimonial-free">
+				<h2>From our Clients</h2>
+				<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+				<div id="secondary" class="widget-area" role="complementary">
+					<?php dynamic_sidebar( 'sidebar-2' ); ?>
+				</div>
+			</div>
 			<div class="blog-post">
 				<h2>From the Blog</h2>
 				<?php query_posts('posts_per_page=1'); ?>
@@ -57,9 +64,11 @@ get_header(); ?>
 					<?php endwhile; ?> 
 				<?php wp_reset_query(); ?>
 			</div>
+		<?php endif; ?>
+		</div>
+	</div>
  		</div>
-
-		
 	</section>
+
 
 <?php get_footer(); ?>

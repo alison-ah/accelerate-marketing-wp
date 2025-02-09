@@ -1,0 +1,6058 @@
+/**
+ *
+ * ---------------------------------------------------------
+ * CSS MAP
+ * ---------------------------------------------------------
+ *
+ * 01. Base
+ *     01. 01. Header
+ *     01. 02. Sticky
+ *     01. 03. Header Buttons
+ *     01. 04. Navigation
+ *     01. 05. Wrapper
+ *     01. 06. Content
+ *     01. 07. Section
+ *     01. 08. Footer
+ *     01. 09. Copyright
+ *     01. 10. Show All Options
+ *     01. 11. Search Input
+ *     01. 12. Metabox
+ *     01. 13. Comment Metabox
+ *     01. 14. Help Tooltip
+ * 02. Themes
+ *     02. 01. Theme Dark
+ *     02. 02. Theme Light
+ * 03. Fields
+ *     03. 01. Field
+ *     03. 02. Field: accordion
+ *     03. 03. Field: background
+ *     03. 04. Field: backup
+ *     03. 05. Field: border, spacing, column, dimensions
+ *     03. 06. Field: button_set
+ *     03. 07. Field: checkbox, radio
+ *     03. 08. Field: code_editor
+ *     03. 09. Field: color
+ *     03. 10. Field: color_group
+ *     03. 11. Field: fieldset
+ *     03. 12. Field: date
+ *     03. 13. Field: gallery
+ *     03. 14. Field: group
+ *     03. 15. Field: icon
+ *     03. 16. Field: image_select
+ *     03. 17. Field: link_color
+ *     03. 18. Field: map
+ *     03. 19. Field: media
+ *     03. 20. Field: palette
+ *     03. 21. Field: repeater
+ *     03. 22. Field: select
+ *     03. 23. Field: slider
+ *     03. 24. Field: sortable
+ *     03. 25. Field: sorter
+ *     03. 26. Field: spinner
+ *     03. 27. Field: switcher
+ *     03. 28. Field: tabbed
+ *     03. 29. Field: text
+ *     03. 30. Field: textarea
+ *     03. 31. Field: typography
+ *     03. 32. Field: upload
+ *     03. 33. Field: wp_editor
+ *     03. 34. Field: heading
+ *     03. 35. Field: subheading
+ *     03. 36. Field: submessage
+ *     03. 37. Field: notice
+ *     03. 38. Field: number
+ *     03. 39. Field: link
+ *     03. 40. Field: Slider
+ *     03. 41. Field: others
+ * 04. Widget
+ * 05. Customizer
+ * 06. Taxonomy
+ * 07. Profile
+ * 08. Nav Menu
+ * 09. Modal
+ *     09. 01. Shortcode Modal
+ *     09. 02. Gutenberg Modal
+ *     09. 03. Icon Modal
+ * 10. Helper
+ * 11. Welcome Page
+ * 12. Responsive
+ * 13. Others
+ *
+ * ---------------------------------------------------------
+ *
+ */
+/**
+ * 01. Base
+ */
+.spftestimonial {
+	position: relative;
+}
+
+.spftestimonial label {
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+}
+
+.spftestimonial-ab-icon {
+	top: 2px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+#screen-meta-links+.spftestimonial-options {
+	margin-top: 40px;
+}
+
+.spftestimonial-options {
+	margin-top: 20px;
+	margin-right: 20px;
+}
+
+/**
+ * 01. 01. Header
+ */
+.spftestimonial-header {
+	position: relative;
+}
+
+.spftestimonial-header-inner {
+	padding: 25px;
+	transition: box-shadow .3s ease;
+}
+
+.spftestimonial-header-inner h1 {
+	float: left;
+	font-size: 20px;
+	line-height: 35px;
+	font-weight: 600;
+	margin: 0;
+}
+
+.spftestimonial-header-inner h1 small {
+	font-size: 11px;
+	font-weight: 500;
+}
+
+/**
+ * 01. 02. Sticky
+ */
+.spftestimonial-sticky .spftestimonial-header-inner {
+	position: fixed;
+	z-index: 99;
+	top: 32px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/**
+ * 01. 03. Header Buttons
+ */
+.spftestimonial-buttons {
+	float: right;
+}
+
+.spftestimonial-buttons .button {
+	margin: 0 2px;
+	line-height: 26px;
+}
+
+.spftestimonial-buttons .button:focus {
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+.spftestimonial-buttons .spftestimonial-save {
+	min-width: 72px;
+}
+
+.spftestimonial-header-left {
+	float: left;
+}
+
+.spftestimonial-header-right {
+	float: right;
+}
+
+/**
+ * 01. 04. Navigation
+ */
+.spftestimonial-nav {
+	display: block;
+	position: relative;
+	z-index: 10;
+	float: left;
+}
+
+.spftestimonial-nav ul {
+	clear: left;
+	margin: 0;
+	list-style-type: none;
+}
+
+.spftestimonial-nav ul li {
+	margin-bottom: 0;
+}
+
+.spftestimonial-nav ul li a {
+	font-size: 13px;
+	position: relative;
+	display: block;
+	padding: 14px 12px;
+	text-decoration: none;
+	transition-property: color, background;
+	transition-duration: 0.2s;
+	transition-timing-function: ease;
+}
+
+.spftestimonial-nav ul li a:focus {
+	outline: none;
+	box-shadow: none;
+}
+
+.spftestimonial-nav ul li .spftestimonial-arrow:after {
+	content: "\f054";
+	display: inline-block;
+	font-family: "Font Awesome 5 Pro", "Font Awesome 5 Free", "FontAwesome";
+	font-weight: 900;
+	font-size: 9px;
+	line-height: 1;
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	margin-top: -4px;
+}
+
+.spftestimonial-nav ul li.spftestimonial-tab-expanded .spftestimonial-arrow:after {
+	transform: rotate(90deg);
+}
+
+.spftestimonial-nav ul li.spftestimonial-tab-expanded ul {
+	display: block;
+}
+
+.spftestimonial-nav ul ul {
+	display: none;
+	position: relative;
+}
+
+.spftestimonial-nav ul ul li a {
+	font-size: 12px;
+	padding: 12px 14px 12px 24px;
+}
+
+.spftestimonial-nav .spftestimonial-tab-icon {
+	width: 20px;
+	margin-right: 5px;
+	font-size: 13px;
+	text-align: center;
+}
+
+.spftestimonial-nav .spftestimonial-label-error {
+	margin-left: 4px;
+	vertical-align: top;
+}
+
+.spftestimonial-nav-normal {
+	width: 238px;
+}
+
+.spftestimonial-nav-normal+.spftestimonial-content {
+	margin-left: 238px;
+}
+
+.spftestimonial-nav-inline {
+	width: 100%;
+}
+
+.spftestimonial-nav-inline ul li {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.spftestimonial-nav-background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 9;
+	width: 237px;
+}
+
+/**
+ * 01. 05. Wrapper
+ */
+.spftestimonial-wrapper {
+	position: relative;
+}
+
+/**
+ * 01. 06. Content
+ */
+.spftestimonial-content {
+	position: relative;
+	background-color: #fff;
+}
+
+/**
+ * 01. 07. Section
+ */
+.spftestimonial-sections {
+	float: left;
+	width: 100%;
+}
+
+.spftestimonial-section-title {
+	display: none;
+	padding: 20px 30px;
+	background-color: #EAECEE;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+}
+
+.spftestimonial-section-title h3 {
+	margin: 0;
+	padding: 0;
+	font-size: 13px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.spftestimonial-section-title .spftestimonial-section-icon {
+	margin-right: 5px;
+}
+
+/**
+ * 01. 08. Footer
+ */
+.spftestimonial-footer {
+	padding: 20px;
+	font-size: 11px;
+}
+
+/**
+ * 01. 09. Copyright
+ */
+.spftestimonial-copyright {
+	float: left;
+	margin-top: 5px;
+}
+
+/**
+ * 01. 10. Show All Settings
+ */
+.spftestimonial-search-all .spftestimonial-nav-background,
+.spftestimonial-search-all .spftestimonial-nav,
+.spftestimonial-show-all .spftestimonial-nav-background,
+.spftestimonial-show-all .spftestimonial-nav {
+	display: none;
+}
+
+.spftestimonial-search-all .spftestimonial-content,
+.spftestimonial-show-all .spftestimonial-content {
+	margin-left: 0;
+}
+
+.spftestimonial-search-all .spftestimonial-section-title,
+.spftestimonial-search-all .spftestimonial-section,
+.spftestimonial-show-all .spftestimonial-section-title,
+.spftestimonial-show-all .spftestimonial-section {
+	display: block !important;
+}
+
+.spftestimonial-search-all .spftestimonial-section-title {
+	display: none !important;
+}
+
+.spftestimonial-expand-all {
+	float: left;
+	padding: 0 8px;
+	margin-right: 4px;
+	z-index: 1;
+	font-size: 13px;
+	line-height: 30px;
+	cursor: pointer;
+	user-select: none;
+	border-radius: 2px;
+	transition: all .2s;
+}
+
+.spftestimonial-expand-all span {
+	font-size: 11px;
+	vertical-align: middle;
+}
+
+/**
+ * 01. 11. Search Input
+ */
+.spftestimonial-search {
+	float: left;
+}
+
+.spftestimonial-search input {
+	margin: 0 2px 0 0;
+	border: none;
+	font-size: 12px;
+	line-height: 30px;
+	min-height: 30px;
+	text-align: inherit;
+	padding: 0 10px;
+	border-radius: 2px;
+	box-shadow: none;
+}
+
+.spftestimonial-search input:focus {
+	box-shadow: none;
+}
+
+.spftestimonial-saving .spftestimonial-buttons,
+.spftestimonial-saving .spftestimonial-content {
+	cursor: default;
+	pointer-events: none;
+	opacity: 1;
+}
+
+/**
+ * 01. 12. Metabox
+ */
+.spftestimonial-metabox {
+	margin: -6px -12px -12px -12px;
+}
+
+.spftestimonial-metabox .spftestimonial-field {
+	padding: 20px 25px;
+}
+
+.spftestimonial-metabox .spftestimonial-section-title {
+	padding: 20px;
+}
+
+.block-editor-page .spftestimonial-metabox {
+	margin: -6px -14px -14px -14px;
+}
+
+.block-editor-editor-skeleton__content .spftestimonial-metabox {
+	border-left: 1px solid #e2e4e7;
+	border-right: 1px solid #e2e4e7;
+}
+
+.spftestimonial-sections-reset {
+	float: left;
+	width: 100%;
+	text-align: right;
+	border-top: 1px solid #eee;
+}
+
+.spftestimonial-sections-reset .spftestimonial-button-cancel,
+.spftestimonial-sections-reset input {
+	display: none;
+}
+
+.spftestimonial-sections-reset label {
+	padding: 10px;
+}
+
+.spftestimonial-sections-reset span {
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+.spftestimonial-sections-reset input:checked~.spftestimonial-button-reset {
+	display: none;
+}
+
+.spftestimonial-sections-reset input:checked~.spftestimonial-button-cancel {
+	display: inline-block;
+}
+
+#side-sortables .spftestimonial-section-title {
+	padding: 12px;
+}
+
+#side-sortables .spftestimonial-field {
+	padding: 10px 15px;
+}
+
+#side-sortables .spftestimonial-field .spftestimonial-title {
+	float: none;
+	width: 100%;
+	margin-bottom: 6px;
+}
+
+#side-sortables .spftestimonial-field .spftestimonial-fieldset {
+	float: none;
+	width: 100%;
+}
+
+#side-sortables .spftestimonial-field-text input {
+	width: 100%;
+}
+
+#side-sortables .spftestimonial-notice {
+	padding: 10px 15px;
+}
+
+.spftestimonial-field.spftestimonial-field-notice.form-fields-notice {
+	padding: 0px 0px 15px 0 !important;
+}
+
+.spftestimonial-field.spftestimonial-field-notice.form-fields-notice .spftestimonial-notice {
+	padding: 0 15px !important;
+}
+
+/**
+ * 01. 13. Comment Metabox
+ */
+.spftestimonial-comment-metabox {
+	margin: -6px -12px -12px -12px;
+}
+
+.spftestimonial-comment-metabox .spftestimonial-field {
+	padding: 20px;
+}
+
+.spftestimonial-comment-metabox .spftestimonial-section-title {
+	padding: 20px;
+}
+
+/**
+ * 01. 14. Help Tooltip
+ */
+.spftestimonial-tooltip {
+	position: absolute;
+	z-index: 5000001;
+	text-align: left;
+	text-decoration: none;
+	max-width: 250px;
+	background-color: rgba(12, 25, 36, 1);
+	border-radius: 3px;
+	padding: 14px 20px;
+	color: #94b2c1;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+/**
+ * 02. Themes
+ */
+/**
+ * 02. 01. Theme Dark
+ */
+.spftestimonial-theme-dark .spftestimonial-header-inner {
+	background-color: #050505;
+}
+
+.spftestimonial-theme-dark .spftestimonial-header-inner h1 {
+	color: #fff;
+}
+
+.spftestimonial-theme-dark .spftestimonial-header-inner h1 small {
+	color: #555;
+}
+
+.spftestimonial-theme-dark .spftestimonial-expand-all {
+	color: #999;
+	background-color: #222;
+}
+
+.spftestimonial-theme-dark .spftestimonial-expand-all:hover {
+	color: #fff;
+	background-color: #333;
+}
+
+.spftestimonial-theme-dark .spftestimonial-search input {
+	color: #fff;
+	background-color: #222;
+}
+
+.spftestimonial-theme-dark .spftestimonial-search:focus {
+	background-color: #444;
+}
+
+.spftestimonial-theme-dark .spftestimonial-search::-webkit-input-placeholder {
+	color: #666;
+}
+
+.spftestimonial-theme-dark .spftestimonial-nav ul li a {
+	color: #999;
+	border-color: #2f2f2f;
+	background-color: #222;
+}
+
+/* .spftestimonial-theme-dark .spftestimonial-nav ul li a:hover {
+  color: #fff;
+} */
+.spftestimonial-theme-dark .spftestimonial-nav ul li .spftestimonial-active .fa {
+	color: #1B73E8;
+}
+
+.spftestimonial-theme-dark .spftestimonial-nav ul li .spftestimonial-active {
+	color: #444;
+	background-color: #fff;
+	box-shadow: 0 3px 0 0 #1B73E8 inset;
+}
+
+.spftestimonial-theme-dark .spftestimonial-nav ul ul li a {
+	border-color: #2f2f2f;
+	background-color: #191919;
+}
+
+.spftestimonial-theme-dark .spftestimonial-nav ul ul li .spftestimonial-active {
+	background-color: #101010;
+}
+
+.spftestimonial-theme-dark .spftestimonial-nav ul ul:before {
+	background-color: rgba(34, 34, 34, 0.75);
+}
+
+.spftestimonial-theme-dark .spftestimonial-nav>ul>li:last-child>a {
+	border: none;
+}
+
+.spftestimonial-theme-dark .spftestimonial-nav-normal ul li a {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+.spftestimonial-theme-dark .spftestimonial-nav-normal ul li .spftestimonial-active:after {
+	content: " ";
+	position: absolute;
+	right: 0;
+	top: 50%;
+	height: 0;
+	width: 0;
+	pointer-events: none;
+	border: solid transparent;
+	border-right-color: #fff;
+	border-width: 4px;
+	margin-top: -4px;
+}
+
+.spftestimonial-theme-dark .spftestimonial-nav-inline {
+	background: #f1f1f1;
+	;
+}
+
+.spftestimonial-field-tabbed.sp_tabbed_horizontal .spftestimonial-tabbed-nav a,
+.spftestimonial-theme-dark .spftestimonial-nav-inline ul li a {
+	background-color: #1B73E8;
+	font-size: 14px;
+	padding: 15px 15px;
+	line-height: 1.4;
+	color: #ffffff;
+	border-right: 1px solid #e2e2e1;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+/* 
+.spftestimonial-field-tabbed.sp_tabbed_horizontal .spftestimonial-tabbed-nav a{
+  background-color: #1B73E8;
+} */
+
+.spftestimonial-field-tabbed.sp_tabbed_horizontal .spftestimonial-tabbed-nav a {
+	padding: 15px 11px;
+}
+
+
+.spftestimonial-field-tabbed.sp_tabbed_horizontal .spftestimonial-tabbed-nav a.spftestimonial-active:after,
+.spftestimonial-theme-dark .spftestimonial-nav-inline ul li .spftestimonial-active:after {
+	content: " ";
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	height: 0;
+	width: 0;
+	pointer-events: none;
+	border: solid transparent;
+	border-bottom-color: #fff;
+	border-width: 4px;
+	margin-left: -4px;
+}
+
+.spftestimonial-theme-dark .spftestimonial-nav-background {
+	background-color: #222;
+}
+
+.spftestimonial-theme-dark .spftestimonial-footer {
+	color: #555;
+	background-color: #050505;
+}
+
+/* .spftestimonial-field-border .spftestimonial--inputs {
+  margin-top: 19px;
+} */
+
+/**
+ * 02. 02. Theme Light
+ */
+.spftestimonial-theme-light .spftestimonial-container {
+	border: 1px solid #ccd0d4;
+	box-shadow: 0 0 15 rgba(0, 0, 0, 0.04);
+}
+
+.spftestimonial-theme-light .spftestimonial-header-inner {
+	border-bottom: 1px solid #ccd0d4;
+	background-color: #f5f5f5;
+	background: linear-gradient(#fefefe, #f5f5f5);
+}
+
+.spftestimonial-theme-light .spftestimonial-header-inner h1 small {
+	color: #999;
+}
+
+.spftestimonial-theme-light .spftestimonial-expand-all {
+	color: #999;
+	background-color: #eee;
+}
+
+.spftestimonial-theme-light .spftestimonial-expand-all:hover {
+	color: #555;
+}
+
+.spftestimonial-theme-light .spftestimonial-search input {
+	color: #555;
+	background-color: #eee;
+}
+
+.spftestimonial-theme-light .spftestimonial-search input::-webkit-input-placeholder {
+	color: #999;
+}
+
+.spftestimonial-theme-light .spftestimonial-nav ul li a {
+	font-weight: 500;
+	color: #444;
+	background-color: #EEF8FF;
+	text-transform: uppercase;
+}
+
+.spftestimonial-theme-light .spftestimonial-nav ul li a:hover {
+	color: #111;
+	background-color: #fff;
+}
+
+.spftestimonial-theme-light .spftestimonial-nav ul li .spftestimonial-active {
+	color: #111;
+	background-color: #fff;
+}
+
+.spftestimonial-theme-light .spftestimonial-nav ul ul li a {
+	background-color: #eee;
+}
+
+.spftestimonial-theme-light .spftestimonial-nav-normal>ul {
+	margin-bottom: -1px;
+}
+
+.spftestimonial-theme-light .spftestimonial-nav-normal>ul li a {
+	border-bottom: 1px solid #CCDEEB;
+	border-right: 1px solid #CCDEEB;
+}
+
+.spftestimonial-theme-light .spftestimonial-nav-normal>ul li .spftestimonial-active {
+	border-right-color: #fff;
+}
+
+.spftestimonial-theme-light .spftestimonial-nav-inline {
+	background-color: #f5f5f5;
+	border-bottom: 1px solid #ccd0d4;
+}
+
+.spftestimonial-theme-light .spftestimonial-nav-inline>ul {
+	margin-bottom: -1px;
+}
+
+.spftestimonial-theme-light .spftestimonial-nav-inline>ul li a {
+	text-align: center;
+	border-right: 1px solid #ccd0d4;
+	border-bottom: 1px solid #ccd0d4;
+}
+
+.spftestimonial-theme-light .spftestimonial-nav-inline>ul li .spftestimonial-active {
+	border-bottom-color: #fff;
+}
+
+.spftestimonial-theme-light .spftestimonial-nav-inline>ul ul {
+	display: none !important;
+}
+
+.spftestimonial-theme-light .spftestimonial-nav-inline .spftestimonial-arrow:after {
+	display: none;
+}
+
+.spftestimonial-theme-light .spftestimonial-nav-background {
+	background-color: #f5f5f5;
+	border-right: 1px solid #ccd0d4;
+}
+
+.spftestimonial-theme-light .spftestimonial-footer {
+	color: #555;
+	border-top: 1px solid #ccd0d4;
+	background-color: #f5f5f5;
+	background: linear-gradient(#fafafa, #f5f5f5);
+}
+
+/**
+ * 03. Fields
+ */
+.spftestimonial-field {
+	position: relative;
+	padding: 30px;
+}
+
+.spftestimonial-field+.spftestimonial-field {
+	border-top: none;
+}
+
+.spftestimonial-field p:first-child {
+	margin-top: 0;
+}
+
+.spftestimonial-field p:last-child {
+	margin-bottom: 0;
+	margin-top: 2px;
+}
+
+.spftestimonial-field:after,
+.spftestimonial-field:before {
+	content: " ";
+	display: table;
+}
+
+.spftestimonial-field:after {
+	clear: both;
+}
+
+.spftestimonial-field h4 {
+	margin-top: 0;
+}
+
+.spftestimonial-field .spftestimonial-title {
+	position: relative;
+	width: 20%;
+	float: left;
+}
+
+.spftestimonial-field .spftestimonial-title h4 {
+	margin: 0;
+	color: #23282d;
+}
+
+.spftestimonial-field .spftestimonial-fieldset {
+	float: right;
+	width: calc(80% - 20px);
+}
+
+.spftestimonial-pseudo-field {
+	padding: 0 5px 0 0 !important;
+	display: inline-block;
+}
+
+.spftestimonial-pseudo-field+.spftestimonial-pseudo-field {
+	border: 0;
+}
+
+.spftestimonial-pseudo-field pre {
+	display: none;
+}
+
+/**
+ * 03. 02. Field: accordion
+ */
+.spftestimonial-field-accordion .spftestimonial-accordion-item {
+	position: relative;
+	margin-bottom: 5px;
+	border: 1px solid #DDDDDD;
+	box-shadow: 0px 2px 8px 0px #00000014;
+	border-radius: 2px;
+}
+
+.spftestimonial-field-accordion .spftestimonial-accordion-item:last-child {
+	margin-bottom: 0;
+}
+
+.spftestimonial-field-accordion .spftestimonial-accordion-item h4 {
+	font-size: 1em;
+}
+
+.spftestimonial-field-accordion .spftestimonial-accordion-title {
+	display: block;
+	cursor: pointer;
+	position: relative;
+	margin: 0;
+	padding: 15px;
+	min-height: 0;
+	font-size: 100%;
+	user-select: none;
+	background-color: #fff;
+	transition: border-color .15s;
+	padding-left: 44px;
+	border-radius: 4px;
+}
+
+.spftestimonial-field-accordion .spftestimonial-accordion-title:active,
+.spftestimonial-field-accordion .spftestimonial-accordion-title:hover,
+.spftestimonial-field-accordion .spftestimonial-accordion-title:focus {
+	outline: none;
+	border-color: #999;
+}
+
+.spftestimonial-field-accordion .spftestimonial-accordion-title .spftestimonial--icon {
+	width: 20px;
+	text-align: center;
+	margin-right: 2px;
+}
+
+.spftestimonial-field-accordion .spftestimonial-accordion-icon {
+	width: 16px;
+	text-align: center;
+	position: absolute;
+	right: 24px;
+	font-size: 20px;
+}
+
+.spftestimonial-field-accordion .spftestimonial-accordion-content {
+	display: none;
+	padding: 0;
+	border-top: none;
+	background-color: #fff;
+}
+
+.spftestimonial-field-accordion .spftestimonial-accordion-content {
+	margin: 10px 20px 20px 20px;
+	border: 1px solid #ccd0d4;
+	border-radius: 2px;
+}
+
+.spftestimonial-field-accordion .spftestimonial-accordion-content>.spftestimonial-field {
+	padding: 15px;
+}
+
+.spftestimonial-field-accordion .spftestimonial-accordion-open {
+	display: block;
+}
+
+.post-type-spt_testimonial_form #sp_tpro_form_code_options .handle-actions {
+	display: none;
+}
+
+.post-type-spt_testimonial_form #sp_tpro_form_code_options .postbox-header {
+	pointer-events: none;
+}
+
+/**
+ * 03. 05. Field: border, spacing, dimensions
+ */
+.spftestimonial-field-custom_size.disabled .spftestimonial-fieldset {
+	pointer-events: none;
+	opacity: 0.7;
+}
+
+.spftestimonial-field-custom_size.disabled .spftestimonial-fieldset .spf--input:after {
+	color: #7b8898;
+	background-color: #cbd6df;
+	font-weight: 500;
+	padding: 1px 4px;
+	content: 'PRO';
+	text-align: center;
+	font-size: 8px;
+	margin-left: 5px;
+}
+
+.spftestimonial-field-box_shadow .spftestimonial--inputs,
+.spftestimonial-field-border .spftestimonial--inputs,
+.spftestimonial-field-custom_size .spftestimonial--inputs,
+.spftestimonial-field-spacing .spftestimonial--inputs,
+.spftestimonial-field-column .spftestimonial--inputs,
+.spftestimonial-field-dimensions .spftestimonial--inputs {
+	float: left;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.spftestimonial-field-box_shadow .spftestimonial--input,
+.spftestimonial-field-border .spftestimonial--input,
+.spftestimonial-field-spacing .spftestimonial--input,
+.spftestimonial-field-custom_size .spftestimonial--input,
+.spftestimonial-field-column .spftestimonial--input,
+.spftestimonial-field-dimensions .spftestimonial--input {
+	display: flex;
+	padding-right: 6px;
+	padding-bottom: 4px;
+	box-sizing: border-box;
+}
+
+.spftestimonial-field-box_shadow .spftestimonial--input select,
+.spftestimonial-field-border .spftestimonial--input select,
+.spftestimonial-field-custom_size .spftestimonial--input select,
+.spftestimonial-field-spacing .spftestimonial--input select,
+.spftestimonial-field-dimensions .spftestimonial--input select {
+	margin: 0;
+}
+
+.spftestimonial-field-box_shadow .spftestimonial--input input,
+.spftestimonial-field-border .spftestimonial--input input,
+.spftestimonial-field-spacing .spftestimonial--input input,
+.spftestimonial-field-column .spftestimonial--input input,
+.spftestimonial-field-custom_size .spftestimonial--input input,
+.spftestimonial-field-dimensions .spftestimonial--input input {
+	position: relative;
+	z-index: 1;
+	margin: 0;
+	width: 65px;
+	max-width: 100%;
+	text-align: center;
+	padding: 0;
+}
+
+.spftestimonial-field-box_shadow .spftestimonial--color,
+.spftestimonial-field-border .spftestimonial--color,
+.spftestimonial-field-spacing .spftestimonial--color,
+.spftestimonial-field-custom_size .spftestimonial--color,
+.spftestimonial-field-dimensions .spftestimonial--color {
+	float: left;
+}
+
+.spftestimonial-field-box_shadow .spftestimonial--label,
+.spftestimonial-field-border .spftestimonial--label,
+.spftestimonial-field-spacing .spftestimonial--label,
+.spftestimonial-field-custom_size .spftestimonial--label,
+.spftestimonial-field-column .spftestimonial--label,
+.spftestimonial-field-dimensions .spftestimonial--label {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	user-select: none;
+	min-width: 20px;
+	max-width: 100%;
+	padding: 0 4px;
+	font-size: 12px;
+	text-align: center;
+	color: #555;
+	border: 1px solid #7B776C;
+	background-color: #f5f5f5;
+}
+
+.spftestimonial-field-box_shadow .spftestimonial--icon,
+.spftestimonial-field-border .spftestimonial--icon,
+.spftestimonial-field-custom_size .spftestimonial--icon,
+.spftestimonial-field-spacing .spftestimonial--icon,
+.spftestimonial-field-column .spftestimonial--icon,
+.spftestimonial-field-dimensions .spftestimonial--icon {
+	border-right: 0;
+	border-radius: 4px 0 0 4px;
+}
+
+.spftestimonial-field-box_shadow .spftestimonial--icon+input,
+.spftestimonial-field-border .spftestimonial--icon+input,
+.spftestimonial-field-custom_size .spftestimonial--icon+input,
+.spftestimonial-field-spacing .spftestimonial--icon+input,
+.spftestimonial-field-column .spftestimonial--icon+input,
+.spftestimonial-field-dimensions .spftestimonial--icon+input {
+	border-top-left-radius: 0 !important;
+	border-bottom-left-radius: 0 !important;
+}
+
+.spftestimonial-field-box_shadow .spftestimonial--unit,
+.spftestimonial-field-border .spftestimonial--unit,
+.spftestimonial-field-custom_size .spftestimonial--unit,
+.spftestimonial-field-spacing .spftestimonial--unit,
+.spftestimonial-field-column .spftestimonial--unit,
+.spftestimonial-field-dimensions .spftestimonial--unit {
+	border-left: 0;
+	border-radius: 0 4px 4px 0;
+}
+
+.spftestimonial-field-box_shadow .spftestimonial--is-unit,
+.spftestimonial-field-border .spftestimonial--is-unit,
+.spftestimonial-field-custom_size .spftestimonial--is-unit,
+.spftestimonial-field-spacing .spftestimonial--is-unit,
+.spftestimonial-field-column .spftestimonial--is-unit,
+.spftestimonial-field-dimensions .spftestimonial--is-unit {
+	border-top-right-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
+}
+
+/**
+ * 03. 06. Field: button_set
+ */
+.spftestimonial-field-button_set .spftestimonial--buttons {
+	display: inline-block;
+}
+
+.spftestimonial-field-button_set .spftestimonial--button {
+	position: relative;
+	z-index: 1;
+	float: left;
+	cursor: pointer;
+	padding: 10px 14px;
+	min-width: 40px;
+	text-align: center;
+	color: #555;
+	border: 1px solid #cccccc;
+	background-color: #f7f7f7;
+	user-select: none;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.spftestimonial-field-button_set .spftestimonial--button:first-child {
+	border-radius: 4px 0 0 4px;
+}
+
+.spftestimonial-field-button_set .spftestimonial--button:last-child {
+	border-radius: 0 4px 4px 0;
+}
+
+.spftestimonial-field-button_set .spftestimonial--button:not(:first-child) {
+	margin-left: -1px;
+}
+
+.spftestimonial-field-button_set .spftestimonial--button:hover {
+	background-color: #eee;
+}
+
+.spftestimonial-field-button_set .spftestimonial--active:hover,
+.spftestimonial-field-button_set .spftestimonial--active {
+	z-index: 2;
+	color: #fff;
+	border-color: #1b73e8;
+	background-color: #1b73e8;
+}
+
+.spftestimonial-field-button_set input {
+	display: none;
+}
+
+.spftestimonial-field-button_set.navigation_icons .spftestimonial--button {
+	padding: 7px 0;
+}
+
+.spftestimonial-field-button_set.button_set_smaller .spftestimonial--button {
+	padding: 8px 2px;
+}
+
+.spftestimonial-field-select.spftestimonial-carousel-nav-position img.icon_preview {
+	width: 190px;
+	margin-top: 20px;
+	display: block;
+}
+
+/**
+ * 03. 07. Field: checkbox, radio
+ */
+.spftestimonial-field-checkbox ul,
+.spftestimonial-field-radio ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	overflow-y: auto;
+}
+
+.spftestimonial-field-checkbox ul li,
+.spftestimonial-field-radio ul li {
+	margin-bottom: 6px;
+}
+
+.spftestimonial-field-checkbox ul ul,
+.spftestimonial-field-radio ul ul {
+	max-height: none;
+}
+
+.spftestimonial-field-checkbox ul ul li,
+.spftestimonial-field-radio ul ul li {
+	margin-left: 8px;
+}
+
+.spftestimonial-field-checkbox ul ul li:first-child,
+.spftestimonial-field-radio ul ul li:first-child {
+	margin-left: 0;
+}
+
+.spftestimonial-field-checkbox input,
+.spftestimonial-field-radio input {
+	margin: 0 1px;
+}
+
+.spftestimonial-field-checkbox .spftestimonial--inline-list li,
+.spftestimonial-field-radio .spftestimonial--inline-list li {
+	display: inline-block;
+	margin-right: 15px;
+}
+
+.spftestimonial-field-checkbox .spftestimonial--text,
+.spftestimonial-field-radio .spftestimonial--text {
+	margin-left: 5px;
+	vertical-align: middle;
+}
+
+.spftestimonial-field-checkbox .spftestimonial-checker,
+.spftestimonial-field-radio .spftestimonial-checker {
+	cursor: pointer;
+}
+
+/**
+ * 03. 08. Field: code_editor
+ */
+.spftestimonial-field-code_editor .CodeMirror {
+	width: 100%;
+	height: 400px;
+}
+
+.spftestimonial-field-code_editor .cm-s-default {
+	border: 1px solid #ccd0d4;
+}
+
+.spftestimonial-field-code_editor textarea {
+	width: 100%;
+	height: 400px;
+}
+
+/**
+ * 03. 09. Field: color
+ */
+.spftestimonial-field-color>input {
+	opacity: 0.75;
+	width: 115px;
+	max-width: 100%;
+}
+
+.spftestimonial-field-color .button.wp-picker-clear {
+	padding: 0 8px;
+	margin-left: 6px;
+	line-height: 2.54545455;
+	min-height: 30px;
+}
+
+/**
+ * 03. 10. Field: color_group
+ */
+.spftestimonial-field-color_group .spftestimonial--left {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 5px;
+}
+
+.spftestimonial-field-border .spftestimonial--title,
+.spftestimonial-field-color_group .spftestimonial--title {
+	color: #999;
+	margin-bottom: 5px;
+}
+
+/**
+ * 03. 11. Field: fieldset
+ */
+/* .spftestimonial-field-fieldset .spftestimonial-fieldset-content {
+  border: 1px solid #ccd0d4;
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+} */
+
+.spftestimonial-field-fieldset .spftestimonial-fieldset-content>.spftestimonial-field {
+	padding: 15px;
+}
+
+.spftestimonial-field-fieldset .spftestimonial-field-subheading {
+	font-size: 13px;
+}
+
+/**
+ * 03. 16. Field: image_select
+ */
+.spftestimonial-field-icon_select .spftestimonial--image,
+.spftestimonial-field-image_select .spftestimonial--image {
+	display: inline-block;
+	margin: 0 5px 5px 0;
+}
+
+.spftestimonial-field-image_select .spftestimonial--inline-list .spftestimonial--image {
+	display: block;
+}
+
+/* .spftestimonial-field-icon_select figure,
+.spftestimonial-field-image_select figure {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  margin: 0;
+  vertical-align: bottom;
+  border: 2px solid transparent;
+  background-color: #fff;
+  user-select: none;
+  transition: all .2s;
+} */
+
+.spftestimonial-field-image_select figure {
+	outline: 3px solid transparent;
+	outline-offset: -3px;
+}
+
+.spftestimonial-field-icon_select .spftestimonial--active figure:before,
+.spftestimonial-field-image_select:not(.sp_slider_mode, .sp_carousel_mode, .carousel_pagination_style, .client_image_style, .filter_ratings_label_type, .live_filter_type,.tpro_star_icon ) .spftestimonial--active:not(.pro-feature) figure:before {
+	position: absolute;
+	top: 6px;
+	right: 6px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 7px;
+	font-family: "Font Awesome 5 Pro", "Font Awesome 5 Free", FontAwesome;
+	font-weight: 900;
+	content: "\f00c";
+	width: 12px;
+	height: 12px;
+	line-height: 11px;
+	color: #fff;
+	background-color: #4184F3;
+	transition: opacity .2s;
+	border-radius: 50%;
+}
+
+.spftestimonial-field.spftestimonial-field-image_select.tfree-layout-preset {
+	padding-top: 25px;
+}
+
+.spftestimonial-field-icon_select figure,
+.spftestimonial-field-image_select figure {
+	cursor: pointer;
+	position: relative;
+	display: inline-block;
+	max-width: 100%;
+	margin: 0;
+	vertical-align: bottom;
+	/* border: 2px solid transparent; */
+	background-color: #fff;
+	user-select: none;
+	transition: all .2s;
+	margin-right: 5px;
+}
+
+.spftestimonial-field-icon_select .spftestimonial--active figure img,
+.spftestimonial-field-image_select .spftestimonial--active figure img {
+	border-color: #4184F3;
+	outline: 2px solid #4184F3;
+	outline-offset: -2px;
+	border-radius: 4px;
+}
+
+.spftestimonial-field-image_select.tfree-layout-preset img {
+	width: 106px;
+	vertical-align: top;
+}
+
+.spftestimonial-field-icon_select input,
+.spftestimonial-field-image_select input {
+	display: none;
+}
+
+.spftestimonial-field-icon_select .spftestimonial--image {
+	cursor: pointer;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	max-width: 100%;
+	margin: 0 8px 7px 0;
+	vertical-align: top;
+	background-color: #fff;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+	border: 1px solid rgb(113 131 145 / 35%);
+	width: 35px;
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+	font-size: 20px;
+}
+
+.sp-field-icon-select .fa {
+	color: #718391;
+}
+
+.spftestimonial-field-icon_select .spftestimonial--active {
+	border-color: #008FF0;
+}
+
+/**
+ * 03. 21. Field: repeater
+ */
+.spftestimonial-field-repeater .spftestimonial-field-text input {
+	width: 100%;
+}
+
+.spftestimonial-field-repeater .spftestimonial-repeater-hidden {
+	display: none !important;
+}
+
+.spftestimonial-field-repeater .spftestimonial-repeater-wrapper .spftestimonial-repeater-item {
+	display: table;
+	width: 100%;
+	margin-bottom: 5px;
+	border: 1px solid #eee;
+}
+
+.spftestimonial-field-repeater .spftestimonial-repeater-wrapper .spftestimonial-repeater-item h4 {
+	font-size: 1em;
+}
+
+.spftestimonial-field-repeater .spftestimonial-repeater-content {
+	width: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	background-color: #fff;
+}
+
+.spftestimonial-field-repeater .spftestimonial-repeater-content>.spftestimonial-field {
+	padding: 15px;
+}
+
+.spftestimonial-field-repeater .spftestimonial-repeater-helper {
+	width: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 14px;
+	line-height: 1em;
+	border-left: 1px solid #eee;
+	background-color: #f7f7f7;
+}
+
+.spftestimonial-field-repeater .spftestimonial-repeater-helper i {
+	display: inline-block;
+	cursor: pointer;
+	color: #999;
+	padding: 5px;
+}
+
+.spftestimonial-field-repeater .spftestimonial-repeater-helper i:hover {
+	color: #555;
+}
+
+.spftestimonial-field-repeater .spftestimonial-repeater-helper-inner {
+	width: 75px;
+}
+
+.spftestimonial-field-repeater .spftestimonial-repeater-alert {
+	display: none;
+	margin-bottom: 5px;
+	padding: 10px 20px;
+	color: #a94442;
+	border: 1px solid #ebccd1;
+	background-color: #f2dede;
+}
+
+.spftestimonial-field-repeater .widget-placeholder {
+	height: 50px;
+	margin-bottom: 3px;
+	border: 1px dashed #f1c40f;
+	background-color: #fffae4;
+}
+
+.spftestimonial-field-repeater .ui-sortable-helper {
+	height: 50px !important;
+	overflow: hidden !important;
+	border-color: #ccc !important;
+	background-color: #eee !important;
+	opacity: 0.5;
+}
+
+.spftestimonial-field-repeater .ui-sortable-helper .spftestimonial-repeater-helper,
+.spftestimonial-field-repeater .ui-sortable-helper .spftestimonial-repeater-content {
+	display: none;
+}
+
+/**
+ * 03. 22. Field: select
+ */
+.spftestimonial-field-select .spftestimonial-fieldset {
+	min-height: 30px;
+}
+
+.spftestimonial-field-select .spftestimonial-chosen {
+	display: none;
+}
+
+.spftestimonial-field-select select {
+	max-width: 100%;
+	margin: 0;
+}
+
+.spftestimonial-field-select .spftestimonial-hide-select {
+	display: none !important;
+}
+
+
+/**
+ * 03. 24. Field: sortable
+ */
+.spftestimonial-field-sortable .spftestimonial-field-text input {
+	width: 100%;
+	max-width: 100%;
+}
+
+.spftestimonial-field-sortable .spftestimonial-sortable .spftestimonial-sortable-item {
+	display: table;
+	width: 100%;
+	margin-bottom: 5px;
+	border: 1px solid #eee;
+}
+
+.spftestimonial-field-sortable .spftestimonial-sortable .spftestimonial-sortable-item h4 {
+	font-size: 1em;
+}
+
+.spftestimonial-field-sortable .spftestimonial-sortable-content {
+	width: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	background-color: #fff;
+}
+
+.spftestimonial-field-sortable .spftestimonial-sortable-content>.spftestimonial-field {
+	padding: 15px;
+}
+
+.spftestimonial-field-sortable .spftestimonial-sortable-helper {
+	width: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 14px;
+	line-height: 1em;
+	border-left: 1px solid #eee;
+	background-color: #f7f7f7;
+}
+
+.spftestimonial-field-sortable .spftestimonial-sortable-helper i {
+	display: inline-block;
+	cursor: pointer;
+	width: 50px;
+	color: #555;
+}
+
+.spftestimonial-field-sortable .spftestimonial-sortable-helper i:hover {
+	opacity: 0.5;
+}
+
+.spftestimonial-field-sortable .widget-placeholder {
+	height: 50px;
+	margin-bottom: 3px;
+	border: 1px dashed #f1c40f;
+	background-color: #fffae4;
+}
+
+.spftestimonial-field-sortable .ui-sortable-helper {
+	height: 50px !important;
+	overflow: hidden !important;
+	border-color: #ccc !important;
+	background-color: #eee !important;
+	opacity: 0.5;
+}
+
+.spftestimonial-field-sortable .ui-sortable-helper .spftestimonial-sortable-helper,
+.spftestimonial-field-sortable .ui-sortable-helper .spftestimonial-sortable-content {
+	display: none;
+}
+
+/**
+ * 03. 25. Field: sorter
+ */
+.spftestimonial-field-sorter .ui-sortable-placeholder {
+	height: 20px;
+	border: 1px dashed #f1c40f;
+	background-color: #fffae4;
+}
+
+.spftestimonial-field-sorter .spftestimonial-modules {
+	float: left;
+	width: 50%;
+	box-sizing: border-box;
+}
+
+.spftestimonial-field-sorter .spftestimonial-modules:first-child {
+	padding-right: 15px;
+}
+
+.spftestimonial-field-sorter .spftestimonial-modules:last-child {
+	padding-left: 15px;
+}
+
+.spftestimonial-field-sorter .spftestimonial-disabled,
+.spftestimonial-field-sorter .spftestimonial-enabled {
+	padding: 5px 15px;
+	border: 1px dashed #ddd;
+	background-color: #fff;
+}
+
+.spftestimonial-field-sorter .spftestimonial-disabled li {
+	opacity: 0.5;
+	transition: opacity .15s;
+}
+
+.spftestimonial-field-sorter .spftestimonial-disabled .ui-sortable-helper {
+	opacity: 1;
+}
+
+.spftestimonial-field-sorter .spftestimonial-sorter-title {
+	font-size: 13px;
+	font-weight: 600;
+	padding: 10px;
+	text-align: center;
+	border: 1px dashed #ddd;
+	border-bottom: none;
+	background-color: #f8f8f8;
+	text-transform: uppercase;
+}
+
+.spftestimonial-field-sorter ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	min-height: 62px;
+}
+
+.spftestimonial-field-sorter ul li {
+	margin: 10px 0;
+	padding: 10px 15px;
+	cursor: move;
+	font-weight: bold;
+	text-align: center;
+	border: 1px solid #e5e5e5;
+	background-color: #fafafa;
+	transition: border-color .15s;
+}
+
+.spftestimonial-field-sorter ul li:hover {
+	border-color: #bbb;
+}
+
+/**
+ * 03. 26. Field: spinner
+ */
+.spftestimonial-field-spinner .spftestimonial--spin {
+	display: flex;
+}
+
+.spftestimonial-field-spinner .ui-spinner {
+	display: flex;
+}
+
+.spftestimonial-field-spinner .ui-button {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	min-width: 20px;
+	padding: 0 10px;
+	color: #555;
+	border: 1px solid #7e8993;
+	background-color: #f5f5f5;
+}
+
+.spftestimonial-field-spinner .ui-spinner-button {
+	cursor: pointer;
+}
+
+.spftestimonial-field-spinner .ui-button {
+	height: 30px;
+	box-shadow: none;
+	box-sizing: border-box;
+}
+
+.spftestimonial--input input:focus,
+.spftestimonial-field-spinner .ui-spinner-input:focus,
+.spftestimonial-field-spinner .ui-button:focus {
+	box-shadow: none;
+}
+
+.spftestimonial-field-spinner .ui-spinner-button:hover {
+	background-color: #e7e7e7;
+}
+
+.spftestimonial-field-spinner .ui-spinner-button:active {
+	background-color: #ddd;
+}
+
+.spftestimonial-field-spinner .ui-spinner-button:before {
+	font-family: "Font Awesome 5 Pro", "Font Awesome 5 Free", "FontAwesome";
+	font-weight: 900;
+	font-size: 14px;
+	line-height: 14px;
+}
+
+.spftestimonial-field-spinner .ui-spinner-down {
+	order: 1;
+	border-right: 0;
+	border-radius: 4px 0 0 4px;
+}
+
+.spftestimonial-field-spinner .ui-spinner-down:before {
+	content: "\f0d9";
+}
+
+.spftestimonial-field-spinner .ui-spinner-input {
+	order: 2;
+}
+
+.spftestimonial-field-spinner .spftestimonial--unit {
+	order: 3;
+	border-left: 0;
+	user-select: none;
+}
+
+.spftestimonial-field-spinner .ui-spinner-up {
+	order: 4;
+	border-left: 0;
+	border-radius: 0 4px 4px 0;
+}
+
+.spftestimonial-field-spinner .ui-spinner-up:before {
+	content: "\f0da";
+}
+
+.spftestimonial-field-spinner input {
+	position: relative;
+	z-index: 1;
+	width: 50px;
+	text-align: center;
+	margin: 0;
+	padding: 0 8px;
+	border-radius: 0;
+	padding: 0;
+}
+
+.spftestimonial-field-spinner .ui-button-text,
+.spftestimonial-field-spinner .ui-button-icon,
+.spftestimonial-field-spinner .ui-button-icon-space {
+	display: none;
+}
+
+/**
+ * 03. 27. Field: switcher
+ */
+.spftestimonial-field-switcher .spftestimonial--switcher {
+	float: left;
+	cursor: pointer;
+	position: relative;
+	width: 60px;
+	height: 26px;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	border-radius: 4px;
+	background-color: #FF4E4F;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+.spftestimonial-field-switcher .spftestimonial--ball {
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	width: 24px;
+	height: 18px;
+	background-color: #fff;
+	border-radius: 4px;
+	transition: all .1s;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+.spftestimonial-field-switcher .spftestimonial--on,
+.spftestimonial-field-switcher .spftestimonial--off {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	font-size: 11px;
+	line-height: 26px;
+	font-weight: 500;
+	font-style: normal;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	padding-right: 28px;
+	opacity: 0;
+	transition: all .1s;
+}
+
+.spftestimonial-field-switcher .spftestimonial--off {
+	padding-right: 0;
+	padding-left: 28px;
+	opacity: 1;
+}
+
+.spftestimonial-field-switcher .spftestimonial--active {
+	background: #4fb845;
+}
+
+.spftestimonial-field-switcher .spftestimonial--active .spftestimonial--on {
+	opacity: 1;
+}
+
+.spftestimonial-field-switcher .spftestimonial--active .spftestimonial--off {
+	opacity: 0;
+}
+
+.spftestimonial-field-switcher .spftestimonial--active .spftestimonial--ball {
+	left: 100%;
+	margin-left: -28px;
+}
+
+.spftestimonial-field-switcher .spftestimonial--label {
+	float: left;
+	margin-top: 4px;
+	margin-left: 8px;
+	font-weight: 400;
+	color: #999;
+}
+
+/**
+ * 03. 28. Field: tabbed & vertical tabbed 
+ */
+.spftestimonial-field-tabbed:not(.sp_tabbed_horizontal) .spftestimonial-tabbed-nav {
+	width: 280px;
+	border-right: 1px solid #CCDEEB;
+}
+
+.spftestimonial-field-tabbed:not(.sp_tabbed_horizontal).spftestimonial-field {
+	display: flex;
+	margin: 25px;
+}
+
+.spftestimonial-field-tabbed:not(.sp_tabbed_horizontal) .spftestimonial-tabbed-sections {
+	float: left;
+	width: 100%;
+}
+
+.spftestimonial-field-tabbed:not(.sp_tabbed_horizontal) .spftestimonial-tabbed-section {
+	border: none;
+	background: #fff;
+}
+
+.spftestimonial-field-tabbed:not(.sp_tabbed_horizontal).spftestimonial-field:not(.hidden) {
+	padding: 0 !important;
+	border: 1px solid #CCDEEB;
+}
+
+.spftestimonial-field-tabbed:not(.sp_tabbed_horizontal) .spftestimonial-tabbed-section>.spftestimonial-field {
+	padding: 20px;
+}
+
+.spftestimonial-wrapper .spftestimonial-field.spftestimonial-field-notice:not(.ajax-notice) {
+	padding: 0px 25px;
+}
+.spftestimonial-wrapper .spftestimonial-field.spftestimonial-field-notice.ajax-notice {
+	padding: 15px 20px;
+}
+.spftestimonial-wrapper .spftestimonial-field.spftestimonial-field-notice.ajax-notice.layout {
+	padding: 0 20px 15px 20px;
+	margin-top: -10px;
+}
+
+.spftestimonial-wrapper .spftestimonial-field.sp-extra-field-notice.spftestimonial-field-notice {
+	padding-left: 25px;
+}
+
+.spftestimonial-field-tabbed:not(.sp_tabbed_horizontal) .spftestimonial-tabbed-nav .spftestimonial--icon {
+	padding-right: 5px;
+}
+
+.spftestimonial-field-tabbed:not(.sp_tabbed_horizontal) .spftestimonial-tabbed-nav a {
+	display: block;
+	padding: 12px 12px;
+	margin-top: 0;
+	position: relative;
+	text-decoration: none;
+	color: #343434;
+	font-weight: 600;
+	border-bottom: 1px solid #CCDEEB;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+	overflow: hidden;
+	background: #EEF8FF;
+	text-transform: uppercase;
+	font-size: 13px;
+}
+
+.spftestimonial-field-tabbed:not(.sp_tabbed_horizontal) .spftestimonial-tabbed-nav a:last-child {
+	margin-bottom: 0px;
+}
+
+.spftestimonial-field-tabbed .spftestimonial-tabbed-nav a:focus {
+	box-shadow: none;
+	outline: none;
+}
+
+.spftestimonial-field-tabbed:not(.sp_tabbed_horizontal) .spftestimonial-pros-tabbed-nav a:focus,
+.spftestimonial-field-tabbed:not(.sp_tabbed_horizontal) .spftestimonial-tabbed-nav a.spftestimonial-tabbed-active {
+	/* background-color: #fff;
+	color:  #67439B; */
+	background-color: #fff;
+	-webkit-box-shadow: inset 3px 0 #1B73E8;
+	box-shadow: inset 3px 0 #1B73E8;
+	color: #1B73E8;
+	font-weight: 600;
+	border-right-color: #fff;
+	margin-right: -1px;
+	border-right: none;
+}
+
+.spftestimonial-field-tabbed .spftestimonial-tabbed-nav a.spftestimonial-tabbed-active svg path,
+.spftestimonial-field-tabbed .spftestimonial-tabbed-nav a.spftestimonial-tabbed-active svg {
+	fill: #1B73E8;
+	/* stroke: #0C6E63; */
+}
+
+.spftestimonial-tabbed-nav a span {
+	margin-right: 6px;
+}
+
+.spftestimonial-tabbed-nav a span svg {
+	vertical-align: text-bottom;
+}
+
+.spftestimonial-field.spftestimonial-field-tabbed .spftestimonial-fieldset {
+	width: calc(75% - 20px);
+}
+
+.spftestimonial-field-tabbed .spftestimonial-tabbed-nav i.testimonial--icon {
+	padding-right: 5px;
+}
+
+/* Horizontal tabbed */
+.spftestimonial-field-tabbed.sp_tabbed_horizontal .spftestimonial-tabbed-nav a {
+	display: inline-block;
+	text-decoration: none;
+}
+
+.spftestimonial-field-tabbed.sp_tabbed_horizontal .spftestimonial-tabbed-section {
+	border: 1px solid #CCDEEB;
+	background-color: #fff;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, .04);
+}
+
+.spftestimonial-field-tabbed.sp_tabbed_horizontal .spftestimonial-tabbed-nav a {
+	border: 1px solid #CCDEEB;
+	border-right: 0;
+	color: #fff;
+	background-color: #1B73E8;
+	margin-bottom: -1px;
+}
+
+.spftestimonial-field-tabbed.sp_tabbed_horizontal .spftestimonial-tabbed-nav a:last-child {
+	border-right: 1px solid #CCDEEB;
+}
+
+.spftestimonial-field-tabbed.sp_tabbed_horizontal .spftestimonial-pros-tabbed-nav a:focus,
+.spftestimonial-field-tabbed.sp_tabbed_horizontal .spftestimonial-tabbed-nav a.spftestimonial-tabbed-active {
+	color: #1B73E8;
+	background-color: #fff;
+	box-shadow: 0 3px 0 0 #1B73E8 inset;
+	border-bottom-color: #fff;
+}
+
+/**
+ * 03. 29. Field: text
+ */
+.spftestimonial-field-text input {
+	width: 300px;
+	max-width: 100%;
+	margin: 0;
+	height: 35px;
+	padding: 0 10px;
+}
+
+.spftestimonial-field-text.larger_text_input input {
+	width: 500px;
+}
+
+
+/**
+ * 03. 30. Field: textarea
+ */
+.spftestimonial-field-textarea textarea {
+	width: 100%;
+	max-width: 100%;
+	min-height: 125px;
+}
+
+.spftestimonial-field-textarea .spftestimonial-shortcode-button {
+	margin-bottom: 10px;
+	margin-right: 5px;
+}
+
+/**
+ * 03. 31. Field: typography
+ */
+.spftestimonial-field-typography textarea,
+.spftestimonial-field-typography select {
+	margin: 0;
+	min-width: 100%;
+	max-width: 100%;
+}
+
+.spftestimonial-field-typography .spftestimonial--title {
+	color: #777;
+	margin: 0 0 2px 0;
+	font-size: 12px;
+}
+
+.spftestimonial-field-typography .spftestimonial--title small {
+	vertical-align: top;
+}
+
+.spftestimonial-field-typography .spftestimonial--blocks {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.spftestimonial-field-typography .spftestimonial--block {
+	flex: 1;
+	max-width: 100%;
+	padding-right: 6px;
+	padding-bottom: 6px;
+}
+
+.spftestimonial-field-typography .spftestimonial--input {
+	margin: 0;
+	min-width: 100%;
+}
+
+.spftestimonial-field-typography .spftestimonial--input-wrap {
+	position: relative;
+}
+
+.spftestimonial-field-typography .spftestimonial--unit {
+	position: absolute;
+	z-index: 1;
+	right: 4px;
+	top: 4px;
+	bottom: 4px;
+	padding: 2px 6px;
+	color: #666;
+	font-size: 11px;
+	line-height: 1;
+	border-radius: 2px;
+	background: #eee;
+	user-select: none;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.spftestimonial-field-typography .spftestimonial--preview {
+	font-size: 16px;
+	line-height: 20px;
+	padding: 20px;
+	color: #222;
+	border: 1px solid #eee;
+	background-color: #fff;
+	border-radius: 2.5px;
+	user-select: none;
+	-webkit-user-select: none;
+	transition: background-color .2s, border-color .2s;
+}
+
+.spftestimonial-field-typography .spftestimonial--block-preview {
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+	margin-top: 10px;
+	max-width: 100%;
+}
+
+.spftestimonial-field-typography .spftestimonial--black-background {
+	border-color: #000;
+	background-color: #000;
+}
+
+.spftestimonial-field-typography .spftestimonial--toggle {
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	color: #999;
+}
+
+.spftestimonial-field-typography .spftestimonial--block-extra-styles {
+	margin-top: 5px;
+}
+
+
+/**
+ * 03. 33. Field: wp_editor
+ */
+.spftestimonial-field-wp_editor .spftestimonial-wp-editor {
+	float: left;
+	width: 100%;
+}
+
+.spftestimonial-field-wp_editor .mce-toolbar-grp {
+	border: none;
+}
+
+.spftestimonial-field-wp_editor .mce-btn.mce-active button,
+.spftestimonial-field-wp_editor .mce-btn.mce-active:hover button,
+.spftestimonial-field-wp_editor .mce-btn.mce-active i,
+.spftestimonial-field-wp_editor .mce-btn.mce-active:hover i {
+	color: #23282d;
+}
+
+.spftestimonial-field-wp_editor .wp-media-buttons {
+	position: relative;
+	z-index: 2;
+}
+
+.spftestimonial-field-wp_editor .wp-editor-tabs {
+	position: relative;
+	z-index: 1;
+}
+
+.spftestimonial-field-wp_editor .spftestimonial-no-tinymce {
+	border: 1px solid #e5e5e5;
+}
+
+.spftestimonial-field-wp_editor .spftestimonial-no-quicktags .wp-media-buttons {
+	float: none;
+	display: block;
+}
+
+.spftestimonial-field-wp_editor .spftestimonial-no-quicktags .mce-tinymce {
+	box-shadow: none;
+	border: 1px solid #e5e5e5;
+}
+
+.spftestimonial-field-wp_editor textarea {
+	width: 100%;
+	max-width: 100%;
+	margin: 0;
+	box-shadow: none;
+}
+
+.email_body_area.spftestimonial-field-wp_editor .spftestimonial-desc-text {
+	border: 1px solid #B2D2EE;
+	box-sizing: border-box;
+}
+
+.email_body_area.spftestimonial-field-wp_editor .spftestimonial-desc-text .template-heading {
+	background: #E3F3FF;
+	padding: 10px 20px;
+	color: #1D1B1A;
+	text-align: left;
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 20px;
+}
+
+.email_body_area.spftestimonial-field-wp_editor .spftestimonial-desc-text .template-content {
+	background: #F4FAFF;
+	padding: 20px;
+	color: #1D1B1A;
+}
+
+/**
+ * 03. 34. Field: heading
+ */
+.spftestimonial-field-heading {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #23282d;
+	background-color: #f5f5f5;
+}
+
+.spftestimonial-field-heading.spftestimonial-admin-header {
+	background-color: #1595ce;
+	padding: 18px 26px;
+	overflow: hidden;
+	background: linear-gradient(90deg, #1565D0 0%, #008FF0 100%);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.spftestimonial-admin-header .heading-wrapper {
+	display: flex;
+	min-width: 300px;
+	gap: 10px;
+}
+
+.spftestimonial-admin-header .sp-testimonial-version {
+	color: #ffffff;
+	border: 1px solid #ffffff;
+	font-size: 12px;
+	padding: 4px 10px 4px 10px;
+	border-radius: 17px;
+	line-height: 15px;
+	height: 15px;
+	font-weight: 600;
+}
+
+.spftestimonial-field-heading.spftestimonial-admin-header img {
+	max-width: 180px;
+}
+
+.spftestimonial-field-heading.spftestimonial-admin-header .support {
+	margin-left: 16px;
+	float: right;
+}
+
+.spftestimonial-field-heading.spftestimonial-admin-header .support a {
+	color: #ffffff;
+	text-decoration: none;
+	line-height: 35px;
+	font-size: 15px;
+	font-weight: 500;
+}
+
+.spftestimonial-admin-header.spftestimonial-field::after,
+.spftestimonial-admin-header.spftestimonial-field::before,
+.spftestimonial-admin-header .clear,
+.spftestimonial-help-text.spftestimonial-support {
+	display: none;
+}
+
+.spftestimonial-admin-header .support {
+	color: #fff;
+	text-decoration: none;
+	font-size: 15px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.spftestimonial-admin-header .support {
+	position: relative;
+}
+
+#sp_tpro_layout_options .postbox-header {
+	border: none;
+}
+
+.spftestimonial-admin-header .support::before {
+	content: '';
+	width: 100%;
+	height: 50px;
+	position: absolute;
+	top: 80%;
+	z-index: 10;
+	cursor: pointer;
+}
+
+/**
+ * 03. 35. Field: subheading
+ */
+.spftestimonial-field-subheading {
+	font-size: 14px;
+	font-weight: bold;
+	padding-top: 17px;
+	padding-bottom: 17px;
+	color: #23282d;
+	background-color: #EAECEE;
+}
+
+/**
+ * 03. 36. Field: submessage
+ */
+.spftestimonial-field-submessage {
+	padding: 0 !important;
+	border: 0 !important;
+}
+
+.spftestimonial-field-submessage+.spftestimonial-field {
+	border-top: 0 !important;
+}
+
+.spftestimonial-submessage {
+	font-size: 12px;
+	padding: 17px 30px;
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid transparent;
+}
+
+.spftestimonial-submessage-success {
+	color: #3c763d;
+	border-color: #d6e9c6;
+	background-color: #dff0d8;
+}
+
+.spftestimonial-submessage-info {
+	color: #31708f;
+	border-color: #bce8f1;
+	background-color: #d9edf7;
+}
+
+.testimonial_backend-notice .spftestimonial-submessage {
+	color: #444;
+	border-color: transparent;
+	font-size: 14px;
+	border: 0;
+	background-color: transparent;
+}
+
+.spftestimonial-submessage-warning {
+	color: #8a6d3b;
+	border-color: #faebcc;
+	background-color: #fcf8e3;
+}
+
+.spftestimonial-submessage-danger {
+	color: #a94442;
+	border-color: #ebccd1;
+	background-color: #f2dede;
+}
+
+.spftestimonial-submessage-normal {
+	color: #23282d;
+	border-color: #eee;
+	background-color: #f7f7f7;
+}
+
+/**
+ * 03. 37. Field: notice
+ */
+.spftestimonial-field-notice {
+	background-color: transparent;
+}
+
+/* .spftestimonial-notice {
+  padding: 12px;
+  background-color: #fff;
+  border-left-style: solid;
+  border-left-width: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+} */
+
+.spftestimonial-notice-success {
+	border-color: #46b450;
+}
+
+.spftestimonial-notice-info {
+	border-color: #339fd4;
+}
+
+.spftestimonial-notice-warning {
+	border-color: #ffbc00;
+}
+
+.spftestimonial-notice-danger {
+	border-color: #dc3232;
+}
+
+.spftestimonial-notice-normal {
+	border-color: #222;
+}
+
+.spftestimonial-notice {
+	border-color: #222;
+	color: #23282d;
+	font-style: normal;
+	font-size: 14px;
+	padding: 0px 12px 0px 0;
+}
+
+.sp_testimonial-pagination-notice .spftestimonial-notice,
+.theme-settings-top-notice .spftestimonial-notice {
+	padding: 21px 12px 0px 0;
+}
+
+.spftestimonial-field-notice.tpro-form-notice .spftestimonial-notice {
+	padding: 12px 12px 0 0;
+}
+
+.spftestimonial-field-notice.form-editor-notice .spftestimonial-notice {
+	padding: 0 12px 20px 0px;
+}
+
+
+
+/**
+ * 03. 38. Field: number
+ */
+.spftestimonial-field-number input {
+	width: 100%;
+	margin: 0;
+}
+
+.spftestimonial-field-number .spftestimonial--wrap {
+	position: relative;
+	float: left;
+	width: 100px;
+}
+
+.spftestimonial-field-number .spftestimonial--unit {
+	position: absolute;
+	z-index: 1;
+	right: 4px;
+	top: 4px;
+	bottom: 4px;
+	padding: 2px 6px;
+	color: #666;
+	font-size: 11px;
+	line-height: 1;
+	border-radius: 2px;
+	background: #eee;
+	user-select: none;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+/**
+ * 03. 39. Field: link
+ */
+.spftestimonial-field-link .spftestimonial--result {
+	display: inline-block;
+	font-size: 12px;
+	line-height: 16px;
+	padding: 7px 10px;
+	margin-bottom: 7px;
+	color: #777;
+	border: 1px solid #e5e5e5;
+	background-color: #f5f5f5;
+	border-radius: 2px;
+	word-break: break-word;
+}
+
+.spftestimonial-field-link .spftestimonial--wrap {
+	position: relative;
+	float: left;
+	width: 100px;
+}
+
+.spftestimonial-field-link .spftestimonial--unit {
+	position: absolute;
+	z-index: 1;
+	right: 4px;
+	top: 4px;
+	bottom: 4px;
+	padding: 2px 6px;
+	color: #666;
+	font-size: 11px;
+	line-height: 1;
+	border-radius: 2px;
+	background: #eee;
+	user-select: none;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+
+/**
+ * 03. 40. others
+ */
+@media (min-width: 1400px) {
+
+	.spftestimonial.spftestimonial-options .spftestimonial--wrap,
+	.sp-metabox-framework .spftestimonial--wrap {
+		width: 35%;
+	}
+}
+
+.spftestimonial-field-slider .spftestimonial--wrap {
+	display: flex;
+	align-items: center;
+}
+
+.spftestimonial-field-slider .spftestimonial--input {
+	display: flex;
+}
+
+.spftestimonial-field-slider .spftestimonial--unit {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	user-select: none;
+	padding: 0 6px;
+	font-size: 11px;
+	line-height: 1;
+	border-radius: 0 4px 4px 0;
+	color: #555;
+	border: 1px solid #7e8993;
+	border-left: 0;
+	background-color: #f5f5f5;
+}
+
+.spftestimonial-field-slider .spftestimonial-slider-ui {
+	margin-right: 15px;
+}
+
+.spftestimonial-field-slider input[type="number"] {
+	position: relative;
+	z-index: 1;
+	margin: 0;
+	width: 65px;
+	text-align: center;
+	padding: 0;
+}
+
+.spftestimonial-field-slider .spftestimonial--is-unit {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.spftestimonial-field-slider .ui-slider {
+	position: relative;
+	max-width: 400px;
+	width: 100%;
+	height: 10px;
+	margin-right: 15px;
+	border: 1px solid #c5c5c5;
+	background: #fff;
+	border-radius: 3px;
+
+}
+
+.spftestimonial-field-slider .ui-slider-range {
+	height: 10px;
+	border: none;
+	background: #4184F3;
+	border-radius: 2px;
+}
+
+.spftestimonial-field-slider .ui-slider-handle {
+	position: absolute;
+	width: 18px;
+	height: 18px;
+	top: -5px;
+	margin-left: -8px;
+	border: 1px solid #c5c5c5;
+	background: #f8f8f8;
+	border-radius: 2px;
+}
+
+.spftestimonial-field-slider .ui-state-active,
+.spftestimonial-field-slider .ui-slider-handle:hover {
+	cursor: pointer;
+}
+
+.spftestimonial-field .spftestimonial--transparent-slider {
+	position: absolute;
+	width: 190px;
+	margin-left: 2px;
+	height: 18px;
+}
+
+.spftestimonial-field .spftestimonial--transparent-slider .ui-slider-handle {
+	position: absolute;
+	top: -3px;
+	bottom: -3px;
+	z-index: 5;
+	border-color: #aaa;
+	border-style: solid;
+	border-width: 4px 3px;
+	width: 10px;
+	height: 16px;
+	margin: 0 -5px;
+	background: none;
+	cursor: ew-resize;
+	opacity: 0.9;
+	border-radius: 4px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.spftestimonial-field .spftestimonial--transparent-slider .ui-slider-handle:before {
+	content: " ";
+	position: absolute;
+	left: -2px;
+	right: -2px;
+	top: -3px;
+	bottom: -3px;
+	border: 2px solid #fff;
+	border-radius: 3px;
+}
+
+/**
+ * 03. 40. others
+ */
+.spftestimonial-help {
+	position: absolute;
+	top: 0;
+	right: 0;
+	position: static;
+	width: 15px;
+	line-height: 28px;
+	padding-left: 5px;
+	cursor: help;
+	padding: 5px;
+	font-size: 14px;
+	color: #aaa;
+	line-height: 20px;
+	float: none;
+	display: inline-block;
+
+}
+
+@media only screen and (max-width: 1600px) {
+	#sp_tpro_form_options .spftestimonial-help.spftestimonial-title-help {
+		position: absolute;
+		top: 50%;
+		right: 0;
+		transform: translate(5px, -50%);
+	}
+}
+
+.spftestimonial-tooltip.spftestimonial-short-content {
+	margin-top: 8px;
+}
+
+.spftestimonial-tooltip .spftestimonial-open-live-demo,
+.spftestimonial-tooltip .spftestimonial-open-docs {
+	margin-top: 10px;
+	display: inline-block;
+	line-height: 34px;
+	background-color: #1d81f9;
+	border-radius: 3px;
+	padding: 0 12px;
+	font-size: 11px;
+	text-transform: capitalize;
+	text-decoration: none;
+	color: #fff;
+	margin-bottom: 0px;
+	font-weight: 500;
+}
+
+.spftestimonial-tooltip .spftestimonial-open-live-demo {
+	background-color: transparent;
+	border: 2px solid #1d81f9;
+	line-height: 32px;
+	color: #1d81f9;
+}
+
+.spftestimonial-tooltip .spftestimonial-open-docs:hover,
+.spftestimonial-tooltip .spftestimonial-open-live-demo:hover {
+	background-color: #226DE5;
+	border-color: #226DE5;
+	color: #ffffff;
+}
+
+.spftestimonial-tooltip .spftestimonial-info-label {
+	color: #fff;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 500;
+	text-transform: capitalize;
+	margin-bottom: 6px;
+	text-align: left;
+}
+
+.spftestimonial-tooltip .spftestimonial-info-label.schema-markup {
+	text-transform: none;
+}
+
+.spftestimonial-tooltip .spftestimonial-open-docs {
+	margin-top: 10px;
+}
+
+.spftestimonial-tooltip .spftestimonial-img-tag {
+	margin-bottom: 6px;
+	min-width: 240px;
+}
+
+.spftestimonial-tooltip .spftestimonial-img-tag img {
+	background-color: #f4f4f4;
+	border-radius: 4px;
+}
+
+.spftestimonial-field-subheading .spftestimonial-title {
+	width: 100%;
+}
+
+.spftestimonial-help-text.spftestimonial-support {
+	display: none;
+}
+
+.spftestimonial-tooltip.support-tooltip {
+	max-width: 300px;
+}
+
+.spftestimonial-tooltip.support-tooltip a.spftestimonial-open-docs {
+	width: 100%;
+	box-sizing: border-box;
+	text-align: center;
+	padding: 8px 8px 8px 8px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	font-size: 13px;
+	line-height: 20px;
+}
+
+.spftestimonial-tooltip.support-tooltip a.spftestimonial-open-docs.support {
+	margin-bottom: 10px;
+}
+
+.spftestimonial-tooltip a.spftestimonial-open-docs {
+	margin-right: 10px;
+}
+
+.spftestimonial-tooltip.support-tooltip a.spftestimonial-open-docs.support {
+	background: #fff;
+	color: #000;
+}
+
+.spftestimonial-tooltip.support-tooltip a.spftestimonial-open-docs.support:hover {
+	background: #f5f5f5;
+}
+
+.spftestimonial-tooltip.support-tooltip a.spftestimonial-open-docs.feature-request {
+	background: transparent;
+	color: #1d81f9;
+	border: 2px solid #1d81f9;
+	text-transform: none;
+	margin-top: 0;
+	margin-bottom: 8px;
+}
+
+.spftestimonial-tooltip.support-tooltip a.spftestimonial-open-docs.feature-request:hover {
+	background: #1d81f9;
+	color: #fff;
+	border: 2px solid #1d81f9;
+}
+
+.spftestimonial-tooltip.support-tooltip .spftestimonial-info-label {
+	text-transform: none;
+}
+
+.spftestimonial-tooltip:not(.support-tooltip):before {
+	content: '';
+	width: 0;
+	position: absolute;
+	height: 0;
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-right: 10px solid rgba(12, 25, 36, .95);
+	left: -10px;
+	top: calc(50% - 7px);
+}
+
+span.tooltip-icon {
+	width: 25px;
+	display: inline-block;
+}
+
+.spftestimonial-help img {
+	width: 14px;
+	vertical-align: middle;
+}
+
+
+.spftestimonial-tooltip .spftestimonial-info-label {
+	color: #fff;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 500;
+	text-transform: capitalize;
+	margin-bottom: 6px;
+	text-align: left;
+}
+
+.spftestimonial-help .spftestimonial-help-text {
+	display: none;
+}
+
+.spftestimonial--preview {
+	max-width: 100%;
+}
+
+.spftestimonial-field.spftestimonial-field-checkbox .spftestimonial-help {
+	bottom: 24px;
+	right: auto;
+	top: auto;
+	margin-left: 18px;
+}
+
+.spftestimonial-image-preview {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	position: relative;
+	padding: 6px;
+	max-width: 120px;
+	max-height: 120px;
+	min-width: 40px;
+	min-height: 40px;
+	margin-bottom: 10px;
+	text-align: center;
+	border-radius: 2px;
+	border: 1px solid #ccc;
+	background-color: #f9f9f9;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08);
+}
+
+.spftestimonial-image-preview i {
+	cursor: pointer;
+	position: absolute;
+	z-index: 1;
+	right: 4px;
+	top: 4px;
+	font-size: 14px;
+	width: 22px;
+	height: 22px;
+	line-height: 22px;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	background-color: #dd3333;
+	opacity: 0.75;
+	border-radius: 2px;
+	transition: all .2s;
+}
+
+.spftestimonial-image-preview i:hover {
+	opacity: 1;
+}
+
+.spftestimonial-image-preview i:focus {
+	box-shadow: none;
+}
+
+.spftestimonial-image-preview span {
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	height: 100%;
+	width: 100%;
+}
+
+.spftestimonial-image-preview img {
+	max-width: 100%;
+	height: auto;
+	object-fit: contain;
+}
+
+.spftestimonial-field-custom .spftestimonial-field {
+	padding: 0;
+}
+
+.spftestimonial-field .chosen-container-single .chosen-single {
+	height: 28px;
+	line-height: 26px;
+}
+
+.spftestimonial-field .chosen-container-single .chosen-single abbr {
+	top: 0;
+	right: 20px;
+	font-family: "Font Awesome 5 Pro", "Font Awesome 5 Free", "FontAwesome";
+	font-weight: 900;
+	font-size: 12px;
+	height: 100%;
+	width: 18px;
+	color: #aaa;
+	text-align: center;
+	background: none !important;
+}
+
+.spftestimonial-field .chosen-container-single .chosen-single abbr:before {
+	content: "\f00d";
+}
+
+.spftestimonial-field .chosen-container-single .chosen-single abbr:hover {
+	color: #555;
+}
+
+.spftestimonial-field .chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
+	font-family: "Font Awesome 5 Pro", "Font Awesome 5 Free", "FontAwesome";
+	font-weight: 900;
+	font-size: 12px;
+	height: 100%;
+	top: 0;
+	width: 18px;
+	color: #aaa;
+	text-align: center;
+	background: none !important;
+}
+
+.spftestimonial-field .chosen-container-multi .chosen-choices li.search-choice .search-choice-close:before {
+	content: "\f00d";
+	display: inline-block;
+	padding-top: 3px;
+}
+
+.spftestimonial-field .chosen-container-multi .chosen-choices li.search-choice .search-choice-close:hover {
+	color: #555;
+}
+
+.spftestimonial-field .chosen-container-single .chosen-single div b {
+	font-family: "Font Awesome 5 Pro", "Font Awesome 5 Free", "FontAwesome";
+	font-weight: 900;
+	font-size: 14px;
+	color: #aaa;
+	background: none !important;
+}
+
+.spftestimonial-field .chosen-container-single .chosen-single div b:before {
+	content: "\f107";
+}
+
+.spftestimonial-field .chosen-container-single .chosen-single div b:hover {
+	color: #555;
+}
+
+.spftestimonial-field .chosen-container-multi .chosen-choices li.search-choice-placeholder {
+	border: 1px dashed #aaa;
+	margin: 3px 5px 3px 0;
+}
+
+.spftestimonial-field .chosen-container-multi .ui-sortable li.search-choice span {
+	cursor: move;
+}
+
+.spftestimonial-field .chosen-container-active.chosen-with-drop .chosen-single div b:before {
+	content: "\f106";
+}
+
+.spftestimonial-field .chosen-container-single .chosen-single-with-deselect span {
+	margin-right: 40px;
+}
+
+.spftestimonial-field .chosen-container-single .chosen-search input[type="text"] {
+	background: none !important;
+}
+
+.spftestimonial-field .chosen-container-single .chosen-search:before {
+	font-family: "Font Awesome 5 Pro", "Font Awesome 5 Free", "FontAwesome";
+	font-weight: 900;
+	font-size: 11px;
+	content: "\f002";
+	position: absolute;
+	right: 12px;
+	top: 10px;
+	color: #aaa;
+}
+
+.spftestimonial-field .wp-picker-container {
+	display: inline-block;
+}
+
+.spftestimonial-field .wp-picker-container .wp-color-result.button {
+	margin-bottom: 0;
+}
+
+.spftestimonial-field .spftestimonial--transparent-wrap {
+	display: none;
+	position: relative;
+	top: -1px;
+	width: 235px;
+	padding: 9px 10px;
+	border: 1px solid #dfdfdf;
+	border-top: none;
+	background-color: #fff;
+}
+
+.spftestimonial-field .wp-picker-active .spftestimonial--transparent-wrap {
+	display: block;
+}
+
+.spftestimonial-field .spftestimonial--transparent-slider {
+	position: absolute;
+	width: 190px;
+	margin-left: 2px;
+	height: 18px;
+}
+
+.spftestimonial-field .spftestimonial--transparent-slider .ui-slider-handle {
+	position: absolute;
+	top: -3px;
+	bottom: -3px;
+	z-index: 5;
+	border-color: #aaa;
+	border-style: solid;
+	border-width: 4px 3px;
+	width: 10px;
+	height: 16px;
+	margin: 0 -5px;
+	background: none;
+	cursor: ew-resize;
+	opacity: 0.9;
+	border-radius: 4px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.spftestimonial-field .spftestimonial--transparent-slider .ui-slider-handle:before {
+	content: " ";
+	position: absolute;
+	left: -2px;
+	right: -2px;
+	top: -3px;
+	bottom: -3px;
+	border: 2px solid #fff;
+	border-radius: 3px;
+}
+
+.spftestimonial-field .spftestimonial--transparent-offset {
+	height: 18px;
+	width: 200px;
+	background: url(../images/checkerboard.png) repeat-y center left scroll #fff;
+	border-radius: 2px;
+	box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+.spftestimonial-field .spftestimonial--transparent-text {
+	position: absolute;
+	top: 12px;
+	right: 10px;
+	width: 30px;
+	font-size: 12px;
+	line-height: 12px;
+	text-align: center;
+	color: #999;
+}
+
+.spftestimonial-field .spftestimonial--transparent-button {
+	cursor: pointer;
+	user-select: none;
+	margin-top: 10px;
+	font-size: 11px;
+	text-align: center;
+	border-radius: 2px;
+	padding: 3px 7px;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+	letter-spacing: 0.2px;
+	color: #777;
+	border: 1px solid #ccc;
+	background-color: #f7f7f7;
+	transition: background-color .2s, border-color .2s, color .2s;
+}
+
+.spftestimonial-field .spftestimonial--transparent-active .wp-color-result {
+	background-image: url(../images/checkerboard.png);
+	background-size: 135px;
+	background-position: center left;
+	background-color: transparent !important;
+}
+
+.spftestimonial-field .spftestimonial--transparent-active .spftestimonial--transparent-button {
+	color: #fff;
+	border-color: #3ea032;
+	background-color: #4fb845;
+}
+
+.spftestimonial-field .spftestimonial--transparent-active .fa:before {
+	content: "\f205";
+}
+
+/**
+ * 04. Widget
+ */
+.spftestimonial-widgets>.spftestimonial-field {
+	position: relative;
+	top: -1px;
+	margin-left: -15px;
+	margin-right: -15px;
+	padding: 12px 15px;
+}
+
+.spftestimonial-widgets>.spftestimonial-field .spftestimonial-title {
+	float: none;
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+.spftestimonial-widgets>.spftestimonial-field .spftestimonial-fieldset {
+	float: none;
+	width: 100%;
+}
+
+.spftestimonial-widgets .spftestimonial-field-text input {
+	width: 100%;
+}
+
+.spftestimonial-widgets .spftestimonial-field-notice .spftestimonial-notice {
+	padding: 15px;
+}
+
+.control-section .spftestimonial-widgets>.spftestimonial-field {
+	margin-left: -10px;
+	margin-right: -10px;
+	padding: 10px 12px;
+}
+
+.wp-block .spftestimonial-widgets {
+	font-size: 13px;
+}
+
+.wp-block .spftestimonial-widgets>.spftestimonial-field {
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+.wp-block .spftestimonial-widgets>.spftestimonial-field .button-primary {
+	color: #fff;
+}
+
+.wp-block .spftestimonial-widgets>.spftestimonial-field>.spftestimonial-title>h4 {
+	font-size: 13px;
+}
+
+/**
+ * 05. Widget
+ */
+.control-section .spftestimonial-field {
+	padding: 0;
+}
+
+.control-section .spftestimonial-field .spftestimonial-title {
+	float: none;
+	width: 100%;
+	margin-bottom: 6px;
+}
+
+.control-section .spftestimonial-field .spftestimonial-title h4 {
+	display: block;
+	font-size: 13px;
+	line-height: 1;
+	font-weight: 600;
+	color: inherit;
+}
+
+.control-section .spftestimonial-field .spftestimonial-fieldset {
+	float: none;
+	width: 100%;
+}
+
+.control-section .spftestimonial-help {
+	top: -5px;
+	right: -5px;
+}
+
+.control-section .spftestimonial-field-select select {
+	width: 100%;
+}
+
+.control-section .spftestimonial-field-heading {
+	color: inherit;
+	font-size: 14px;
+	line-height: 1em;
+	margin-right: -15px;
+	margin-left: -15px;
+	padding: 15px;
+}
+
+.control-section .spftestimonial-field-subheading {
+	color: inherit;
+	font-size: 11px;
+	margin-right: -15px;
+	margin-left: -15px;
+	padding: 10px 15px;
+}
+
+.control-section .spftestimonial-subtitle-text {
+	margin-top: 4px;
+	font-size: 12px;
+	font-style: italic;
+}
+
+.control-section .spftestimonial-field-submessage .spftestimonial-submessage {
+	margin-right: -15px;
+	margin-left: -15px;
+	padding: 15px;
+}
+
+.control-section .spftestimonial-fieldset .spftestimonial-field-submessage .spftestimonial-submessage,
+.control-section .spftestimonial-fieldset .spftestimonial-field-heading,
+.control-section .spftestimonial-fieldset .spftestimonial-field-subheading {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.control-section .spftestimonial-field-date .spftestimonial--to {
+	margin-left: 0;
+}
+
+.control-section .spftestimonial-field-sorter ul li {
+	padding: 5px;
+}
+
+.control-section .spftestimonial-field-sorter .spftestimonial-modules {
+	float: none;
+	width: 100%;
+}
+
+.control-section .spftestimonial-field-sorter .spftestimonial-modules:first-child {
+	padding-right: 0;
+	padding-bottom: 15px;
+}
+
+.control-section .spftestimonial-field-background .spftestimonial--background-attributes {
+	flex-direction: column;
+}
+
+.control-section .spftestimonial-field-spacing input {
+	width: 90px;
+}
+
+.control-section .spftestimonial-field-border .spftestimonial--input {
+	flex: 1 50%;
+}
+
+.control-section .spftestimonial-field-border input,
+.control-section .spftestimonial-field-border select {
+	width: 100%;
+}
+
+.control-section .spftestimonial-field-spinner input {
+	width: 50px;
+}
+
+.control-section .spftestimonial-field-number .spftestimonial--wrap {
+	width: 100%;
+}
+
+.control-section .spftestimonial-field-backup .spftestimonial-export-data {
+	display: none;
+}
+
+.control-section .spftestimonial-field-fieldset .spftestimonial-fieldset-content {
+	border-color: #e5e5e5;
+}
+
+.control-section .spftestimonial-tabbed-content>.spftestimonial-field,
+.control-section .spftestimonial-sortable-content>.spftestimonial-field,
+.control-section .spftestimonial-repeater-content>.spftestimonial-field,
+.control-section .spftestimonial-fieldset-content>.spftestimonial-field,
+.control-section .spftestimonial-cloneable-content>.spftestimonial-field,
+.control-section .spftestimonial-accordion-content>.spftestimonial-field {
+	padding: 10px;
+}
+
+.control-section .spftestimonial-tabbed-content>.spftestimonial-field .spftestimonial-title,
+.control-section .spftestimonial-sortable-content>.spftestimonial-field .spftestimonial-title,
+.control-section .spftestimonial-repeater-content>.spftestimonial-field .spftestimonial-title,
+.control-section .spftestimonial-fieldset-content>.spftestimonial-field .spftestimonial-title,
+.control-section .spftestimonial-cloneable-content>.spftestimonial-field .spftestimonial-title,
+.control-section .spftestimonial-accordion-content>.spftestimonial-field .spftestimonial-title {
+	margin-bottom: 5px;
+}
+
+.control-section .spftestimonial-tabbed-content>.spftestimonial-field h4,
+.control-section .spftestimonial-sortable-content>.spftestimonial-field h4,
+.control-section .spftestimonial-repeater-content>.spftestimonial-field h4,
+.control-section .spftestimonial-fieldset-content>.spftestimonial-field h4,
+.control-section .spftestimonial-cloneable-content>.spftestimonial-field h4,
+.control-section .spftestimonial-accordion-content>.spftestimonial-field h4 {
+	font-size: 12px;
+}
+
+.control-section .spftestimonial-depend-hidden.spftestimonial-depend-on {
+	display: none !important;
+}
+
+.control-section .spftestimonial-depend-visible.spftestimonial-depend-on {
+	border-top: 0 !important;
+}
+
+/**
+ * 06. Taxonomy
+ */
+.spftestimonial-taxonomy {
+	max-width: 95%;
+}
+
+.spftestimonial-taxonomy>.spftestimonial-field {
+	border-top: none !important;
+}
+
+.spftestimonial-taxonomy>.spftestimonial-field-heading {
+	font-size: 1.1em;
+	padding: 20px !important;
+	border: 1px solid #ddd;
+}
+
+.spftestimonial-taxonomy>.spftestimonial-field-subheading {
+	font-size: 12px;
+	padding: 15px !important;
+	border: 1px solid #ddd;
+}
+
+.spftestimonial-taxonomy>.spftestimonial-field-submessage .spftestimonial-submessage {
+	padding: 15px;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-right-width: 1px;
+	border-right-style: solid;
+}
+
+.spftestimonial-taxonomy>.spftestimonial-field-notice {
+	background-color: transparent;
+}
+
+.spftestimonial-taxonomy .spftestimonial-section-title {
+	display: block;
+	padding: 15px;
+	background-color: #f9f9f9;
+	border: 1px solid #e5e5e5;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.spftestimonial-taxonomy-add-fields>.spftestimonial-field {
+	padding: 8px 0;
+}
+
+.spftestimonial-taxonomy-add-fields>.spftestimonial-field>.spftestimonial-title {
+	float: none;
+	width: 100%;
+	padding: 2px 2px 4px 0;
+}
+
+.spftestimonial-taxonomy-add-fields>.spftestimonial-field>.spftestimonial-title h4 {
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.spftestimonial-taxonomy-add-fields>.spftestimonial-field>.spftestimonial-fieldset {
+	float: none;
+	width: 100%;
+}
+
+.spftestimonial-taxonomy-add-fields>.spftestimonial-field>.spftestimonial-fieldset>.spftestimonial-help {
+	right: -5px;
+}
+
+.spftestimonial-taxonomy-add-fields+p.submit {
+	margin-top: 0;
+}
+
+.spftestimonial-taxonomy-edit-fields>.spftestimonial-field {
+	padding: 20px 0;
+}
+
+.spftestimonial-taxonomy-edit-fields>.spftestimonial-field>.spftestimonial-title {
+	width: 200px;
+}
+
+.spftestimonial-taxonomy-edit-fields>.spftestimonial-field>.spftestimonial-title h4 {
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1.3;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.spftestimonial-taxonomy-edit-fields>.spftestimonial-field>.spftestimonial-fieldset {
+	width: calc(100% - 220px);
+}
+
+.spftestimonial-taxonomy-edit-fields>.spftestimonial-field>.spftestimonial-fieldset>.spftestimonial-help {
+	top: -5px;
+	right: -5px;
+}
+
+.spftestimonial-taxonomy-edit-fields>.spftestimonial-field-submessage {
+	margin: 20px 0;
+}
+
+.spftestimonial-taxonomy-edit-fields>.spftestimonial-field-subheading,
+.spftestimonial-taxonomy-edit-fields>.spftestimonial-field-heading {
+	margin: 20px 0;
+	border: 1px solid #ddd;
+}
+
+/**
+ * 08. Nav Menu
+ */
+.spftestimonial-nav-menu-options {
+	clear: both;
+	float: left;
+	width: 100%;
+}
+
+.spftestimonial-nav-menu-options>.spftestimonial-fields {
+	margin-left: -10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+}
+
+.spftestimonial-nav-menu-options>.spftestimonial-fields>.spftestimonial-field {
+	padding: 12px 14px 12px 12px;
+}
+
+.spftestimonial-nav-menu-options>.spftestimonial-fields>.spftestimonial-field .spftestimonial-title {
+	float: none;
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+.spftestimonial-nav-menu-options>.spftestimonial-fields>.spftestimonial-field .spftestimonial-fieldset {
+	float: none;
+	width: 100%;
+}
+
+.spftestimonial-nav-menu-options .spftestimonial-field-text input {
+	width: 100%;
+}
+
+.spftestimonial-nav-menu-options .spftestimonial-field-notice .spftestimonial-notice {
+	padding: 15px;
+}
+
+.spftestimonial-nav-menu-title {
+	padding: 12px 14px 12px 12px;
+	background-color: #f5f5f5;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+}
+
+.spftestimonial-nav-menu-title:first-child {
+	border-top: 0;
+}
+
+.spftestimonial-nav-menu-title h4 {
+	margin: 0;
+	padding: 0;
+	color: #23282d;
+}
+
+.spftestimonial-nav-menu-icon {
+	margin-right: 5px;
+}
+
+/**
+ * 06. Profile
+ */
+.spftestimonial-profile-options>h2>.fa {
+	padding-right: 7px;
+}
+
+.spftestimonial-profile-options>.spftestimonial-field {
+	max-width: 750px;
+	padding: 15px 0;
+	border-top: none !important;
+}
+
+.spftestimonial-profile-options>.spftestimonial-field>.spftestimonial-title {
+	width: 200px;
+}
+
+.spftestimonial-profile-options>.spftestimonial-field>.spftestimonial-title h4 {
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1.3;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.spftestimonial-profile-options>.spftestimonial-field>.spftestimonial-fieldset {
+	width: calc(100% - 220px);
+}
+
+.spftestimonial-profile-options>.spftestimonial-field>.spftestimonial-fieldset>.spftestimonial-help {
+	top: -15px;
+	right: -5px;
+}
+
+.spftestimonial-profile-options>.spftestimonial-field-heading {
+	font-size: 1.1em;
+}
+
+.spftestimonial-profile-options>.spftestimonial-field-subheading {
+	font-size: 12px;
+}
+
+.spftestimonial-profile-options>.spftestimonial-field-subheading,
+.spftestimonial-profile-options>.spftestimonial-field-heading {
+	margin: 10px 0;
+	padding: 15px !important;
+	border: 1px solid #ddd;
+}
+
+.spftestimonial-profile-options>.spftestimonial-field-submessage {
+	margin: 20px 0;
+}
+
+.spftestimonial-profile-options>.spftestimonial-field-submessage .spftestimonial-submessage {
+	padding: 10px;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-right-width: 1px;
+	border-right-style: solid;
+}
+
+.spftestimonial-profile-options>.spftestimonial-field-notice {
+	background-color: transparent;
+}
+
+/**
+ * 09. Modal
+ */
+.spftestimonial-modal {
+	position: fixed;
+	z-index: 100101;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.spftestimonial-modal.hidden {
+	display: none;
+}
+
+.spftestimonial-modal-icon {
+	z-index: 100102;
+}
+
+.spftestimonial-modal-table {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+.spftestimonial-modal-table-cell {
+	display: table-cell;
+	vertical-align: middle;
+	margin: 100px 0;
+}
+
+.spftestimonial-modal-inner {
+	position: relative;
+	z-index: 10;
+	width: 760px;
+	height: 750px;
+	margin: 0 auto;
+	background-color: #fff;
+}
+
+.spftestimonial-modal-content {
+	position: relative;
+	overflow: hidden;
+	overflow-y: auto;
+	height: 595px;
+}
+
+.spftestimonial-modal-content .spftestimonial-shortcode-button {
+	display: none;
+}
+
+.spftestimonial-modal-content .spftestimonial-field {
+	padding: 15px 30px 15px 15px;
+}
+
+.spftestimonial-modal-content a:active,
+.spftestimonial-modal-content a:focus {
+	outline: none;
+	box-shadow: none;
+}
+
+.spftestimonial-modal-content h4 {
+	font-size: 13px;
+}
+
+.spftestimonial-modal-content h4 small {
+	font-style: italic;
+	font-weight: 400;
+	color: #aaa;
+}
+
+.spftestimonial-modal-title {
+	position: relative;
+	background-color: #fcfcfc;
+	border-bottom: 1px solid #ddd;
+	height: 36px;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 36px;
+	margin: 0;
+	padding: 0 36px 0 16px;
+}
+
+.spftestimonial-modal-header {
+	width: 100%;
+	padding: 14px 0;
+	background-color: #f5f5f5;
+	border-bottom: 1px solid #ddd;
+}
+
+.spftestimonial-modal-header select {
+	display: block;
+	width: 250px;
+	margin: 0 auto;
+	font-size: 13px;
+	line-height: 1;
+	height: 30px;
+	min-height: 30px;
+	background-color: #fff;
+}
+
+.spftestimonial-modal-close {
+	color: #666;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 36px;
+	height: 36px;
+	text-align: center;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+.spftestimonial-modal-close:before {
+	font: normal 20px/36px dashicons;
+	content: "\f158";
+	vertical-align: top;
+	width: 36px;
+	height: 36px;
+}
+
+.spftestimonial-modal-close:hover {
+	opacity: 0.5;
+}
+
+.spftestimonial-modal-insert-wrapper {
+	text-align: center;
+	width: 100%;
+	padding: 15px 0;
+	background-color: #f5f5f5;
+	border-top: 1px solid #ddd;
+}
+
+.spftestimonial-modal-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.5;
+}
+
+/**
+ * 09. 01. Shortcode Modal
+ */
+.spftestimonial--repeatable {
+	padding: 15px 15px 0 15px;
+}
+
+.spftestimonial--repeat-button-block {
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+.spftestimonial--repeat-shortcode {
+	position: relative;
+	margin-bottom: 15px;
+	border: 1px dashed #ddd;
+}
+
+.spftestimonial--repeat-shortcode:first-child .spftestimonial-repeat-remove {
+	display: none;
+}
+
+.spftestimonial--repeat-shortcode .spftestimonial-repeat-remove {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	z-index: 10;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 11px;
+	width: 18px;
+	height: 18px;
+	line-height: 18px;
+	text-align: center;
+	border-radius: 2px;
+	color: #fff;
+	background-color: #e14d43;
+	opacity: 0.5;
+}
+
+.spftestimonial--repeat-shortcode .spftestimonial-repeat-remove:hover {
+	opacity: 0.5;
+}
+
+.spftestimonial-shortcode-single .spftestimonial-modal-inner {
+	height: 750px;
+}
+
+.spftestimonial-shortcode-single .spftestimonial-modal-content {
+	height: 652px;
+}
+
+.elementor-editor-active .spftestimonial-shortcode-button {
+	margin-left: 5px;
+}
+
+.elementor-editor-active .spftestimonial-modal .hidden {
+	display: none !important;
+}
+
+/**
+ * 09. 02. Gutenberg Modal
+ */
+.spftestimonial-shortcode-block {
+	text-align: center;
+	padding: 14px;
+	font-size: 13px;
+	background-color: #f5f5f5;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.spftestimonial-shortcode-block .components-button {
+	margin-bottom: 10px;
+}
+
+/**
+ * 09. 03. Icon Modal
+ */
+.spftestimonial-modal-icon .spftestimonial-icon-title {
+	padding: 15px 0;
+	margin: 4px;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	border: 1px solid #eee;
+	background-color: #f7f7f7;
+}
+
+.spftestimonial-modal-icon .spftestimonial-modal-header {
+	text-align: center;
+}
+
+.spftestimonial-modal-icon .spftestimonial-icon-search {
+	width: 50%;
+	height: 40px;
+	line-height: 40px;
+}
+
+.spftestimonial-modal-icon i {
+	cursor: pointer;
+	display: inline-block;
+	margin: 4px;
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	font-size: 16px;
+	color: #555;
+	text-align: center;
+	border: 1px solid #ccc;
+	background-color: #f7f7f7;
+	border-radius: 2px;
+	box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.05);
+}
+
+.spftestimonial-modal-icon i:hover {
+	color: #fff;
+	border-color: #222;
+	background-color: #222;
+}
+
+.spftestimonial-modal-icon .spftestimonial-modal-content {
+	padding: 10px;
+	height: 618px;
+}
+
+.spftestimonial-modal-icon .spftestimonial-error-text {
+	padding: 10px;
+}
+
+.spftestimonial-modal-loading {
+	display: none;
+	position: absolute;
+	left: 15px;
+	top: 15px;
+}
+
+.spftestimonial-loading {
+	position: relative;
+	width: 20px;
+	height: 20px;
+	background: #ccc;
+	border-radius: 20px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.07);
+}
+
+.spftestimonial-loading:after {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 4px;
+	height: 4px;
+	content: "";
+	margin-top: -2px;
+	margin-left: -2px;
+	background-color: white;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-name: spftestimonialLoader;
+	border-radius: 4px;
+}
+
+@keyframes spftestimonialLoader {
+	0% {
+		transform: rotate(0deg) translateX(-6px) rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg) translateX(-6px) rotate(-360deg);
+	}
+}
+
+/**
+ * 10. Helper
+ */
+.spftestimonial-subtitle-text {
+	margin-top: 6px;
+	font-weight: 400;
+	color: #999;
+	font-style: italic;
+}
+
+.spftestimonial-desc-text {
+	clear: both;
+	float: left;
+	width: 100%;
+	margin-top: 6px;
+	font-weight: 400;
+	color: #23282d;
+	font-size: 14px;
+}
+
+.spftestimonial-error-text {
+	margin-top: 6px;
+	color: #d02c21;
+}
+
+.spftestimonial-before-text {
+	margin-bottom: 6px;
+}
+
+.spftestimonial-after-text {
+	margin-top: 6px;
+}
+
+.spftestimonial-metabox-hide {
+	display: none !important;
+}
+
+.spftestimonial-metabox-show {
+	display: block !important;
+}
+
+.spftestimonial-depend-hidden.spftestimonial-depend-on {
+	display: none;
+}
+
+.spftestimonial-depend-visible.spftestimonial-depend-on {
+	display: block;
+	opacity: 0.75;
+	filter: grayscale(1);
+	user-select: none;
+	border-top: 1px solid #eee;
+}
+
+.spftestimonial-depend-visible.spftestimonial-depend-on .clear:before {
+	content: "";
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	position: absolute;
+	background-color: #eee;
+	opacity: 0.25;
+	z-index: 10;
+}
+
+.spftestimonial-warning-primary {
+	color: #fff !important;
+	border-color: #dc3545 !important;
+	background: #dc3545 !important;
+}
+
+.spftestimonial-warning-primary:hover,
+.spftestimonial-warning-primary:focus {
+	border-color: #bd2130 !important;
+	background: #bd2130 !important;
+}
+
+.spftestimonial-warning-primary:focus {
+	box-shadow: 0 0 0 1px #fff, 0 0 0 3px #bd2130 !important;
+}
+
+.spftestimonial-warning-primary:active {
+	border-color: #bd2130 !important;
+	background: #bd2130 !important;
+}
+
+.spftestimonial-form-result {
+	display: none;
+	user-select: none;
+	border-radius: 2px;
+	padding: 12px;
+	margin: 0 0 15px 0;
+	background-color: #fff;
+	border-left: 4px solid #555;
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+	box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+}
+
+.spftestimonial-form-success {
+	border-left-color: #46b450;
+}
+
+.spftestimonial-form-result.error {
+	margin: 0 0 15px 0;
+	padding: 12px;
+	border-left-color: #d63638;
+}
+
+.spftestimonial-form-show {
+	display: block;
+}
+
+/* .spftestimonial-form-success {
+  color: #fff;
+  background-color: #46b450;
+} */
+
+.spftestimonial-form-warning {
+	color: #8a6d3b;
+	background-color: #faebcc;
+	display: none !important;
+}
+
+.spftestimonial-label-error {
+	position: relative;
+	top: -2px;
+	display: inline-block;
+	font-size: 10px;
+	line-height: 10px;
+	height: 10px;
+	width: 10px;
+	padding: 1px;
+	font-style: normal;
+	text-align: center;
+	color: #fff;
+	vertical-align: middle;
+	background-color: #e10000;
+	border-radius: 2px;
+}
+
+.spftestimonial-no-option {
+	padding: 30px;
+}
+
+.spftestimonial-input-number {
+	-moz-appearance: textfield;
+}
+
+.spftestimonial-field-spinner .spftestimonial-input-number::-webkit-inner-spin-button,
+.spftestimonial-field-spinner .spftestimonial-input-number::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.spftestimonial--input input.spftestimonial-number {
+	padding: 0;
+	border-radius: 0 4px 4px 0;
+}
+
+.spftestimonial-fa5-shims .spftestimonial .fas,
+.spftestimonial-fa5-shims .spftestimonial .far,
+.spftestimonial-fa5-shims .spftestimonial .fab {
+	font-family: "FontAwesome";
+	font-style: normal;
+}
+
+/**
+ * 11. Welcome Page
+ */
+.spftestimonial-welcome-wrap {
+	position: relative;
+	margin: 25px 40px 0 20px;
+	font-size: 15px;
+	max-width: 1200px;
+}
+
+.spftestimonial-welcome-wrap p {
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+.spftestimonial-welcome-wrap h1 {
+	margin: 0.2em 200px 0 0;
+	padding: 0;
+	color: #32373c;
+	line-height: 1.2em;
+	font-size: 2.8em;
+	font-weight: 400;
+}
+
+.spftestimonial-welcome-wrap .spftestimonial-logo {
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	right: 0;
+	height: 160px;
+	width: 140px;
+	background-image: linear-gradient(45deg, #2d67cb, #ad19f3);
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25), inset 0 0 0 4px rgba(0, 0, 0, 0.25);
+}
+
+.spftestimonial-welcome-wrap .spftestimonial-logo .spftestimonial--effects i {
+	position: absolute;
+	width: 200px;
+	height: 100px;
+	background-color: rgba(0, 0, 0, 0.15);
+	transform: rotate(-45deg);
+}
+
+.spftestimonial-welcome-wrap .spftestimonial-logo .spftestimonial--effects i:nth-child(1) {
+	bottom: -20px;
+	right: -70px;
+}
+
+.spftestimonial-welcome-wrap .spftestimonial-logo .spftestimonial--effects i:nth-child(2) {
+	bottom: -35px;
+	right: -80px;
+}
+
+.spftestimonial-welcome-wrap .spftestimonial-logo .spftestimonial--effects i:nth-child(3) {
+	bottom: -50px;
+	right: -90px;
+}
+
+.spftestimonial-welcome-wrap .spftestimonial-logo .spftestimonial--effects i:nth-child(4) {
+	bottom: -65px;
+	right: -100px;
+}
+
+.spftestimonial-welcome-wrap .spftestimonial-logo .spftestimonial--wp-logos {
+	position: relative;
+	padding-top: 25px;
+	text-align: center;
+}
+
+.spftestimonial-welcome-wrap .spftestimonial-logo .spftestimonial--wp-logo {
+	position: absolute;
+	left: 20px;
+	width: 20px;
+	height: 20px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url(../images/wp-logo.svg);
+}
+
+.spftestimonial-welcome-wrap .spftestimonial-logo .spftestimonial--wp-plugin-logo {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	border: 3px solid #fff;
+	background-size: 40px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url(../images/wp-plugin-logo.svg);
+	border-radius: 100%;
+	vertical-align: middle;
+}
+
+.spftestimonial-welcome-wrap .spftestimonial-logo .spftestimonial--text {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 90px;
+	color: #fff;
+	font-size: 13px;
+	line-height: 1.2em;
+	font-weight: 600;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.spftestimonial-welcome-wrap .spftestimonial-logo .spftestimonial--version {
+	top: auto;
+	left: auto;
+	right: 8px;
+	bottom: 4px;
+	font-size: 11px;
+	text-transform: lowercase;
+}
+
+.spftestimonial-welcome-wrap .spftestimonial-about-text {
+	font-weight: 400;
+	line-height: 1.6em;
+	font-size: 19px;
+	margin: 1em 200px 1em 0;
+	color: #555d66;
+}
+
+.spftestimonial-welcome-wrap .spftestimonial-demo-button {
+	margin: 1em 200px 2em 0;
+}
+
+.spftestimonial-welcome-wrap .nav-tab-wrapper {
+	margin-bottom: 20px;
+}
+
+.spftestimonial-welcome-wrap ul {
+	list-style-type: disc;
+	padding-left: 15px;
+}
+
+.spftestimonial-welcome-wrap .spftestimonial--col {
+	float: left;
+	padding-right: 20px;
+	box-sizing: border-box;
+}
+
+.spftestimonial-welcome-wrap .spftestimonial--col-2 {
+	width: 50%;
+}
+
+.spftestimonial-welcome-wrap .spftestimonial--col-3 {
+	width: 33.333%;
+}
+
+.spftestimonial-welcome-wrap .spftestimonial--col-4 {
+	width: 25%;
+}
+
+.spftestimonial-welcome-wrap .spftestimonial--col-5 {
+	width: 20%;
+}
+
+.spftestimonial-welcome-wrap .spftestimonial--col-last {
+	padding-right: 0;
+}
+
+.spftestimonial-welcome-wrap .spftestimonial--col-upgrade {
+	padding: 10px 0;
+	text-align: center;
+	border-top: 1px solid #e5e5e5;
+}
+
+.spftestimonial--table-compare thead td,
+.spftestimonial--table-compare tfoot td {
+	text-align: center;
+}
+
+.spftestimonial--table-compare td {
+	font-size: 14px;
+	text-align: center;
+	vertical-align: middle;
+	padding: 10px;
+}
+
+.spftestimonial--table-compare td:first-child {
+	text-align: left;
+}
+
+.spftestimonial--table-compare tfoot td {
+	padding: 15px 0;
+}
+
+.spftestimonial--table-compare .fa {
+	font-size: 18px;
+}
+
+.spftestimonial--table-compare .fa-check-circle {
+	color: #46b450;
+}
+
+.spftestimonial--table-compare .fa-times-circle {
+	color: #dc3232;
+}
+
+.spftestimonial-welcome-cols {
+	clear: both;
+	margin: 20px 0;
+	background-color: #fff;
+	padding: 0 0;
+	border-radius: 2px;
+	border: 1px solid #e5e5e5;
+}
+
+.spftestimonial-welcome-cols .spftestimonial--col {
+	width: 33.333%;
+	float: left;
+	padding: 20px;
+	text-align: center;
+	box-sizing: border-box;
+	min-height: 200px;
+	border-right: 1px solid #e5e5e5;
+}
+
+.spftestimonial-welcome-cols .spftestimonial--left,
+.spftestimonial-welcome-cols .spftestimonial--block {
+	float: left;
+	width: 20%;
+	padding: 0 30px;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.spftestimonial-welcome-cols .spftestimonial--block {
+	width: 80%;
+}
+
+.spftestimonial-welcome-cols .spftestimonial--col-first {
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.spftestimonial-welcome-cols .spftestimonial--last {
+	border-right: none;
+}
+
+.spftestimonial-welcome-cols .spftestimonial--space {
+	height: 20px;
+}
+
+.spftestimonial-welcome-cols .spftestimonial--icon {
+	display: inline-block;
+	font-size: 20px;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	margin-bottom: 10px;
+	color: #fff;
+	background-color: #555;
+	border-radius: 30px;
+}
+
+.spftestimonial-welcome-cols .spftestimonial--active {
+	background-color: #5cb85c;
+}
+
+.spftestimonial-welcome-cols .spftestimonial--deactive {
+	background-color: #e14d43;
+}
+
+.spftestimonial-welcome-cols .spftestimonial--title {
+	font-weight: bold;
+	display: block;
+}
+
+.spftestimonial-welcome-cols p:last-child {
+	margin-bottom: 0;
+}
+
+.spftestimonial-features-cols .spftestimonial--key-features {
+	width: 30%;
+}
+
+.spftestimonial-features-cols .spftestimonial--available-fields {
+	width: 70%;
+}
+
+.spftestimonial-code-block {
+	margin: 20px 0;
+	padding: 5px 20px;
+	background-color: #fff;
+	border-radius: 2px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+.spftestimonial-code-block pre {
+	font-size: 13px;
+	color: #0073aa;
+}
+
+.spftestimonial-code-block pre span {
+	color: #999;
+}
+
+.spftestimonial--table-fields td {
+	font-size: 14px;
+}
+
+.spftestimonial--upgrade a {
+	color: #5cb85c;
+	font-weight: bold;
+}
+
+.spftestimonial--upgrade a:focus,
+.spftestimonial--upgrade a:hover {
+	color: #4aa14a;
+	outline: none;
+	box-shadow: none;
+}
+
+@media only screen and (max-width: 782px) {
+	.spftestimonial-welcome-cols .spftestimonial--col {
+		width: 100%;
+		min-height: auto;
+		border-right: none;
+		border-bottom: 1px solid #e5e5e5;
+	}
+
+	.spftestimonial-features-cols .spftestimonial--key-features {
+		width: 100%;
+	}
+
+	.spftestimonial-features-cols .spftestimonial--available-fields {
+		width: 100%;
+	}
+}
+
+/**
+ * 12. Responsive
+ */
+@media only screen and (max-width: 1200px) {
+	.spftestimonial-metabox .spftestimonial-field .spftestimonial-title {
+		float: none;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.spftestimonial-metabox .spftestimonial-field .spftestimonial-fieldset {
+		float: none;
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 782px) {
+	.spftestimonial-header-inner {
+		text-align: center;
+	}
+
+	.spftestimonial-header-inner h1 {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.spftestimonial-form-result {
+		float: none;
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+
+	.spftestimonial-search,
+	.spftestimonial-header-right,
+	.spftestimonial-header-left {
+		width: 100%;
+	}
+
+	.spftestimonial-search {
+		text-align: center;
+		margin-bottom: 15px;
+	}
+
+	.spftestimonial-footer {
+		text-align: center;
+	}
+
+	.spftestimonial-buttons {
+		float: none;
+	}
+
+	.spftestimonial-copyright {
+		float: none;
+		margin-top: 10px;
+	}
+
+	.spftestimonial-nav,
+	.spftestimonial-expand-all,
+	.spftestimonial-reset-section,
+	.spftestimonial-nav-background {
+		display: none !important;
+	}
+
+	.spftestimonial-nav-normal+.spftestimonial-content {
+		margin-left: 0;
+	}
+
+	.spftestimonial-section-title,
+	.spftestimonial-section {
+		display: block !important;
+	}
+
+	.spftestimonial-field .spftestimonial-title {
+		float: none;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.spftestimonial-field .spftestimonial-fieldset {
+		float: none;
+		width: 100%;
+	}
+
+	.spftestimonial-field-color .button.wp-picker-clear {
+		padding: 0 8px;
+		line-height: 2.14285714;
+		min-height: 32px;
+	}
+
+	.spftestimonial-modal-inner {
+		width: 350px;
+		height: 400px;
+	}
+
+	.spftestimonial-modal-content {
+		height: 237px;
+	}
+
+	.spftestimonial-icon-dialog .spftestimonial-modal-inner {
+		width: 305px;
+		height: 380px;
+	}
+
+	.spftestimonial-icon-dialog .spftestimonial-modal-content {
+		height: 267px;
+	}
+
+	.spftestimonial-modal-icon .spftestimonial-modal-inner {
+		width: 330px;
+		height: 385px;
+	}
+
+	.spftestimonial-modal-icon .spftestimonial-modal-content {
+		height: 252px;
+	}
+
+	.spftestimonial-profile-options>.spftestimonial-field>.spftestimonial-title,
+	.spftestimonial-taxonomy-edit-fields>.spftestimonial-field>.spftestimonial-title {
+		float: none;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.spftestimonial-profile-options>.spftestimonial-field>.spftestimonial-fieldset,
+	.spftestimonial-taxonomy-edit-fields>.spftestimonial-field>.spftestimonial-fieldset {
+		float: none;
+		width: 100%;
+	}
+
+	.spftestimonial-nav-menu-options>.spftestimonial-fields {
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+
+	.spftestimonial-nav-menu-options>.spftestimonial-fields>.spftestimonial-field {
+		padding: 10px;
+	}
+}
+
+/**
+ * Chosen JS Styles
+ */
+.chosen-container {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 13px;
+	user-select: none;
+}
+
+.chosen-container * {
+	box-sizing: border-box;
+}
+
+.chosen-container .chosen-drop {
+	position: absolute;
+	top: 100%;
+	z-index: 1010;
+	width: 100%;
+	border: 1px solid #aaa;
+	border-top: 0;
+	background: #fff;
+	box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+	clip: rect(0, 0, 0, 0);
+	clip-path: inset(100% 100%);
+}
+
+.chosen-container.chosen-with-drop .chosen-drop {
+	clip: auto;
+	clip-path: none;
+}
+
+.chosen-container a {
+	cursor: pointer;
+}
+
+.chosen-container .search-choice .group-name,
+.chosen-container .chosen-single .group-name {
+	margin-right: 4px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-weight: normal;
+	color: #999999;
+}
+
+.chosen-container .search-choice .group-name:after,
+.chosen-container .chosen-single .group-name:after {
+	content: ":";
+	padding-left: 2px;
+	vertical-align: top;
+}
+
+.chosen-container-single .chosen-single {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	padding: 0 0 0 8px;
+	height: 25px;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	background-color: #fff;
+	background: linear-gradient(#fff 20%, #f6f6f6 50%, #eee 52%, #f4f4f4 100%);
+	background-clip: padding-box;
+	box-shadow: 0 0 3px #fff inset, 0 1px 1px rgba(0, 0, 0, 0.1);
+	color: #444;
+	text-decoration: none;
+	white-space: nowrap;
+	line-height: 24px;
+}
+
+.chosen-container-single .chosen-default {
+	color: #999;
+}
+
+.chosen-container-single .chosen-single span {
+	display: block;
+	overflow: hidden;
+	margin-right: 26px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.chosen-container-single .chosen-single-with-deselect span {
+	margin-right: 38px;
+}
+
+.chosen-container-single .chosen-single abbr {
+	position: absolute;
+	top: 6px;
+	right: 26px;
+	display: block;
+	width: 12px;
+	height: 12px;
+	font-size: 1px;
+}
+
+.chosen-container-single .chosen-single div {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	width: 18px;
+	height: 100%;
+}
+
+.chosen-container-single .chosen-single div b {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.chosen-container-single .chosen-search {
+	position: relative;
+	z-index: 1010;
+	margin: 0;
+	padding: 3px 4px;
+	white-space: nowrap;
+}
+
+.chosen-container-single .chosen-search input[type="text"] {
+	margin: 1px 0;
+	padding: 4px 20px 4px 5px;
+	width: 100%;
+	height: auto;
+	outline: 0;
+	border: 1px solid #aaa;
+	font-size: 1em;
+	font-family: sans-serif;
+	line-height: normal;
+	border-radius: 0;
+}
+
+.chosen-container-single .chosen-drop {
+	margin-top: -1px;
+	border-radius: 0 0 4px 4px;
+	background-clip: padding-box;
+}
+
+.chosen-container-single.chosen-container-single-nosearch .chosen-search {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+	clip-path: inset(100% 100%);
+}
+
+.chosen-container .chosen-results {
+	color: #444;
+	position: relative;
+	overflow-x: hidden;
+	overflow-y: auto;
+	margin: 0 4px 4px 0;
+	padding: 0 0 0 4px;
+	max-height: 240px;
+	-webkit-overflow-scrolling: touch;
+}
+
+.chosen-container .chosen-results li {
+	display: none;
+	margin: 0;
+	padding: 5px 6px;
+	list-style: none;
+	line-height: 15px;
+	word-wrap: break-word;
+	-webkit-touch-callout: none;
+}
+
+.chosen-container .chosen-results li.active-result {
+	display: list-item;
+	cursor: pointer;
+}
+
+.chosen-container .chosen-results li.disabled-result {
+	display: list-item;
+	color: #ccc;
+	cursor: default;
+}
+
+.chosen-container .chosen-results li.highlighted {
+	background-color: #3875d7;
+	background-image: linear-gradient(#3875d7 20%, #2a62bc 90%);
+	color: #fff;
+}
+
+.chosen-container .chosen-results li.no-results {
+	color: #777;
+	display: list-item;
+	background: #f4f4f4;
+}
+
+.chosen-container .chosen-results li.group-result {
+	display: list-item;
+	font-weight: bold;
+	cursor: default;
+}
+
+.chosen-container .chosen-results li.group-option {
+	padding-left: 15px;
+}
+
+.chosen-container .chosen-results li em {
+	font-style: normal;
+	text-decoration: underline;
+}
+
+.chosen-container-multi .chosen-choices {
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+	padding: 0 5px;
+	width: 100%;
+	height: auto;
+	border: 1px solid #aaa;
+	background-color: #fff;
+	background-image: linear-gradient(#eee 1%, #fff 15%);
+	cursor: text;
+}
+
+.chosen-container-multi .chosen-choices li {
+	float: left;
+	list-style: none;
+}
+
+.chosen-container-multi .chosen-choices li.search-field {
+	margin: 0;
+	padding: 0;
+	white-space: nowrap;
+}
+
+.chosen-container-multi .chosen-choices li.search-field input[type="text"] {
+	margin: 1px 0;
+	padding: 0;
+	outline: 0;
+	border: 0 !important;
+	background: transparent !important;
+	box-shadow: none;
+	color: #999;
+	font-size: 100%;
+	font-family: sans-serif;
+	line-height: normal;
+	border-radius: 0;
+	width: 25px;
+	height: 25px;
+	min-height: 25px;
+}
+
+.chosen-container-multi .chosen-choices li.search-choice {
+	position: relative;
+	margin: 3px 5px 3px 0;
+	padding: 3px 20px 3px 6px;
+	border: 1px solid #aaa;
+	max-width: 100%;
+	border-radius: 3px;
+	background-color: #eeeeee;
+	background-image: linear-gradient(#f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eee 100%);
+	background-size: 100% 19px;
+	background-repeat: repeat-x;
+	background-clip: padding-box;
+	box-shadow: 0 0 2px #fff inset, 0 1px 0 rgba(0, 0, 0, 0.05);
+	color: #333;
+	line-height: 13px;
+	cursor: default;
+}
+
+.chosen-container-multi .chosen-choices li.search-choice span {
+	word-wrap: break-word;
+	white-space: nowrap;
+}
+
+.chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	width: 12px;
+	height: 12px;
+	font-size: 1px;
+}
+
+.chosen-container-multi .chosen-choices li.search-choice-disabled {
+	padding-right: 5px;
+	border: 1px solid #ccc;
+	background-color: #e4e4e4;
+	background-image: linear-gradient(#f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eee 100%);
+	color: #666;
+}
+
+.chosen-container-multi .chosen-choices li.search-choice-focus {
+	background: #d4d4d4;
+}
+
+.chosen-container-multi .chosen-results {
+	margin: 0;
+	padding: 0;
+}
+
+.chosen-container-multi .chosen-drop .result-selected {
+	display: list-item;
+	color: #ccc;
+	cursor: default;
+}
+
+.chosen-container-active .chosen-single {
+	border: 1px solid #5897fb;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.chosen-container-active.chosen-with-drop .chosen-single {
+	border: 1px solid #aaa;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	background-image: linear-gradient(#eee 20%, #fff 80%);
+	box-shadow: 0 1px 0 #fff inset;
+}
+
+.chosen-container-active.chosen-with-drop .chosen-single div {
+	border-left: none;
+	background: transparent;
+}
+
+.chosen-container-active .chosen-choices {
+	border: 1px solid #5897fb;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.chosen-container-active .chosen-choices li.search-field input[type="text"] {
+	color: #222 !important;
+}
+
+.chosen-disabled {
+	opacity: 0.5 !important;
+	cursor: default;
+}
+
+.chosen-disabled .chosen-single {
+	cursor: default;
+}
+
+.chosen-disabled .chosen-choices .search-choice .search-choice-close {
+	cursor: default;
+}
+
+.spftestimonial-buttons .button.spftestimonial-save-ajax[disabled] {
+	background-color: #c5c5c6 !important;
+	border: none;
+}
+
+.chosen-rtl {
+	text-align: right;
+}
+
+.chosen-rtl .chosen-single {
+	overflow: visible;
+	padding: 0 8px 0 0;
+}
+
+.chosen-rtl .chosen-single span {
+	margin-right: 0;
+	margin-left: 26px;
+	direction: rtl;
+}
+
+.chosen-rtl .chosen-single-with-deselect span {
+	margin-left: 38px;
+}
+
+.chosen-rtl .chosen-single div {
+	right: auto;
+	left: 3px;
+}
+
+.chosen-rtl .chosen-single abbr {
+	right: auto;
+	left: 26px;
+}
+
+.chosen-rtl .chosen-choices li {
+	float: right;
+}
+
+.chosen-rtl .chosen-choices li.search-field input[type="text"] {
+	direction: rtl;
+}
+
+.chosen-rtl .chosen-choices li.search-choice {
+	margin: 3px 5px 3px 0;
+	padding: 3px 5px 3px 19px;
+}
+
+.chosen-rtl .chosen-choices li.search-choice .search-choice-close {
+	right: auto;
+	left: 4px;
+}
+
+.chosen-rtl.chosen-container-single .chosen-results {
+	margin: 0 0 4px 4px;
+	padding: 0 4px 0 0;
+}
+
+.chosen-rtl .chosen-results li.group-option {
+	padding-right: 15px;
+	padding-left: 0;
+}
+
+.chosen-rtl.chosen-container-active.chosen-with-drop .chosen-single div {
+	border-right: none;
+}
+
+.chosen-rtl .chosen-search input[type="text"] {
+	padding: 4px 5px 4px 20px;
+	direction: rtl;
+}
+
+/*  Theme select  */
+.spftestimonial-field.spftestimonial-field-image_select.theme_style .spftestimonial-fieldset {
+	margin-left: 0;
+	width: 100%;
+	float: none;
+}
+
+.spftestimonial-field.spftestimonial-field-image_select.theme_style .spftestimonial-title {
+	width: 100%;
+	margin-bottom: 30px;
+	float: none;
+}
+
+.spftestimonial-field.spftestimonial-field-image_select.theme_style .spftestimonial--image {
+	margin: 0 24px 24px 0;
+}
+
+/* Form style */
+#sp_tpro_form_options .spftestimonial-metabox .spftestimonial-nav ul li a {
+	color: #464646;
+	background-color: #EEF8FF;
+	border-top: 0;
+	border-right: 0;
+	margin-bottom: 0;
+	padding: 15px 15px;
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+	border-bottom: 1px solid #CCDEEB;
+	border-right: 1px solid #CCDEEB;
+}
+
+#sp_tpro_form_options .spftestimonial-metabox .spftestimonial-nav ul li .spftestimonial-active {
+	box-shadow: 3px 0 0 0 #1B73E8 inset;
+	background-color: #fff;
+	color: #1B73E8;
+	border-right-color: #fff;
+}
+
+#sp_tpro_form_options .spftestimonial-metabox .spftestimonial-nav-background {
+	background-color: #f5f5f5;
+	border-right: 1px solid #CCDEEB;
+	display: block;
+}
+
+.spftestimonial-field-sortable.form_fields .spftestimonial-sortable .spftestimonial-sortable-item {
+	margin: 0;
+	border: 0;
+}
+
+.spftestimonial-field-sortable.form_fields .spftestimonial-sortable-helper {
+	display: none;
+}
+
+.form_fields .spftestimonial-accordion-item::after {
+	position: absolute;
+	top: 18px;
+	right: 18px;
+	content: "\f0b2";
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.spftestimonial-field-sortable.form_fields .spftestimonial-sortable-content>.spftestimonial-field {
+	padding: 0px;
+	margin-bottom: 5px;
+}
+
+/* Rating */
+.sp-tpro-client-rating {
+	float: left;
+}
+
+.sp-tpro-client-rating:not(:checked)>input {
+	visibility: hidden;
+	display: none;
+	width: 0;
+	height: 0;
+	float: right;
+	top: 100%;
+	clip: rect(0, 0, 0, 0);
+	margin: 0;
+	padding: 0;
+	border: 10px #fff solid;
+}
+
+.sp-tpro-client-rating:not(:checked)>label {
+	float: right;
+	display: block;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+	font-size: 150%;
+	line-height: 1.2;
+	color: #d4d4d4;
+	width: 1em;
+}
+
+.sp-tpro-client-rating>input:checked~label {
+	color: #f3bb00;
+}
+
+.sp-tpro-client-rating:not(:checked)>label:hover,
+.sp-tpro-client-rating:not(:checked)>label:hover~label {
+	color: #de7202;
+}
+
+.sp-tpro-client-rating>input:checked+label:hover,
+.sp-tpro-client-rating>input:checked+label:hover~label,
+.sp-tpro-client-rating>input:checked~label:hover,
+.sp-tpro-client-rating>input:checked~label:hover~label,
+.sp-tpro-client-rating>label:hover~input:checked~label {
+	color: #de7202;
+}
+
+
+/**
+* Single testimonial metabox.
+*/
+.spftestimonial-field-repeater.social-profile-repeater .spftestimonial-repeater-wrapper .spftestimonial-repeater-item {
+	display: grid;
+	grid-template-columns: 9fr 1fr;
+}
+
+.spftestimonial-field-repeater.social-profile-repeater .spftestimonial-repeater-content {
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+}
+
+.spftestimonial-field-repeater.social-profile-repeater .spftestimonial-repeater-item {
+	max-width: 600px;
+}
+
+.spftestimonial-field-repeater.social-profile-repeater .spftestimonial-repeater-helper {
+	border-left: 0;
+	background-color: transparent;
+}
+
+.spftestimonial-field-repeater.social-profile-repeater .spftestimonial-repeater-helper-inner {
+	width: 60px;
+	line-height: 4em;
+}
+
+.spftestimonial-field-repeater .spftestimonial-repeater-helper i.spftestimonial-repeater-clone.far.fa-clone {
+	display: none;
+}
+
+.spftestimonial-field-select.tpro-group-list .chosen-container,
+.spftestimonial-field-select.tpro-exclude-testimonial .chosen-container,
+.spftestimonial-field-select.tpro-specific-testimonial .chosen-container {
+	max-width: 500px;
+}
+
+.spftestimonial-field-select.tpro-group-operator .spftestimonial-fieldset,
+.spftestimonial-field-text.tpro-item-global-name .spftestimonial-fieldset {
+	position: relative;
+}
+
+.spftestimonial-field-select.tpro-group-operator .spftestimonial-help,
+.spftestimonial-field-text.tpro-item-global-name .spftestimonial-help {
+	right: auto;
+	display: inline-block;
+}
+
+span.spftestimonial-shortcode-selectable {
+	background-color: rgba(82, 179, 217, .11);
+	padding: 10px 15px 10px 30px;
+	display: inline-block;
+	border: 1px solid #d1e4ef;
+	border-radius: 2px;
+	cursor: pointer;
+	border-radius: 3px;
+	word-break: break-word;
+	position: relative;
+	width: 80%;
+}
+
+span.spftestimonial-shortcode-selectable::after {
+	content: url(../images/copy.svg);
+	width: 16px;
+	left: 10px;
+	top: 50%;
+	position: absolute;
+	margin-top: -6px;
+}
+
+.spftestimonial-header-inner h1 img {
+	height: 24px;
+	width: 24px;
+	margin-right: 8px;
+	margin-bottom: -4px;
+}
+
+.spftestimonial-theme-light .spftestimonial-nav ul li .spftestimonial-active {
+	box-shadow: 3px 0 0 0 #1595ce inset;
+	background-color: #ffffff;
+	color: #1595CE;
+}
+
+.spftestimonial-buttons .button.spftestimonial-save-ajax {
+	background-color: #02cc7b;
+	border-color: transparent;
+	color: #fff !important;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	text-shadow: none;
+	border-radius: 4px;
+	height: 38px;
+	text-transform: uppercase;
+	width: 165px;
+	-webkit-transition: background-color 0.2s;
+	transition: background-color 0.2s;
+}
+
+.spftestimonial-buttons .button.spftestimonial-save-ajax:hover {
+	background-color: #02bb71;
+}
+
+.spftestimonial-buttons .button.spftestimonial-reset-all,
+.spftestimonial-buttons .button.spftestimonial-reset-section {
+	background-color: #cd3c3c !important;
+	border-color: transparent !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	text-shadow: none !important;
+	text-transform: uppercase;
+	border-radius: 4px;
+	height: 38px;
+	-webkit-transition: background-color 0.2s;
+	transition: background-color 0.2s;
+	color: #fff;
+}
+
+.spftestimonial-buttons .button.spftestimonial-reset-section:hover {
+	background-color: #c03635 !important;
+}
+
+.spftestimonial-buttons .button.spftestimonial-reset-section {
+	background-color: #cd3c3c !important;
+}
+
+.spftestimonial-buttons .button {
+	margin: 0 3px;
+	line-height: 26px;
+	font-weight: 600;
+}
+
+/* Import export css */
+.spftestimonial-field.spftestimonial-field-button_set.spt_export {
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.spftestimonial-field-button_set.spt_export .spftestimonial--button:hover,
+.spftestimonial-field.spftestimonial-field-custom_import.spt_import button:hover {
+	background: #135e96;
+	border-color: #135e96;
+	color: #fff;
+}
+
+.spftestimonial-field.spftestimonial-field-custom_import.spt_import button,
+.spftestimonial-field-button_set.spt_export .spftestimonial--button {
+	background: #2271b1;
+	border-color: #2271b1;
+	color: #fff;
+	text-decoration: none;
+	text-shadow: none;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 13px;
+	line-height: 2.15384615;
+	min-height: 30px;
+	margin: 0;
+	padding: 0 10px;
+	cursor: pointer;
+	border-width: 1px;
+	border-style: solid;
+	-webkit-appearance: none;
+	border-radius: 3px;
+	white-space: nowrap;
+	box-sizing: border-box;
+}
+
+.sp-lcp-options .spftestimonial-field-select .spftestimonial-fieldset {
+	position: relative;
+}
+
+.spftestimonial-field.spftestimonial-field-custom_import.spt_import .spftestimonial-fieldset {
+	position: relative;
+}
+
+.spftestimonial-field.spftestimonial-field-custom_import.spt_import p {
+	padding-bottom: 0;
+	margin-bottom: 1px;
+}
+
+.spftestimonial-field.spftestimonial-field-custom_import.spt_import button {
+	margin-top: 10px;
+	padding-bottom: 0px;
+}
+
+.spftestimonial-field.spftestimonial-field-custom_import.spt_import .spftestimonial-help {
+	cursor: help;
+	position: absolute;
+	top: 80%;
+	transform: translateY(-50%);
+	padding: 5px;
+	font-size: 14px;
+	color: #aaa;
+	width: 15px;
+	left: 64px;
+	text-align: left;
+}
+
+.spftestimonial-field.spftestimonial-field-select.spt_post_forms_id .chosen-container .chosen-drop,
+.spftestimonial-field.spftestimonial-field-select.spt_post_id .chosen-container .chosen-drop {
+	max-width: 400px;
+}
+
+.spftestimonial-field.spftestimonial-field-select.spt_post_forms_id .chosen-container,
+.spftestimonial-field.spftestimonial-field-select.spt_post_id .chosen-container {
+	max-width: 400px;
+}
+
+.spftestimonial-field.spftestimonial-field-select.spt_post_forms_id,
+.spftestimonial-field.spftestimonial-field-select.spt_post_id {
+	padding-top: 0;
+}
+
+.spftestimonial_tools .spftestimonial-header-inner h1.export-import img {
+	height: 24px;
+}
+
+.spftestimonial_tools .spftestimonial-nav-options li:nth-child(1) a {
+	background-image: url(../images/export-icon.svg);
+}
+
+.spftestimonial_tools .spftestimonial-nav-options li:nth-child(2) a {
+	background-image: url(../images/import.svg);
+}
+
+.spftestimonial_tools .spftestimonial-nav-options li:nth-child(1) a.spftestimonial-active {
+	background-image: url(../images/file-export-icon1.svg);
+}
+
+.spftestimonial_tools .spftestimonial-nav-options li:nth-child(2) a.spftestimonial-active {
+	background-image: url(../images/file-import-icon1.svg);
+}
+
+.spt-main-class.spftestimonial-theme-light.spftestimonial_tools .spftestimonial-nav-options ul li a {
+	padding: 15px 30px;
+	background-size: 14px;
+	background-position: 10px center;
+	background-repeat: no-repeat;
+}
+
+/* Custom */
+.spftestimonial--image.pro-feature {
+	position: relative;
+}
+
+.spftestimonial--image.pro-feature:not(.spftestimonial-pro-only) {
+	pointer-events: none;
+}
+
+.spftestimonial--image.pro-feature::after {
+	position: absolute;
+	top: 1px;
+	right: 6.5px;
+	color: #585B6F;
+	background-color: #cbd6df;
+	font-weight: 600;
+	padding: 0 4px;
+	content: 'PRO';
+	text-align: center;
+	font-size: 8px;
+	border-top-right-radius: 2px;
+	border-bottom-left-radius: 2px;
+	line-height: 12px;
+}
+
+.theme_style .spftestimonial--image.pro-feature::after {
+	top: 2px;
+	right: 7px;
+	border-top-right-radius: 2px;
+}
+
+/* Pro field css */
+.testimonial_text_limit .testimonial_limit_input,
+.sp-field-icon-select.spftestimonial-pro-only,
+.pro_only_field>.spftestimonial-fieldset,
+.spftestimonial-field-button_set .spftestimonial--button.spftestimonial-pro-only,
+.spftestimonial-field-checkbox.pro_only_field>.spftestimonial-fieldset,
+.spftestimonial-field-color.pro_only_field>.spftestimonial-fieldset {
+	opacity: .7;
+	pointer-events: none;
+}
+
+.spftestimonial-field-image_select:not(.tfree-layout-preset) .spftestimonial--image.spftestimonial-pro-only img {
+	opacity: .7;
+	cursor: default;
+}
+
+.spftestimonial-field.pro_only_field.form_settings {
+	pointer-events: none;
+	opacity: .6;
+}
+
+.carousel_pagination_style .spftestimonial--sibling.pro-feature {
+	opacity: .7;
+}
+
+.carousel_pagination_style .spftestimonial--sibling.pro-feature:after {
+	right: 6px;
+}
+
+/* .sp-field-icon-select.spftestimonial-pro-only {
+  opacity: 0.5;
+} */
+
+.addition_extra_fields_pro.testimonial_extra_info .spftestimonial-icon-select .spftestimonial-icon-add,
+.addition_extra_fields_pro.testimonial_extra_info .additional_custom_fields_pro,
+.addition_extra_fields_pro.testimonial_extra_info .spftestimonial-repeater-add,
+.addition_extra_fields_pro.social-profile-repeater .spftestimonial-repeater-add,
+.addition_extra_fields_pro.social-profile-repeater .social_name select option {
+	pointer-events: none;
+	opacity: .8;
+}
+
+/**
+* Single testimonial metabox.
+*/
+.spftestimonial-field-repeater.social-profile-repeater .spftestimonial-repeater-wrapper .spftestimonial-repeater-item {
+	display: grid;
+	grid-template-columns: 9fr 1fr;
+}
+
+.spftestimonial-field-repeater.social-profile-repeater .spftestimonial-repeater-content {
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+}
+
+.spftestimonial-field-repeater.social-profile-repeater .spftestimonial-repeater-item {
+	max-width: 600px;
+}
+
+.spftestimonial-field-repeater.social-profile-repeater .spftestimonial-repeater-helper {
+	border-left: 0;
+	background-color: transparent;
+}
+
+.spftestimonial-field-repeater.social-profile-repeater .spftestimonial-repeater-helper-inner {
+	width: 100px;
+	line-height: 4em;
+}
+
+.spftestimonial-field-button_set.tpro_company_logo_pro .spftestimonial--button:last-child {
+	border-radius: 4px;
+	padding: 5px 10px;
+}
+
+/*  Theme select  */
+.spftestimonial-field.spftestimonial-field-image_select.theme_style img {
+	border-radius: 4px;
+	width: 290px;
+}
+
+.spftestimonial-field.spftestimonial-field-image_select.theme_style .spftestimonial-fieldset {
+	margin-left: 0;
+}
+
+.spftestimonial-field.spftestimonial-field-image_select.theme_style .spftestimonial-title {
+	width: 100%;
+	margin-bottom: 30px;
+	float: none;
+}
+
+.spftestimonial-field.spftestimonial-field-image_select.theme_style .spftestimonial--image {
+	margin: 0 24px 24px 0;
+}
+
+/* pro switcher */
+.spftestimonial-field-switcher.pro_switcher .spftestimonial--ball::after {
+	content: "PRO";
+	position: relative;
+	text-align: center;
+	width: 24px;
+	float: right;
+	font-weight: 600;
+	font-size: 8px;
+	color: #8796A1;
+	opacity: 1;
+	line-height: 18px;
+}
+
+.pro_switcher .spftestimonial--switcher {
+	background-color: #99AAB2;
+	pointer-events: none;
+	color: rgb(135, 150, 161);
+}
+
+.sp-field-icon-select.spftestimonial-pro-only:last-child:after,
+.spftestimonial-field-button_set .spftestimonial--button.spftestimonial-pro-only:after {
+	opacity: 1;
+	position: absolute;
+	top: 0px;
+	right: 0;
+	color: #181c2d;
+	background-color: #cbd6df;
+	font-weight: 600;
+	padding: 0 4px;
+	content: 'PRO';
+	text-align: center;
+	font-size: 8px;
+	border-top-right-radius: 2px;
+	border-bottom-left-radius: 2px;
+	line-height: 12px;
+}
+
+/* client image */
+.client_image_style.spftestimonial-field-image_select img {
+	width: 70px;
+}
+
+.sp-field-icon-select.spftestimonial-pro-only:last-child:after {
+	content: "PRO";
+}
+
+/* help */
+.spftestimonial-field.spftestimonial-field-checkbox .spftestimonial-help {
+	bottom: 15px;
+	right: auto;
+	top: auto;
+}
+
+.spftestimonial-field.spftestimonial-field-checkbox .spftestimonial-help.spftestimonial-title-help {
+	position: relative;
+	bottom: 0;
+}
+
+.spftestimonial-field.spftestimonial-field-checkbox.tpro-data-remove-check .spftestimonial-help {
+	margin-left: 0;
+}
+
+/* Pro only submessage */
+
+.spftestimonial-field.spftestimonial-field-submessage.pro_only_field {
+	opacity: 0.7;
+}
+
+/* Form field */
+
+/* .spftestimonial-field-checkbox u {
+  max-height: 400px !important;
+} */
+.spftestimonial-field-sortable.form_fields .spftestimonial--sortable .spftestimonial--sortable-item {
+	margin: 0;
+	border: 0;
+}
+
+.spftestimonial-field-sortable.form_fields .spftestimonial--sortable-content>.spftestimonial-field {
+	padding: 0;
+}
+
+.spftestimonial-field-sortable.form_fields .spftestimonial--sortable-helper {
+	display: none;
+}
+
+.form_fields .spftestimonial-accordion-items {
+	position: relative;
+}
+
+.form_fields .spftestimonial-accordion-item::after {
+	position: absolute;
+	top: 16px;
+	left: 18px;
+	content: url(../images/drag_and_drop.svg);
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+div.sp-testimonial-help .sp-testimonial-features h1 {
+	font-size: 30px;
+	font-weight: 500;
+	color: #444;
+}
+
+div.sp-testimonial-help .sp-testimonial-features .sp-testimonial-subtitle {
+	font-size: 18px;
+	font-weight: 400;
+}
+
+/*  */
+#sp_tpro_form_options .postbox-header,
+div#sp_tpro_form_elements_options .handle-actions.hide-if-no-js,
+div#sp_tfree_form_upper_section .postbox-header,
+#sp_tpro_form_elements_options .handle-actions.hide-if-no-js {
+	display: none;
+}
+
+#sp_tpro_form_options.postbox {
+	border: 1px solid #CCDEEB;
+}
+
+#sp_tpro_form_elements_options .postbox-header .ui-sortable-handle {
+	pointer-events: none;
+}
+
+#sp_tpro_form_options .spftestimonial-nav-metabox .spftestimonial--sortable-item .spftestimonial-accordion-title {
+	pointer-events: none;
+}
+
+.form_fields .spftestimonial-field-accordion .spftestimonial-accordion-title:before {
+	content: '';
+	left: 0;
+	top: 0;
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	z-index: 99;
+}
+
+#sp_tpro_form_options .spftestimonial-field-sortable.form_fields .spftestimonial--sortable-content>.spftestimonial-field
+
+/*,
+#sp_tpro_form_options .spftestimonial-field-accordion .spftestimonial-accordion-title,
+ #sp_tpro_form_options .spftestimonial-nav-metabox,
+#sp_tpro_form_options .spftestimonial-nav-metabox li a */
+	{
+	pointer-events: none;
+}
+
+div#spftestimonial-section-sp_tpro_form_elements_options_1 .spftestimonial-field-checkbox ul {
+	max-height: 100%;
+}
+
+/* Form */
+/* Form editor */
+#sp_tpro_form_options .spftestimonial-metabox .spftestimonial-nav {
+	display: block;
+	position: relative;
+	z-index: 10;
+	float: left;
+}
+
+#sp_tpro_form_options .spftestimonial-metabox .spftestimonial-content {
+	position: relative;
+	background-color: #fff;
+	-moz-transition: opacity 0.2s;
+	-o-transition: opacity 0.2s;
+	-webkit-transition: opacity 0.2s;
+	transition: opacity 0.2s;
+}
+
+#sp_tpro_form_options .spftestimonial-metabox .spftestimonial-nav ul li {
+	display: list-item;
+}
+
+#sp_tpro_form_options .spftestimonial-field-sortable .spftestimonial-field-text input {
+	max-width: 400px;
+}
+
+#sp_tpro-preview-box {
+	overflow-x: auto;
+	padding: 0 20px;
+	resize: vertical;
+	min-height: 150px;
+}
+
+#sp_tpro_live_preview .postbox-header .handle-actions .handle-order-lower,
+#sp_tpro_live_preview .postbox-header .handle-actions .handle-order-higher {
+	display: none;
+}
+
+
+.spftestimonial-field-column .spftestimonial--title,
+.spftestimonial-field-box_shadow .spftestimonial--title,
+.spftestimonial-field-spacing .spftestimonial--title {
+	padding-bottom: 5px;
+	color: #999;
+}
+
+
+.spftestimonial-page-loading-spinner i {
+	animation: import-spinner 2s linear infinite;
+	margin-left: 5px;
+}
+
+@keyframes import-spinner {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/* Styles for the testimonial carousel navigation & pagination */
+.spftestimonial-field.spftestimonial-field-fieldset.sp_testimonial-navigation-and-pagination-style {
+	padding: 0 0 20px 0;
+}
+
+.spftestimonial-field.spftestimonial-field-fieldset.sp_testimonial-navigation-and-pagination-style .spftestimonial-fieldset-content {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0;
+	box-sizing: border-box;
+	width: 100%;
+	padding-left: 0px;
+	justify-content: flex-start;
+	float: right;
+	width: calc(75% - 20px);
+}
+
+.spftestimonial-field-fieldset.sp_testimonial-navigation-and-pagination-style.autoplay .spftestimonial-fieldset-content {
+	padding-left: 0;
+}
+
+.spftestimonial-field.spftestimonial-field-fieldset.sp_testimonial-navigation-and-pagination-style .sp_testimonial_navigation,
+.spftestimonial-field.spftestimonial-field-fieldset.sp_testimonial-navigation-and-pagination-style .sp_testimonial_pagination {
+	display: flex;
+	justify-self: center;
+	align-items: center;
+	max-width: fit-content;
+	padding-left: 0;
+	flex: 1;
+	position: static;
+}
+
+.spftestimonial-field.spftestimonial-field-fieldset.sp_testimonial-navigation-and-pagination-style .spftestimonial-fieldset-content>.spftestimonial-field .spftestimonial-title {
+	width: 100%;
+	max-width: 49%;
+}
+
+.spftestimonial-field.spftestimonial-field-fieldset.sp_testimonial-navigation-and-pagination-style .spftestimonial-fieldset-content>.sp_testimonial_navigation .spftestimonial-title,
+.spftestimonial-field.spftestimonial-field-fieldset.sp_testimonial-navigation-and-pagination-style .spftestimonial-fieldset-content>.sp_testimonial_pagination .spftestimonial-title {
+	position: absolute;
+	left: 20px;
+	top: 20px;
+}
+
+.spftestimonial-field.spftestimonial-field-fieldset.sp_testimonial-navigation-and-pagination-style .spftestimonial-fieldset-content>.spt_hide_on_mobile .spftestimonial-title,
+.spftestimonial-field.spftestimonial-field-fieldset.sp_testimonial-navigation-and-pagination-style .spt_disable_on_mobile {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	padding: 0;
+}
+
+.spftestimonial-field.spftestimonial-field-fieldset.sp_testimonial-navigation-and-pagination-style .sp_testimonial_pagination,
+.spftestimonial-field.spftestimonial-field-fieldset.sp_testimonial-navigation-and-pagination-style .sp_testimonial_navigation {
+	padding-right: 10px;
+}
+
+.spftestimonial-field.spftestimonial-field-fieldset.sp_testimonial-navigation-and-pagination-style .spt_disable_on_mobile {
+	display: flex;
+	width: 235px;
+}
+
+.spftestimonial-field.spftestimonial-field-fieldset.sp_testimonial-navigation-and-pagination-style .spt_hide_on_mobile {
+	display: flex;
+	width: 220px;
+}
+
+/**
+ * 12. Responsive of Navigation and Pagination options.
+ */
+@media only screen and (max-width: 1200px) {
+
+	.spftestimonial-field.spftestimonial-field-fieldset.sp_testimonial-navigation-and-pagination-style .sp_testimonial_navigation,
+	.spftestimonial-field.spftestimonial-field-fieldset.sp_testimonial-navigation-and-pagination-style .sp_testimonial_pagination,
+	.spftestimonial-field.spftestimonial-field-fieldset.sp_testimonial-navigation-and-pagination-style .spt_hide_on_mobile {
+		display: block;
+	}
+
+	.spftestimonial-field.spftestimonial-field-fieldset.sp_testimonial-navigation-and-pagination-style .spt_hide_on_mobile {
+		padding: 0;
+	}
+
+	.spftestimonial-field.spftestimonial-field-fieldset.sp_testimonial-navigation-and-pagination-style .spt_hide_on_mobile {
+		padding-top: 20px;
+	}
+
+	.spftestimonial-field.spftestimonial-field-fieldset.sp_testimonial-navigation-and-pagination-style .spftestimonial-fieldset-content {
+		float: none;
+		margin-left: 0;
+		padding-top: 20px;
+		padding-left: 20px;
+	}
+
+	.spftestimonial-field.spftestimonial-field-fieldset.sp_testimonial-navigation-and-pagination-style .spftestimonial-fieldset-content>.spftestimonial-field .spftestimonial-title {
+		left: 0;
+		position: unset;
+	}
+}
+
+/* Responsiveness for the click action type's title */
+@media (min-width: 1200px) and (max-width: 1375px) {
+	.spftestimonial-field.spftestimonial-field-fieldset.sp_testimonial-navigation-and-pagination-style .spftestimonial-fieldset-content>.spftestimonial-field .spftestimonial-title {
+		max-width: 20%;
+	}
+}
+
+/* Responsiveness for the carousel navigation option's title */
+@media (min-width: 1200px) and (max-width: 1500px) {
+
+	.spftestimonial-field.spftestimonial-field-fieldset.sp_testimonial-navigation-and-pagination-style .spftestimonial-fieldset-content>.spftestimonial-field.sp_testimonial_pagination .spftestimonial-title,
+	.spftestimonial-field.spftestimonial-field-fieldset.sp_testimonial-navigation-and-pagination-style .spftestimonial-fieldset-content>.spftestimonial-field.sp_testimonial_navigation .spftestimonial-title {
+		max-width: 25%;
+	}
+
+	.spftestimonial-field.spftestimonial-field-fieldset.sp_testimonial-navigation-and-pagination-style .spftestimonial-fieldset-content>.spftestimonial-field.sp_testimonial_navigation .spftestimonial-title {
+		top: 20px;
+	}
+}
+
+/* Responsiveness for the carousel navigation option's title */
+@media (min-width: 1200px) and (max-width: 1268px) {
+
+	.spftestimonial-field.spftestimonial-field-fieldset.sp_testimonial-navigation-and-pagination-style .sp_testimonial_pagination,
+	.spftestimonial-field.spftestimonial-field-fieldset.sp_testimonial-navigation-and-pagination-style .sp_testimonial_navigation {
+		padding-top: 20px;
+	}
+}
+
+.spftestimonial-field.spftestimonial-field-fieldset.sp_testimonial-navigation-and-pagination-style .sp_testimonial_navigation.spftestimonial-depend-hidden.spftestimonial-depend-on,
+.spftestimonial-field.spftestimonial-field-fieldset.sp_testimonial-navigation-and-pagination-style .spt_hide_on_mobile.spftestimonial-depend-hidden.spftestimonial-depend-on {
+	display: none;
+}
+
+/* Extra fields style */
+.spftestimonial-field-repeater.testimonial_extra_info .spftestimonial-repeater-content {
+	display: flex;
+}
+
+.social-profile-repeater.testimonial_extra_info .spftestimonial-repeater-content>div:nth-of-type(2) {
+	left: -12px;
+}
+
+.spftestimonial-field-repeater.testimonial_extra_info .spftestimonial-repeater-content>.spftestimonial-field.repeater-text {
+	width: 100%;
+}
+
+.spftestimonial-field-repeater.testimonial_extra_info .spftestimonial-repeater-content>.spftestimonial-field.repeater-text .spftestimonial-field-text input {
+	max-width: 100%;
+	margin: 0;
+	height: 35px;
+}
+
+.social-profile-repeater.testimonial_extra_info .spftestimonial-field-select.repeater-select select {
+	width: auto;
+}
+
+
+/* Styles of settings page */
+.spftestimonial.spftestimonial-options .spftestimonial-buttons .button.spftestimonial-reset-section {
+	background-image: url('../images/reset-icon.svg');
+	background-repeat: no-repeat;
+	background-position: 8px center;
+	padding-left: 30px;
+}
+
+.spftestimonial.spftestimonial-options .spftestimonial-buttons .button.spftestimonial-save {
+	background-image: url('../images/save-icon.svg') !important;
+	background-repeat: no-repeat !important;
+	background-position: 16px center !important;
+	padding-left: 30px !important;
+}
+
+.testimonial_extra_info .spftestimonial-icon-select .spftestimonial-icon-add {
+	color: #555;
+	border: 1px solid #ccc;
+	background-color: #f7f7f7;
+}
+
+
+
+/* SVG images for the Rating Star options */
+.tpro-rating-star li.tpro-list-one_star {
+	background-image: url('../images/one_star.svg') !important;
+}
+
+.tpro-rating-star li.tpro-list-two_star {
+	background-image: url('../images/two_star.svg') !important;
+}
+
+.tpro-rating-star li.tpro-list-three_star {
+	background-image: url('../images/three_star.svg') !important;
+}
+
+.tpro-rating-star li.tpro-list-four_star {
+	background-image: url('../images/four_star.svg') !important;
+}
+
+.tpro-rating-star li.tpro-list-five_star {
+	background-image: url('../images/five_star.svg') !important;
+}
+
+.tpro-rating-star li.tpro-list-one_star,
+.tpro-rating-star li.tpro-list-two_star,
+.tpro-rating-star li.tpro-list-three_star,
+.tpro-rating-star li.tpro-list-four_star,
+.tpro-rating-star li.tpro-list-five_star {
+	background-repeat: no-repeat !important;
+	background-position: 25px center !important;
+}
+
+
+/* CSV file import form style */
+form.stp_csv_file_import_form {
+	width: 60%;
+	box-shadow: 0px 0px 4px 0px #c7c2c24a;
+	margin-top: 15px;
+}
+
+form.stp_csv_file_import_form .stp_csv_file_row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 16px;
+}
+
+form.stp_csv_file_import_form .stp_csv_file_row:nth-child(odd) {
+	background-color: #cccccc1f;
+}
+
+form.stp_csv_file_import_form .stp_csv_file_content {
+	width: 70%;
+	overflow: hidden;
+}
+
+.spftestimonial-loading-spinner i {
+	animation: import-spinner 2s linear infinite;
+	margin-left: 5px;
+}
+
+@keyframes import-spinner {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/* Styles of Testimonial title and content length options */
+.spftestimonial-field-fieldset.testimonial_text_limit .spftestimonial-fieldset-content {
+	display: flex;
+}
+
+.spftestimonial-field-fieldset.testimonial_text_limit .spftestimonial-fieldset-content>.spftestimonial-field-spinner,
+.spftestimonial-field-fieldset.testimonial_text_limit .spftestimonial-fieldset-content>.spftestimonial-field-select {
+	padding: 0;
+	padding-right: 10px;
+}
+
+.spftestimonial-field-fieldset.testimonial_text_limit .spftestimonial-fieldset-content>.spftestimonial-field-spinner .spftestimonial--spin input {
+	padding: 0;
+	border-radius: 4px;
+}
+
+.spftestimonial-field-fieldset.testimonial_text_limit .spftestimonial-field-spinner .ui-button {
+	display: none;
+}
+
+.post-type-spt_testimonial_form .page-title-action {
+	visibility: hidden;
+	opacity: 0;
+}
+
+/* demo external icon styles */
+.spt-live-demo-icon[tooltip]:hover {
+	position: relative;
+}
+
+.tfree-layout-preset a.spt-live-demo-icon {
+	margin-left: 4px;
+}
+
+.tfree-layout-preset .spftestimonial--image a.spt-live-demo-icon {
+	opacity: 0;
+	pointer-events: none;
+	position: absolute;
+	z-index: 1;
+}
+
+.tfree-layout-preset .spftestimonial--image:hover a.spt-live-demo-icon,
+.tfree-layout-preset .spftestimonial--image.spftestimonial--active a.spt-live-demo-icon {
+	opacity: 1;
+	pointer-events: painted;
+	transition: all 0.2s linear;
+}
+
+.spt-live-demo-icon[tooltip]:hover:before {
+	position: absolute;
+	top: 100%;
+	left: -12px;
+	z-index: 99999;
+	content: attr(tooltip);
+	margin-top: 0.5em;
+	margin-left: -6px;
+	padding: 4px;
+	width: 54px;
+	overflow: hidden;
+	word-wrap: break-word;
+	font-size: 11px;
+	text-transform: uppercase;
+	color: #FFF;
+	text-align: center;
+	background-color: #222;
+	box-sizing: border-box;
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+	border-radius: 3px;
+}
+
+.spt-live-demo-icon[tooltip]:hover:after {
+	position: absolute;
+	top: 9px;
+	left: 50%;
+	z-index: 99999;
+	content: '';
+	width: 0;
+	height: 0;
+	border: 0.75em dashed transparent;
+	border-bottom: 0.75em solid #222;
+	font-size: inherit;
+	transform: translateX(-50%);
+}
+
+a.spt-live-demo-icon:focus {
+	border: none;
+	box-shadow: none;
+	outline: none;
+}
+
+p.testimonial-pro-img-title {
+	text-align: center;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.testimonial-pro-img-title a.spt-live-demo-icon {
+	margin-left: 4px;
+}
+
+.testimonial-pro-img-title a.spt-live-demo-icon>i.sptpro-icon-demo_link {
+	font-size: 11px;
+}
+
+.spftestimonial-theme-dark .spftestimonial-nav ul li .spftestimonial-active .fa,
+.spftestimonial-theme-dark .spftestimonial-nav ul li .spftestimonial-active .spftestimonial-tab-icon {
+	color: #1B73E8;
+}
+
+#sp_tpro_layout_options .spftestimonial-fieldset,
+#sp_tpro_layout_options .spftestimonial-field .spftestimonial-title {
+	width: 100%;
+}
+
+#sp_tpro_layout_options .spftestimonial-field .spftestimonial-fieldset {
+	margin-top: 10px;
+	margin-left: 0;
+}
+
+#sp_tpro_layout_options .sp_carousel_mode.spftestimonial-field {
+	padding-top: 0;
+	margin-top: -10px;
+}
+
+.spftestimonial-field-image_select.tpro-layout-preset img {
+	width: 106px;
+	vertical-align: top;
+}
+
+.tpro-layout-preset .spftestimonial--image p {
+	position: relative;
+}
+
+.tpro-layout-preset .spftestimonial--image a.spt-live-demo-icon {
+	opacity: 0;
+	pointer-events: none;
+	position: absolute;
+	z-index: 1;
+}
+
+.tpro-layout-preset .spftestimonial--image:hover a.spt-live-demo-icon,
+.tpro-layout-preset .spftestimonial--image.spftestimonial--active a.spt-live-demo-icon {
+	opacity: 1;
+	pointer-events: painted;
+	transition: all 0.2s linear;
+}
+
+div#sp_tpro_live_preview.postbox {
+	border: none;
+	border-top: 1px solid #dddddd;
+}
+
+#sp_tpro_layout_options.postbox {
+	/* border-bottom: none; */
+	margin-bottom: 0;
+}
+
+#sp_tpro_shortcode_options.postbox {
+	border-top: none;
+}
+
+#sp_tpro_shortcode_options .spftestimonial-nav.spftestimonial-nav-metabox {
+	border-right-color: #f1f1f1;
+	border-right-color: #f1f1f1;
+	background: #f1f1f1;
+	margin-right: 0;
+	padding-top: 20px;
+	margin: 0;
+}
+
+/* Preloader */
+.post-type-spt_shortcodes #postbox-container-2 {
+	position: relative;
+}
+
+.post-type-spt_shortcodes #postbox-container-2::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	min-height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	background-image: url(../../../../assets/images/spinner.svg);
+	background-repeat: no-repeat;
+	background-color: #fff;
+	background-position: center 65%;
+}
+
+.post-type-spt_shortcodes #postbox-container-2:has(.spftestimonial-depend-on)::before {
+	display: none;
+}
+
+.filter_ratings_label_type .spftestimonial--image img {
+	height: 36px;
+}
+
+.spftestimonial-field-sortable.live_filter_sorter .spftestimonial-sortable.ui-sortable {
+	max-width: 500px;
+}
+
+.spftestimonial-field-sortable.live_filter_sorter .spftestimonial-sortable-helper {
+	display: none;
+}
+
+.spftestimonial-field-sortable.live_filter_sorter .spftestimonial-sortable-item .spftestimonial-title {
+	width: 24%;
+}
+
+.spftestimonial-field-sortable.live_filter_sorter .spftestimonial-field-switcher .spftestimonial--switcher {
+	float: right;
+}
+
+.live_filter_sorter .spftestimonial-field:after {
+	position: absolute;
+	top: 20px;
+	left: 14px;
+	content: url(../images/drag_and_drop.svg);
+	display: inline-block;
+	font: normal normal normal 14px / 1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.spftestimonial-field-sortable.live_filter_sorter .spftestimonial-sortable-item h4 {
+	line-height: 24px;
+	margin-left: 24px;
+}
+.tpro_star_icon .spftestimonial--image:is(.spftestimonial-pro-only,.pro-feature),
+.sp-testimonial-live-filters-options .spftestimonial-fieldset {
+	opacity: .8;
+	pointer-events: none;
+}
+.sp-testimonial-location .spftestimonial-fieldset-content {
+	display: flex;
+	gap: 20px;
+}
+
+.sp-testimonial-location .spftestimonial-fieldset-content .spftestimonial-field {
+	padding: 0;
+}
+
+.sp-testimonial-location .spftestimonial-fieldset-content .spftestimonial-field select {
+	height: 35px;
+	width: 200px;
+}
+.spftestimonial-field-image_select.sp_slider_mode figure,
+.spftestimonial-field-image_select.sp_carousel_mode figure,
+.spftestimonial-field-image_select.filter_style figure {
+	height: 60px;
+}
