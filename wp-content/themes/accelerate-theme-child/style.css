@@ -349,8 +349,32 @@ h2.call-to-action {
 }
 
 /* 404 page */
-.missing-page {
-    background: url("img/404.gif") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+.highlight-links a {
+	font-family: 'Montserrat';
+	font-weight: 700;
+	color: #45ac9d;
+	text-transform: uppercase;
+}
+
+#not-found-img {
+	padding-bottom: 2em;
+	margin: 0 15%;
+}
+
+h2.not-found {
+	font-family: "Knewave", serif;
+	font-weight: 400;
+	font-size: 8em;
+	text-align: center;
+	margin: 0;
+}
+
+h3.not-found {
+	font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+    color: #2b2b2b;
+    text-transform: uppercase;
+    margin: 0;
+	text-align: center;
 }
 
 
@@ -482,4 +506,15 @@ h2.call-to-action {
 		padding-right: 2em;
 	}
 
+	/* About/Services */
+
+	#not-found-page {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+
+	#not-found-img {
+		padding-bottom: 2em;
+		margin: 0;
+	}
 }
