@@ -83,6 +83,10 @@ img {
     background: none repeat scroll 0 0 #45ac9d;
 }
 
+.hero-content h3 {
+	font: 500 1.5em 'Montserrat', 'Open Sans', Arial, sans-serif;
+}
+
 
 /*--- Case Studies on Homepage ---*/
 
