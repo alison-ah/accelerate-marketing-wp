@@ -428,7 +428,8 @@ h3.not-found {
 	/* Homepage */
 
 	#hero-summary {
-		margin: 0 12em;
+		max-width: 800px;
+		margin:    0 auto;
 		color: white;
 	}
 	
@@ -476,7 +477,8 @@ h3.not-found {
 		margin: 4em 0 .5em;
 	}
 
-	#sp-testimonial-free-47411 {
+	#sp-testimonial-free-47411, 
+	#sp-testimonial-free-47446 {
 		padding: 0;
 		margin: 0;
 	}
