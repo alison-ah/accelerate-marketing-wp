@@ -228,7 +228,7 @@ aside.case-study-sidebar h3 {
 	font: 300 .75em 'Montserrat', 'Open Sans', Arial, sans-serif;
     color: #a6a6a6;
     margin: 0 0 1em 0;
-	text-align: left;
+	text-align: center;
 }
 
 aside.case-study-sidebar h4 {
@@ -488,6 +488,10 @@ h3.not-found {
 	/* Case Studies */
 
 	aside.case-study-sidebar h2 {
+		text-align: left;
+	}
+
+	aside.case-study-sidebar h3 {
 		text-align: left;
 	}
 

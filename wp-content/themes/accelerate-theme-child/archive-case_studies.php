@@ -19,7 +19,7 @@ get_header(); ?>
 		<article class="case-study clearfix">
 			<aside class="case-study-sidebar">
 				<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-				<h4><?php echo $services; ?></h4>
+				<h3><?php echo $services; ?></h3>
 				<?php the_excerpt(); ?>
 				<p class="read-more-link"><a href="<?php the_permalink(); ?>">View Project &rsaquo;</a></p>
 			</aside>
