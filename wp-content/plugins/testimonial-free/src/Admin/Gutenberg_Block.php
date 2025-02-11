@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-if ( ! class_exists( 'Gutenberg_Block' ) ) {
+if ( ! class_exists( 'ShapedPlugin\TestimonialFree\Admin\Gutenberg_Block' ) ) {
 
 	/**
 	 * Custom Gutenberg Block.

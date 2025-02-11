@@ -795,6 +795,10 @@ div#sp_tpro_live_preview {
   line-height: 24px;
 }
 
+.sprtf-gutenberg-shortcode.editor-styles-wrapper::after {
+  display: none;
+}
+
 .editor-styles-wrapper .sprtf_block_shortcode img {
   box-shadow: none;
 }

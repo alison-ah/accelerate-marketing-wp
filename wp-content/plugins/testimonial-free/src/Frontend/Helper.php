@@ -438,7 +438,7 @@ class Helper {
 		if ( $hash ) {
 			$string  = '<script type="text/javascript">';
 			$string .= '
-			var elmnt = document.getElementById("' . $url . '");
+			var elmnt = document.getElementById("' . esc_url( $url ) . '");
 			elmnt.scrollIntoView(true);
 			// window.location.hash = "' . $url . '"';
 			$string .= '</script>';

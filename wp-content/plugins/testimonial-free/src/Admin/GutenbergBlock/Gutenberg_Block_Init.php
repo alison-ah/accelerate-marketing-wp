@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-if ( ! class_exists( 'Gutenberg_Block_Init' ) ) {
+if ( ! class_exists( 'ShapedPlugin\TestimonialFree\Admin\GutenbergBlock\Gutenberg_Block_Init' ) ) {
 	/**
 	 * Sp_Testimonial_free_Gutenberg_Block_Init class.
 	 */
@@ -36,7 +36,7 @@ if ( ! class_exists( 'Gutenberg_Block_Init' ) ) {
 		 * Custom Gutenberg Block Initializer.
 		 */
 		public function __construct() {
-			$this->suffix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG || defined( 'WP_DEBUG' ) && WP_DEBUG ? '' : '.min';
+			$this->suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) || ( defined( 'WP_DEBUG' ) && WP_DEBUG ) ? '' : '.min';
 			add_action( 'plugins_loaded', array( $this, 'sptf_testimonial_plugin_loaded' ) );
 			add_action( 'init', array( $this, 'sptf_gutenberg_shortcode_block' ) );
 			add_action( 'init', array( $this, 'sptf_gutenberg_form_shortcode_block' ) );
@@ -55,9 +55,9 @@ if ( ! class_exists( 'Gutenberg_Block_Init' ) ) {
 		}
 
 		/**
-		 * Method to register testimonial blocks category
+		 * Method to register testimonial blocks category.
 		 *
-		 * @param $categories
+		 * @param mixed $categories block category.
 		 *
 		 * @return $categories array
 		 */
@@ -281,7 +281,7 @@ if ( ! class_exists( 'Gutenberg_Block_Init' ) ) {
 
 			$edit_page_link = get_edit_post_link( sanitize_text_field( $attributes['shortcode'] ) );
 
-			return '<div id="' . uniqid() . '" class="' . $class_name . '"><a href="' . $edit_page_link . '" target="_blank" class="sp_testimonial_block_edit_button">Edit View</a>' . do_shortcode( '[sp_testimonial id="' . sanitize_text_field( $attributes['shortcode'] ) . '"]' ) . '</div>';
+			return '<div id="' . esc_attr( uniqid() ) . '" class="' . esc_attr( $class_name ) . '"><a href="' . esc_url( $edit_page_link ) . '" target="_blank" class="sp_testimonial_block_edit_button">Edit View</a>' . do_shortcode( '[sp_testimonial id="' . sanitize_text_field( $attributes['shortcode'] ) . '"]' ) . '</div>';
 		}
 
 		/**
@@ -315,7 +315,7 @@ if ( ! class_exists( 'Gutenberg_Block_Init' ) ) {
 			}
 
 			$edit_page_link = get_edit_post_link( sanitize_text_field( $attributes['shortcode'] ) );
-			return $load_google_font . '<div id="testimonial_form_' . $form_id . ' " class="' . $class_name . '"><a href="' . $edit_page_link . '" target="_blank" class="sp_testimonial_block_edit_button">Edit View</a>' . do_shortcode( '[sp_testimonial_form id="' . sanitize_text_field( $attributes['shortcode'] ) . '"]' ) . '</div>';
+			return $load_google_font . '<div id="testimonial_form_' . esc_attr( $form_id ) . ' " class="' . esc_attr( $class_name ) . '"><a href="' . esc_url( $edit_page_link ) . '" target="_blank" class="sp_testimonial_block_edit_button">Edit View</a>' . do_shortcode( '[sp_testimonial_form id="' . sanitize_text_field( $attributes['shortcode'] ) . '"]' ) . '</div>';
 		}
 	}
 }

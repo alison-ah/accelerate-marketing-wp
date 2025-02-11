@@ -85,6 +85,7 @@ img {
 
 .hero-content h3 {
 	font: 500 1.5em 'Montserrat', 'Open Sans', Arial, sans-serif;
+	padding: 0 1em;
 }
 
 
@@ -149,7 +150,6 @@ ul.homepage-featured-work {
 }
 
 .read-more-link {
-	font-family: 'Montserrat';
 	font-weight: 700;
 	color: #45ac9d;
 	text-transform: uppercase;

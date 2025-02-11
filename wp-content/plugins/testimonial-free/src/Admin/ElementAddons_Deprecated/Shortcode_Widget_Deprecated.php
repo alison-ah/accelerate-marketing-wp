@@ -131,7 +131,6 @@ class Shortcode_Widget_Deprecated extends \Elementor\Widget_Base {
 		);
 
 		$this->end_controls_section();
-
 	}
 
 	/**
@@ -170,9 +169,7 @@ class Shortcode_Widget_Deprecated extends \Elementor\Widget_Base {
 			<script src="<?php echo esc_url( SP_TFREE_URL . 'Frontend/assets/js/sp-scripts.min.js' ); ?>" ></script>
 			<?php
 		} else {
-			echo do_shortcode( '[sp_testimonial id="' . $generator_id . '"]' );
+			echo do_shortcode( '[sp_testimonial id="' . esc_attr( $generator_id ) . '"]' );
 		}
-
 	}
-
 }

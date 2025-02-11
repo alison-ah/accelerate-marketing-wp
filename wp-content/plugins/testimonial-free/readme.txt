@@ -3,7 +3,7 @@ Contributors: shapedplugin, rubel_miah, khalilu, shamimmiashuhagh
 Tags: testimonials, testimonial slider, customer reviews, social proof, review form
 Requires at least: 4.7
 Tested up to: 6.7.1
-Stable tag: 3.1.6
+Stable tag: 3.1.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -501,6 +501,10 @@ Thank you!
 
 
 == Changelog ==
+
+= 3.1.7 - Feb 10, 2025 =
+* Improved: The plugin security improved.
+* Fix: The shortcode select option gap issue was found in the gutenberg block.
 
 = 3.1.6 - Jan 24, 2025 =
 * Improved: The grid number pagination has been improved.

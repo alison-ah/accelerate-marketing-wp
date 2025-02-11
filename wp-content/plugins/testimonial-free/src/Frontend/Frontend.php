@@ -292,14 +292,12 @@ class Frontend {
 					update_option( $option_key, $found_generator_id );
 				}
 			}
-		} else {
+		} elseif ( $current_page_id ) {
 			// If option not set in current page add option.
-			if ( $current_page_id ) {
-				if ( is_multisite() ) {
-					add_site_option( $option_key, array( $post_id ) );
-				} else {
-					add_option( $option_key, array( $post_id ) );
-				}
+			if ( is_multisite() ) {
+				add_site_option( $option_key, array( $post_id ) );
+			} else {
+				add_option( $option_key, array( $post_id ) );
 			}
 		}
 	}
