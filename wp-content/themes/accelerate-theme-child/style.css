@@ -14,7 +14,7 @@ Text Domain:  accelerate-theme-child
 /* Global Styles */
 
 .button {
-    background: none repeat scroll 0 0 #45ac9d;
+    background: none repeat scroll 0 0 #28625A;
 }
 
 #primary {
@@ -31,8 +31,25 @@ img {
 	text-align: center;
 }
 
+/*--- Header ---*/
+.page-header h1 {
+	display: block;
+	text-align: center;
+	margin-bottom: 1em;
+	color: #fff;
+	font: 700 1.5em/1.3125 'Montserrat', 'Open Sans', Arial, sans-serif;
+	text-transform: uppercase;
+	margin: 0;
+}
 
-/* --- Footer ---*/
+.page-header .primary-navigation ul li a {
+	color: #fff;
+	margin: 0 1em;
+	padding: 1em 0 .25em 0;
+	text-transform: uppercase;
+}
+
+/*--- Footer ---*/
 
 #main {
 	margin-bottom: 0;
@@ -40,6 +57,12 @@ img {
 
 .site-footer {
 	padding-top: 1em;
+}
+
+.site-footer, .site-footer p, .site-footer a {
+    color: #595959;
+    font-size: .9em;
+    line-height: 1.5;
 }
 
 .social-media-navigation {
@@ -70,6 +93,21 @@ img {
     font-size: 1em;
 }
 
+/*--- Sidebar ---*/
+
+#sidebar .widget_search input[type="submit"] {
+	background: url('img/white-arrow-right.png') no-repeat center #28625A;
+}
+
+#sidebar h2 {
+	color: #28625A;
+}
+
+/* Next/Previous */
+#navigation .left a,
+#navigation .right a {
+	color: #28625A;
+}
 
 /* Homepage */
 
@@ -80,7 +118,15 @@ img {
 }
 
 #masthead {
-    background: none repeat scroll 0 0 #45ac9d;
+    background: none repeat scroll 0 0 #28625A;
+}
+
+.hero-content h2 {
+	color: #fff;
+	font-weight:bold;
+	font-size: 3em;
+	line-height: 1.5;
+	margin: 0 2%;
 }
 
 .hero-content h3 {
@@ -131,7 +177,7 @@ ul.homepage-featured-work {
 
 .blog-post h2 {
     font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
-    color: #a6a6a6;
+    color: #595959;
     text-transform: uppercase;
     margin: 4em 0 .5em;
 	text-align: left;
@@ -151,7 +197,7 @@ ul.homepage-featured-work {
 
 .read-more-link {
 	font-weight: 700;
-	color: #45ac9d;
+	color: #28625A;
 	text-transform: uppercase;
 }
 
@@ -163,7 +209,7 @@ ul.homepage-featured-work {
 
 .sp-testimonial-free h2 {
 	font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
-    color: #a6a6a6;
+    color: #595959;
     text-transform: uppercase;
     margin: 4em 3em .5em;
 	text-align: left;
@@ -204,6 +250,53 @@ ul.homepage-featured-work {
 	text-align: left;
 }
 
+.entry-title a:hover {
+	color: #28625A;
+}
+.entry-time {
+	color: #28625A;
+}
+.category .page-title span {
+	color: #28625A;
+}
+.entry-summary a {
+	color: #28625A;
+}
+
+.entry-footer .entry-terms a:hover {
+	border-bottom: 1px solid #28625A;
+}
+
+.comment-list .comment a {
+	color: #28625A;
+}
+
+.comments-area .comment-reply-title {
+	color: #28625A;
+}
+.comments-area .comment-reply-title a {
+	color: #28625A;
+}
+
+.comments-area .comment-form p a {
+	color: #28625A;
+}
+
+.comments-area .comment-form input[type="submit"] {
+	background: #28625A;
+}
+
+.wp-caption-text {
+	color: #595959;
+}
+.entry-footer .entry-terms {
+	color: #595959;
+}
+
+.entry-terms span {
+	color: #595959;
+}
+
 /* Case Studies */
 
 .case-study {
@@ -226,7 +319,7 @@ aside.case-study-sidebar h2 {
 
 aside.case-study-sidebar h3 {
 	font: 300 .75em 'Montserrat', 'Open Sans', Arial, sans-serif;
-    color: #a6a6a6;
+    color: #595959;
     margin: 0 0 1em 0;
 	text-align: center;
 }
@@ -304,7 +397,7 @@ div.case-study-images {
 }
 
 .page #nf-field-4 {
-	background-color: #45ac9d;
+	background-color: #28625A;
 	float: right;
 }
 
@@ -327,6 +420,7 @@ div.case-study-images {
 #hero-summary {
 	margin: 0 5em;
 	color: white;
+	font-size: 1.75em;
 }
 
 .intro {
@@ -389,13 +483,15 @@ div.case-study-images {
 
 h2.call-to-action {
 	margin: 0;
+	color: #3b3b3b;
+	font: 700 1em / 1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
 }
 
 /* 404 page */
 .highlight-links a {
 	font-family: 'Montserrat';
 	font-weight: 700;
-	color: #45ac9d;
+	color: #28625A;
 	text-transform: uppercase;
 }
 
@@ -522,10 +618,6 @@ h3.not-found {
 
 	.about {
 		padding: 0 10em 2em;
-	}
-
-	.about h2 {
-		margin: 0;
 	}
 	
 	.services {
