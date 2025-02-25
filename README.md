@@ -16,7 +16,12 @@ WordPress site with Custom Themes, Child Themes, and Advanced Theme Customizatio
 This is a custom WordPress site developed for a <a href="https://skillcrush.com/" target="_blank">Skillcrush</a> course. 
 
 ## My Customizations
-I customized the project by implementing a mobile-first strategy and adding customer quotes on the homepage, replacing a Twitter feed in the original design.
+I customized the project by:
+- Implementing a mobile-first strategy
+- Adding customer quotes on the homepage, replacing a Twitter feed in the original design
+- Improving accessibility (color contrast, heading levels, etc.)
 
 ## Future development
-- Improve accessibility of color contrast
+- Resolve H1 challenge in the blog
+- Update filler blog content
+- Consider options to modernize style
