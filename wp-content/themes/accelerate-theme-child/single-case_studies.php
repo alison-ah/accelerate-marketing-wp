@@ -11,6 +11,7 @@ get_header(); ?>
 
 <div id="primary" class="site-content sidebar">
 	<div class="main-content" role="main">
+	<h1 class ="hidden">Work Sample</h1>
 
 	<?php while ( have_posts() ) : the_post();
 		$services = get_field('services');

@@ -17,7 +17,7 @@ get_header(); ?>
 	<div id="primary" class="site-content sidebar">
 		<div id="contact-form" class="main-content page" role="main">
 			<?php while ( have_posts() ) : the_post(); ?>
-                <h2><?php the_title(); ?></h2>
+                <h1><?php the_title(); ?></h1>
 				<?php the_content(); ?>
 			<?php endwhile; // end of the loop. ?>
 		</div><!-- .main-content -->

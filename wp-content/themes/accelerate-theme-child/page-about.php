@@ -31,7 +31,7 @@ get_header(); ?>
         <article class="about" id="about-services">
             <aside class="about-services">
                 <div class="intro">
-                    <h2><?php the_title(); ?></h2>
+                    <h1><?php the_title(); ?></h1>
                     <p><?php the_content(); ?></p>
                 </div>
 
@@ -43,7 +43,7 @@ get_header(); ?>
                         </div>
 
                         <div class="service-text" id="service-<?php echo $index + 1; ?>-text">
-                            <h3><?php echo esc_html($service['name']); ?></h3>
+                            <h2><?php echo esc_html($service['name']); ?></h2>
                             <p><?php echo esc_html($service['description']); ?></p>
                         </div>
                     </div> <!-- .services -->

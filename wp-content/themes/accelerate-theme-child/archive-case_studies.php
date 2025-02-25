@@ -11,6 +11,7 @@
 get_header(); ?>
 <div id="primary" class="site-content">
 		<div class="main-content" role="main">
+		<h1 class ="hidden">Work Samples</h1>
 	<?php while ( have_posts() ) : the_post();
 			$image_1 = get_field("image_1");
 			$size = "full";
