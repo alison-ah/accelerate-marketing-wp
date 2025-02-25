@@ -25,4 +25,3 @@ I customized the project by:
 - Resolve H1 challenge in the blog
 - Update filler blog content
 - Consider options to modernize style
-- Update screenshot in theme
