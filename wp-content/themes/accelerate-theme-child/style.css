@@ -387,12 +387,8 @@ div.case-study-images {
 
 #nf-field-1-container,
 #nf-field-2-container {
-	width: 49%;
+	width: 90%;
 	display: inline-block;
-}
-
-#nf-field-1-wrap {
-	padding-right: 2em;
 }
 
 .page #nf-field-4 {
@@ -417,9 +413,9 @@ div.case-study-images {
 }
 
 #hero-summary {
-	margin: 0 5em;
+	margin: 0 1em;
 	color: white;
-	font-size: 1.75em;
+	font-size: 1.5em;
 }
 
 .intro {
@@ -609,6 +605,11 @@ h3.not-found {
 
 	/* About/Services */
 
+	#hero-summary {
+		color: white;
+		font-size: 1.75em;
+	}
+
 	#about-services,
 	#call-to-action {
 		margin:    0 auto;
@@ -669,7 +670,20 @@ h3.not-found {
 		padding-right: 2em;
 	}
 
-	/* About/Services */
+	/* Contact */
+
+	#nf-field-1-container,
+	#nf-field-2-container {
+		width: 49%;
+		display: inline-block;
+	}
+
+
+	#nf-field-1-wrap {
+		padding-right: 2em;
+	}
+
+	/* 404 */
 
 	#not-found-page {
 		display: flex;
