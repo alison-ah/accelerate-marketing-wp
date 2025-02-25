@@ -2,7 +2,7 @@
 
 WordPress site with Custom Themes, Child Themes, and Advanced Theme Customizations
 
-
+<img src="wp-content/themes/accelerate-theme-child/screenshot.png" alt="screenshot preview of the front page" height="250px">
 
 ## Tools & Skills
 - MySQL
