@@ -11,7 +11,6 @@ get_header(); ?>
 
 <div id="primary" class="site-content sidebar">
 	<div class="main-content" role="main">
-	<h1 class ="hidden">Work Sample</h1>
 
 	<?php while ( have_posts() ) : the_post();
 		$services = get_field('services');
@@ -24,10 +23,10 @@ get_header(); ?>
 		?>
 
 	<article class="case-study">
-		<aside class="case-study-sidebar">
-			<h2><?php the_title(); ?></h2>
-			<h3><?php echo $services; ?></h3>
-			<h4>Client: <?php echo $client; ?> </h4>
+		<aside class="case-study-sidebar single-case-study">
+			<h1><?php the_title(); ?></h1>
+			<h2><?php echo $services; ?></h2>
+			<h3>Client: <?php echo $client; ?> </h3>
 
 			<?php the_content(); ?>
 
